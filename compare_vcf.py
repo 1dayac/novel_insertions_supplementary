@@ -31,7 +31,7 @@ def get_popins_len(line):
 def Near(sv1, sv2):
     return abs(sv1.pos - sv2.pos) <= 100
 len_300 = 0
-with open("pacbio.txt", "r") as pacbio:
+with open("./../pacbio.txt", "r") as pacbio:
      for r in pacbio.readlines():
          break
          if r.split("\t")[1].split("/")[0] not in sv_dict:
@@ -47,9 +47,9 @@ print(sv_dict)
 len_50_300 = 0
 len_300_500 = 0
 len_500 = 0
-with open("CHM13_final_genotypes.annotated.vcf", "r") as pacbio:
-
+with open("CHM1_final_genotypes.annotated.vcf", "r") as pacbio:
      for r in pacbio.readlines():
+         #break
          if r.startswith("#") or r.find("deletion") != -1:
              continue
          splitted = r.split("\t")
@@ -80,7 +80,7 @@ len_300_500 = 0
 len_500 = 0
 with open("insertions_setcover.vcf", "r") as pamir_vcf:
     for r in pamir_vcf.readlines():
-        break
+        #break
         if r.startswith("#"):
             continue
         chrom = r.split("\t")[0]
@@ -133,11 +133,11 @@ popins_dict = {}
 near = 0
 not_near = 0
 ins = 0
-with open("chm13_popins.vcf", "r") as popins_vcf:
+with open("popins.vcf", "r") as popins_vcf:
     for r in popins_vcf.readlines():
         if r.startswith("#"):
             continue
-        chrom = r.split("\t")[0]
+        chrom = "chr" + r.split("\t")[0]
         pos = int(r.split("\t")[1])
         new_sv = SV(chrom, pos, get_popins_len(r))
         found = False
@@ -149,20 +149,21 @@ with open("chm13_popins.vcf", "r") as popins_vcf:
         if chrom not in popins_dict:
             popins_dict[chrom] = []
         popins_dict[chrom].append(new_sv)
-        if get_popins_len(r) < 50:
-            pass
-        elif get_popins_len(r) < 300:
-            len_50_300 += 1
-        elif get_popins_len(r) < 500:
-            len_300_500 += 1
-        else:
-            len_500 += 1
+
 
         for sv in sv_dict[chrom]:
             if sv.checked:
                 continue
             if Near(sv, new_sv):
                 near += 1
+                if get_popins_len(r) < 50:
+                    pass
+                elif get_popins_len(r) < 300:
+                    len_50_300 += 1
+                elif get_popins_len(r) < 500:
+                    len_300_500 += 1
+                else:
+                    len_500 += 1
                 #seq = r.split("\t")[7].split(";")[5][4:]
                 #print(seq)
                 sv.checked = True
@@ -188,7 +189,7 @@ near = 0
 not_near = 0
 num = 0
 ins = 0
-with open("CHM13_180GB_CrG_GRCh38_phased_possorted.vcf", "r") as my_vcf:
+with open("test.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue
@@ -204,21 +205,18 @@ with open("CHM13_180GB_CrG_GRCh38_phased_possorted.vcf", "r") as my_vcf:
             sv_dict[chrom] = []
         if len(r.split("\t")[4]) >= 300:
             ins += 1
-        if len(r.split("\t")[4]) < 300:
-            pass
 
-        elif len(r.split("\t")[4]) < 300:
-            len_50_300 += 1
-        elif len(r.split("\t")[4]) < 500:
-            len_300_500 += 1
-        else:
-            len_500 += 1
         for sv in sv_dict[chrom]:
             if sv.checked:
                 continue
             if Near(sv, new_sv):
 
-
+                if len(r.split("\t")[4]) < 300:
+                    len_50_300 += 1
+                elif len(r.split("\t")[4]) < 500:
+                    len_300_500 += 1
+                else:
+                    len_500 += 1
 
                 near += 1
                 # seq = r.split("\t")[7].split(";")[5][4:]
@@ -230,8 +228,9 @@ with open("CHM13_180GB_CrG_GRCh38_phased_possorted.vcf", "r") as my_vcf:
 
 print(ins)
 
-print("me")
-print(near)
+print("Novel-X")
+print("Total - " + str(num))
+print("Shared - " + str(near))
 print("50-300 " + str(len_50_300) )
 print("300-500 " + str(len_300_500))
 print("500 " + str(len_500) )

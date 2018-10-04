@@ -17,7 +17,7 @@ with open("CHM1_bionano.smap", "r") as bionano:
         rstart = int(float(splited[6]))
         rend = int(float(splited[7]))
         count += 1
-        if abs(rstart - rend) < 5000:
+        if abs(rstart - rend) < 5000 and abs(qend - qstart) >= 2000:
             print(str(abs(qstart - qend)) + " " + str(abs(rstart - rend)))
 
     print(count)

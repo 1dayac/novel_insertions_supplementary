@@ -182,8 +182,8 @@ def AnalyzeCurrentSet(al1, al2):
 class ContigFilter(object):
 
     def __init__(self):
-        self.coverage_cutoff = 5.0
-        self.length_cutoff = 5000
+        self.coverage_cutoff = 0.0
+        self.length_cutoff = 0
 
     def ParseCoverage(self, contig_name):
         m = re.search("cov_([\d\.]+)", contig_name)
@@ -272,6 +272,6 @@ with open(sys.argv[3], "w") as vcf:
     for insertion in unique_insertions:
         ins_seq = str(record_dict[insertion.node].seq[insertion.pos1 : insertion.pos2] if not insertion.rc else record_dict[insertion.node].seq[insertion.pos1 : insertion.pos2].reverse_complement())
         vcf.write(str(insertion.ref_id) + "\t" + str(insertion.ref_pos) + "\t" + "." + "\t" + str(record_dict[insertion.node].seq[insertion.pos1]) + "\t" + ins_seq + "\t" + "." + "\t" + "PASS" + "\t" + "DP=100" + "\t" + insertion.node + "\t" + str(insertion.anchor1) + "\t" + str(insertion.anchor2) + "\t" + str(insertion.pos1) + "\t" + str(insertion.pos2) + "\n")
-    for deletion in unique_deletions:
-        del_seq = str(record_dict[deletion.node].seq[deletion.pos1 : deletion.pos2] if not insertion.rc else record_dict[deletion.node].seq[deletion.pos1 : deletion.pos2].reverse_complement())
-        vcf.write(str(deletion.ref_id) + "\t" + str(deletion.ref_pos1) + "\t" + "." + "\t" + str(record_dict[deletion.node].seq[deletion.pos1]) + "\t" + del_seq + "\t" + "." + "\t" + "PASS" + "\t" + "DP=100" + "\t" + deletion.node + "\t" + str(deletion.anchor1) + "\t" + str(deletion.anchor2) + "\t" + str(deletion.pos1) + "\t" + str(deletion.pos2) + "\n")
+#    for deletion in unique_deletions:
+#        del_seq = str(record_dict[deletion.node].seq[deletion.pos1 : deletion.pos2] if not insertion.rc else record_dict[deletion.node].seq[deletion.pos1 : deletion.pos2].reverse_complement())
+#        vcf.write(str(deletion.ref_id) + "\t" + str(deletion.ref_pos1) + "\t" + "." + "\t" + str(record_dict[deletion.node].seq[deletion.pos1]) + "\t" + del_seq + "\t" + "." + "\t" + "PASS" + "\t" + "DP=100" + "\t" + deletion.node + "\t" + str(deletion.anchor1) + "\t" + str(deletion.anchor2) + "\t" + str(deletion.pos1) + "\t" + str(deletion.pos2) + "\n")
