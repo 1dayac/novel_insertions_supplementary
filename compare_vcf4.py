@@ -46,7 +46,7 @@ def Near(sv1, sv2):
 #        if len(r.split("\t")[2]) > 500:
 #            sv_dict[r.split("\t")[1].split("/")[0]].append(sv)
 
-with open("CHM1_180GB_CrG_GRCh38_phased_possorted.vcf", "r") as my_vcf:
+with open("test.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue

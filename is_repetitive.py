@@ -24,11 +24,11 @@ def get_my_len(s):
 
 is_repeat = 0
 non_repeat = 0
-with open("insertions_setcover.vcf", "r") as my_vcf:
+with open("../results/chm13/novelx.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue
-        if get_len(r) < 300:
+        if get_my_len(r) < 300:
             continue
         chrom = r.split("\t")[0]
         pos = int(r.split("\t")[1])

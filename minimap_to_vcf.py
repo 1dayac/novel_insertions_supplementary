@@ -155,6 +155,7 @@ def IsInsertion(al1, al2):
                 non_unique_insertions.append(ins)
             return True
 
+
     if cont22 < cont11:
         ins = Insertion(al1.node, cont22, cont11, is_rc, al1.chrom, ref_breakpoint, abs(cont22 - cont21), abs(cont12 - cont11))
         if ins.size() > 500:
@@ -220,9 +221,11 @@ with open(sys.argv[1], "r") as nucmer_file:
     lines = nucmer_file.readlines()
     for i in range(1, len(lines) - 1):
         line = lines[i]
-        if line.startswith("local misassembly") or line.startswith("relocation") or line.startswith("indel: indel (> 5bp)"):
+        if line.startswith("local misassembly") or line.startswith("transloc") or line.startswith("relocation") or line.startswith("indel") or line.startswith("fake"):
             line1 = lines[i-1]
             line2 = lines[i+1]
+            if line2.startswith("CON"):
+                continue
 
             chrom = line1.split("\t")[4].strip()
 
@@ -251,25 +254,21 @@ with open(sys.argv[1], "r") as nucmer_file:
             al1 = Alignment(ref11, ref12, cont11, cont12, chrom, contig_name)
             al2 = Alignment(ref21, ref22, cont21, cont22, chrom, contig_name)
 
-
-
             AnalyzeCurrentSet(al1, al2)
 
-
-print(unique_insertions)
-print(non_unique_insertions)
-
-
-print(unique_deletions)
-print(non_unique_deletions)
 
 records = list(SeqIO.parse(sys.argv[2], "fasta"))
 record_dict = {}
 for record in records:
-    if record not in record_dict:
+    if record.id not in record_dict.keys():
         record_dict[record.id] = record
-with open(sys.argv[3], "w") as vcf:
+with open(sys.argv[3], "w") as vcf, open("insertions_with_anchors.fasta", "w") as fasta:
     for insertion in unique_insertions:
+        if insertion.size() >= 300:
+            fasta.write(">" + insertion.node + "\n")
+            fasta.write(str(record_dict[insertion.node].seq))
+            fasta.write("\n")
+
         ins_seq = str(record_dict[insertion.node].seq[insertion.pos1 : insertion.pos2] if not insertion.rc else record_dict[insertion.node].seq[insertion.pos1 : insertion.pos2].reverse_complement())
         vcf.write(str(insertion.ref_id) + "\t" + str(insertion.ref_pos) + "\t" + "." + "\t" + str(record_dict[insertion.node].seq[insertion.pos1]) + "\t" + ins_seq + "\t" + "." + "\t" + "PASS" + "\t" + "DP=100" + "\t" + insertion.node + "\t" + str(insertion.anchor1) + "\t" + str(insertion.anchor2) + "\t" + str(insertion.pos1) + "\t" + str(insertion.pos2) + "\n")
 #    for deletion in unique_deletions:

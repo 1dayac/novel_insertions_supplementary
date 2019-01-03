@@ -59,7 +59,7 @@ with open("insertions_setcover.vcf", "r") as pamir_vcf:
                 
                 
 print(len(sv_dict))
-with open("CHM1_final_genotypes.annotated.vcf", "r") as pacbio:
+with open("test.vcf", "r") as pacbio:
     for r in pacbio.readlines():
         if r.startswith("#") or r.find("deletion") != -1:
             continue
@@ -129,7 +129,7 @@ len_300_500 = 0
 len_500 = 0
 near = 0
 not_near = 0
-with open("CHM1_180GB_CrG_GRCh38_phased_possorted.vcf", "r") as my_vcf:
+with open("test.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue
