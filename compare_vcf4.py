@@ -46,7 +46,7 @@ def Near(sv1, sv2):
 #        if len(r.split("\t")[2]) > 500:
 #            sv_dict[r.split("\t")[1].split("/")[0]].append(sv)
 
-with open("test.vcf", "r") as my_vcf:
+with open("./../results/chm1/novelx.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue
@@ -62,7 +62,7 @@ with open("test.vcf", "r") as my_vcf:
 
 
 
-with open("insertions_setcover.vcf", "r") as pamir_vcf:
+with open("./../results/chm1/pamir.vcf", "r") as pamir_vcf:
     for r in pamir_vcf.readlines():
         if r.startswith("#"):
             continue
@@ -78,7 +78,7 @@ with open("insertions_setcover.vcf", "r") as pamir_vcf:
                 sv.in_pamir = True
 
 print(len(sv_dict))
-with open("CHM1_final_genotypes.annotated.vcf", "r") as pacbio:
+with open("./../results/chm1/pacbio.vcf", "r") as pacbio:
     for r in pacbio.readlines():
         if r.startswith("#") or r.find("deletion") != -1:
             continue
@@ -119,7 +119,7 @@ len_300_500 = 0
 len_500 = 0
 near = 0
 not_near = 0
-with open("remapped_popins.vcf", "r") as popins_vcf:
+with open("./../results/chm1/popins.vcf", "r") as popins_vcf:
     for r in popins_vcf.readlines():
         if r.startswith("#"):
             continue

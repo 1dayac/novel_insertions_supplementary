@@ -14,7 +14,7 @@ class SV:
 db = gffutils.FeatureDB('test.db', keep_order=True)
 overlap = 0
 non_overlap = 0
-with open("test.vcf", "r") as my_vcf:
+with open("./../results/chm1/novelx.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue
@@ -24,6 +24,8 @@ with open("test.vcf", "r") as my_vcf:
 
         if len(r.split("\t")[4]) >= 300:
             if len(list(db.region(region=(chrom, pos, pos+1)))):
+                for f in list(db.region(region=(chrom, pos, pos+1))):
+                    print(f)
                 overlap += 1
             else:
                 non_overlap += 1
