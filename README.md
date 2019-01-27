@@ -10,3 +10,14 @@ Folder simulation contains various scripts we used to obtain results for the "Si
 * ... - commands used to simulated reads and bam-file
 * ... - list of insertions used (borrowed from Huddlestone et al, 2015)
 * ...vcf - list of insertions found
+
+### ALU and tandem repeat filtering
+
+Folder filtered_statistics contains comparison with SMRT-SV calls without ALU and tandem repeat insertions:
+
+* ....pdf - list of tables for each dataset
+* ....py - script for comparison of vcf-files
+
+### Read and barcode usage statistics
+
+In read_barcode_statistics.pdf you can find a statistics on read and barcode usage on the key steps of Novel-X for each dataset from the paper.
