@@ -2,6 +2,10 @@
 
 This repository contains data that didn't show up in "Novel sequence insertion detection using Linked-Reads" paper. It is not structured at the moment but will be.
 
+### VCF-files
+
+Results folder contains all vcf files that we used for generating Tables from the article.
+
 ### Simulated dataset
 
 Folder simulation contains various scripts we used to obtain results for the "Simulated dataset" section:
