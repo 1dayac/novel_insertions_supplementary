@@ -15,7 +15,7 @@ Folder simulation contains various scripts we used to obtain results for the "Si
 
 Folder filtered_statistics contains comparison with SMRT-SV calls without ALU and tandem repeat insertions:
 
-* ....pdf - list of tables for each dataset
+* NA19240_table_filtered.pdf - table for NA19240 dataset
 * ....py - script for comparison of vcf-files
 
 ### Read and barcode usage statistics
