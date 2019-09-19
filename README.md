@@ -2,6 +2,11 @@
 
 This repository contains data that didn't show up in "Novel sequence insertion detection using Linked-Reads" paper. It is not structured at the moment but will be.
 
+
+### Novel-X flowchart
+
+flowchart.pdf contains a detailed pipeline scheme.
+
 ### VCF-files
 
 Results folder contains all vcf files that we used for generating Tables from the article.
