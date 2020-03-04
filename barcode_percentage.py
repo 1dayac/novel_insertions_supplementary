@@ -1,4 +1,5 @@
 from subprocess import call, Popen
+#first we need to put some stuff into contigs
 
 with open("CHM13_180GB_CrG_GRCh38_phased_possorted.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():

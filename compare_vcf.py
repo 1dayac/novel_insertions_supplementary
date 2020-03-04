@@ -53,6 +53,11 @@ def Near(sv1, sv2):
     return abs(sv1.pos - sv2.pos) <= 100
 
 len_300 = 0
+len_50_300 = 0
+len_300_500 = 0
+len_500_1000 = 0
+len_1000_2000 = 0
+len_2000 = 0
 with open("./../pacbio.txt", "r") as pacbio:
      for r in pacbio.readlines():
          break
@@ -64,21 +69,32 @@ with open("./../pacbio.txt", "r") as pacbio:
          if len(r.split("\t")[2]) > 300:
             sv_dict[r.split("\t")[1].split("/")[0]].append(sv)
             len_300 += 1
+            if len(r.split("\t")[2]) < 300:
+                pass
+            elif len(r.split("\t")[2]) < 300:
+                len_50_300 += 1
+            elif len(r.split("\t")[2]) < 500:
+                len_300_500 += 1
+            elif len(r.split("\t")[2]) < 1000:
+                len_500_1000 += 1
+            elif len(r.split("\t")[2]) < 2000:
+                len_1000_2000 += 1
+            else:
+                len_2000 += 1
 
 print(len_300)
 print(sv_dict)
 # print(len(sv_dict))
-len_50_300 = 0
-len_300_500 = 0
-len_500_1000 = 0
-len_1000_2000 = 0
-len_2000 = 0
+
 
 with open("./../results/19240/pacbio.vcf", "r") as pacbio:
      for r in pacbio.readlines():
          #break
+         #if r.startswith("#") or r.find("DEL") != -1 or r.find("Tandem") != -1 or r.find("Alu") != -1 or r.find("ANN=L1") != -1:
+         #    continue
          if r.startswith("#") or r.find("DEL") != -1:
              continue
+
          splitted = r.split("\t")
          sv = SV(splitted[0], int(splitted[1]), get_len(r))
          if get_len(r) < 300:
@@ -133,18 +149,6 @@ try:
             if chrom not in pamir_dict:
                 pamir_dict[chrom] = []
             pamir_dict[chrom].append(new_sv)
-            if get_len(r) < 50:
-                pass
-            elif get_len(r) < 300:
-                len_50_300 += 1
-            elif get_len(r) < 500:
-                len_300_500 += 1
-            elif get_len(r) < 1000:
-                len_500_1000 += 1
-            elif get_len(r) < 2000:
-                len_1000_2000 += 1
-            else:
-                len_2000 += 1
 
             for sv in sv_dict[chrom]:
                 if sv.checked:
@@ -153,10 +157,22 @@ try:
                     if get_len(r) >= 300:
                         near += 1
                         sv.checked = True
+                        if get_len(r) < 50:
+                            pass
+                        elif get_len(r) < 300:
+                            len_50_300 += 1
+                        elif get_len(r) < 500:
+                            len_300_500 += 1
+                        elif get_len(r) < 1000:
+                            len_500_1000 += 1
+                        elif get_len(r) < 2000:
+                            len_1000_2000 += 1
+                        else:
+                            len_2000 += 1
 
-                            #align_sequences(sv.seq, new_sv.seq)
-                    #seq = r.split("\t")[7].split(";")[5][4:]
-                    #print(seq)
+                        align_sequences(sv.seq, new_sv.seq)
+                        seq = r.split("\t")[7].split(";")[5][4:]
+                        print(seq)
                         print(chrom)
                         print(pos)
 except:
@@ -181,6 +197,18 @@ len_500_1000 = 0
 len_1000_2000 = 0
 len_2000 = 0
 
+alt_map = {'ins':'0'}
+complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
+def reverse_complement(seq):
+    for k,v in alt_map.iteritems():
+        seq = seq.replace(k,v)
+    bases = list(seq)
+    bases = reversed([complement.get(base,base) for base in bases])
+    bases = ''.join(bases)
+    for k,v in alt_map.iteritems():
+        bases = bases.replace(v,k)
+    return bases
+
 popins_dict = {}
 near = 0
 not_near = 0
@@ -204,18 +232,6 @@ try:
                 popins_dict[chrom] = []
             popins_dict[chrom].append(new_sv)
 
-            if get_popins_len(r) < 50:
-                pass
-            elif get_popins_len(r) < 300:
-                len_50_300 += 1
-            elif get_popins_len(r) < 500:
-                len_300_500 += 1
-            elif get_popins_len(r) < 1000:
-                len_500_1000 += 1
-            elif get_popins_len(r) < 2000:
-                len_1000_2000 += 1
-            else:
-                len_2000 += 1
             for sv in sv_dict[chrom]:
                 if sv.checked:
                     continue
@@ -223,7 +239,18 @@ try:
                     if Near(sv, new_sv):
                         near += 1
 
-
+                        if get_popins_len(r) < 50:
+                            pass
+                        elif get_popins_len(r) < 300:
+                            len_50_300 += 1
+                        elif get_popins_len(r) < 500:
+                            len_300_500 += 1
+                        elif get_popins_len(r) < 1000:
+                            len_500_1000 += 1
+                        elif get_popins_len(r) < 2000:
+                            len_1000_2000 += 1
+                        else:
+                            len_2000 += 1
 
                         #seq = r.split("\t")[7].split(";")[5][4:]
                         #print(seq)
@@ -271,23 +298,25 @@ try:
             chrom = "chr" + splitted[0]
             pos = int(splitted[1])
 
-            if get_len_nui(splitted) < 300:
-                len_50_300 += 1
-            elif get_len_nui(splitted) < 500:
-                len_300_500 += 1
-            elif get_len_nui(splitted) < 1000:
-                len_500_1000 += 1
-            elif get_len_nui(splitted) < 2000:
-                len_1000_2000 += 1
-            else:
-                len_2000 += 1
-
 
             for sv in sv_dict[chrom]:
                 if Near(sv, new_sv):
+
                     if sv.checked:
                         pass
                         continue
+                    if get_len_nui(splitted) < 300:
+                        len_50_300 += 1
+                    elif get_len_nui(splitted) < 500:
+                        len_300_500 += 1
+                    elif get_len_nui(splitted) < 1000:
+                        len_500_1000 += 1
+                    elif get_len_nui(splitted) < 2000:
+                        len_1000_2000 += 1
+                    else:
+                        len_2000 += 1
+                        print(chrom)
+                        print(pos)
 
                     sv.checked = True
                     break
@@ -335,39 +364,42 @@ with open("./../results/19240/novelx.vcf", "r") as my_vcf:
         found = False
         if chrom not in sv_dict:
             sv_dict[chrom] = []
+
         if len(r.split("\t")[4]) >= 300:
             ins += 1
             lengths.append(len(r.split("\t")[4]))
             anchors.append(int(r.split("\t")[9]) + int(r.split("\t")[10]))
-        if len(r.split("\t")[4]) < 300:
-            len_50_300 += 1
-        elif len(r.split("\t")[4]) < 500:
-            len_300_500 += 1
-        elif len(r.split("\t")[4]) < 1000:
-            len_500_1000 += 1
-        elif len(r.split("\t")[4]) < 2000:
-            len_1000_2000 += 1
-        else:
-            len_2000 += 1
 
+        if int(r.split("\t")[9]) == 0 or int(r.split("\t")[10]) == 0:
+            continue
         for sv in sv_dict[chrom]:
             if sv.checked:
                 continue
             if Near(sv, new_sv):
-
-
                 if len(r.split("\t")[4]) >=  300:
                     found = True
                     near += 1
 
-
+                    if len(r.split("\t")[4]) < 300:
+                        len_50_300 += 1
+                    elif len(r.split("\t")[4]) < 500:
+                        len_300_500 += 1
+                    elif len(r.split("\t")[4]) < 1000:
+                        len_500_1000 += 1
+                    elif len(r.split("\t")[4]) < 2000:
+                        len_1000_2000 += 1
+                    else:
+                        len_2000 += 1
 
                     #align_sequences(sv.seq, new_sv.seq)
-                    # seq = r.split("\t")[7].split(";")[5][4:]
-                    # print(seq)
+                    #seq = r.split("\t")[7].split(";")[5][4:]
+                    #print(seq)
                     sv.checked = True
                     print(chrom)
                     print(pos)
+                    break
+        if not found:
+            print("Not found")
 
 
 
