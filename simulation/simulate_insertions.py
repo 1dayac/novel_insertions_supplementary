@@ -30,10 +30,13 @@ min_length = int(sys.argv[2])
 max_length = int(sys.argv[3])
 out_file = sys.argv[4]
 
-
+ans = []
 with open(out_file, 'w') as out:
     for i in range(num_of_insertions):
         chrom, pos = get_chrom_pos(randrange(sum(lengths)))
         ins_len = randrange(min_length, max_length)
         ins = ''.join(choice(["A", "C", "G", "T"]) for i in range(ins_len))
+        ans.append((chrom, pos, ins))
+    ans = sorted(ans)
+    for chrom, pos, ins in ans:
         out.write(str(chrom) + "/" + str(pos) + "\t" + ins + "\n")
