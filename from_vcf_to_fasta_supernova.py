@@ -1,3 +1,4 @@
+import sys
 class SV:
     def __init__(self, chrom, pos, length, seq=""):
         self.chrom = chrom
@@ -26,8 +27,8 @@ def get_len(line):
         return 0
     return int(ans)
 
-with open("pacbio_19240.fasta", "w") as pacbio_fasta:
-        with open("./../results/19240/pacbio.vcf", "r") as pacbio:
+with open(sys.argv[2], "w") as pacbio_fasta:
+        with open(sys.argv[1], "r") as pacbio:
             for r in pacbio.readlines():
                 #break
                 # if r.startswith("#") or r.find("DEL") != -1 or r.find("Tandem") != -1 or r.find("Alu") != -1 or r.find("ANN=L1") != -1:

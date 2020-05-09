@@ -31,14 +31,16 @@ def get_seq(line):
 
 def get_len(line):
     start_pos = line.find("SVLEN")
+    if start_pos == -1:
+        return 0
     ans = ""
     start_pos += 6
-    while line[start_pos].isdigit():
+    while line[start_pos].isdigit() or line[start_pos] == "+" or line[start_pos] == "-":
         ans += line[start_pos]
         start_pos += 1
     if ans == "":
         return 0
-    return int(ans)
+    return abs(int(ans))
 
 def get_popins_len(line):
     start_pos = line.find("length_")
@@ -58,26 +60,24 @@ len_300_500 = 0
 len_500_1000 = 0
 len_1000_2000 = 0
 len_2000 = 0
-with open("./../pacbio.txt", "r") as pacbio:
+with open("./results/simulated/insertions.txt", "r") as pacbio:
      for r in pacbio.readlines():
          break
          #if r[0] == "#":
          #    continue
-         if r.split("\t")[1].split("/")[0] not in sv_dict:
-             sv_dict[r.split("\t")[1].split("/")[0]] = []
-         sv = SV(r.split("\t")[1].split("/")[0], int(r.split("\t")[1].split("/")[1]), len(r.split("\t")[2]), r.split("\t")[2])
-         if len(r.split("\t")[2]) > 300:
-            sv_dict[r.split("\t")[1].split("/")[0]].append(sv)
+         if r.split("\t")[0].split("/")[0] not in sv_dict:
+             sv_dict[r.split("\t")[0].split("/")[0]] = []
+         sv = SV(r.split("\t")[0].split("/")[0], int(r.split("\t")[0].split("/")[1]), len(r.split("\t")[1]), r.split("\t")[1])
+         if len(r.split("\t")[1]) >= 50:
+            sv_dict[r.split("\t")[0].split("/")[0]].append(sv)
             len_300 += 1
-            if len(r.split("\t")[2]) < 300:
-                pass
-            elif len(r.split("\t")[2]) < 300:
+            if len(r.split("\t")[1]) < 300:
                 len_50_300 += 1
-            elif len(r.split("\t")[2]) < 500:
+            elif len(r.split("\t")[1]) < 500:
                 len_300_500 += 1
-            elif len(r.split("\t")[2]) < 1000:
+            elif len(r.split("\t")[1]) < 1000:
                 len_500_1000 += 1
-            elif len(r.split("\t")[2]) < 2000:
+            elif len(r.split("\t")[1]) < 2000:
                 len_1000_2000 += 1
             else:
                 len_2000 += 1
@@ -85,9 +85,9 @@ with open("./../pacbio.txt", "r") as pacbio:
 print(len_300)
 print(sv_dict)
 # print(len(sv_dict))
+max_len = 0
 
-
-with open("./../results/19240/pacbio.vcf", "r") as pacbio:
+with open("results/19240/pacbio_filtered.vcf", "r") as pacbio:
      for r in pacbio.readlines():
          #chm13break
          #if r.startswith("#") or r.find("DEL") != -1 or r.find("Tandem") != -1 or r.find("Alu") != -1 or r.find("ANN=L1") != -1:
@@ -97,6 +97,8 @@ with open("./../results/19240/pacbio.vcf", "r") as pacbio:
 
          splitted = r.split("\t")
          sv = SV(splitted[0], int(splitted[1]), get_len(r))
+         if get_len(r) > max_len:
+             max_len = get_len(r)
          if get_len(r) < 300:
              pass
          elif get_len(r) < 300:
@@ -121,6 +123,7 @@ print("300-500 " + str(len_300_500))
 print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print(">=2000 " + str(len_2000))
+print("Max len " + str(max_len))
 
 pamir_dict = {}
 near = 0
@@ -132,8 +135,10 @@ len_300_500 = 0
 len_500_1000 = 0
 len_1000_2000 = 0
 len_2000 = 0
+max_len = 0
+
 try:
-    with open("./../results/19240/pamir.vcf", "r") as pamir_vcf:
+    with open("results/19240/pamir.vcf", "r") as pamir_vcf:
         for r in pamir_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -142,6 +147,8 @@ try:
             pos = int(r.split("\t")[1])
             new_sv = SV(chrom, pos, get_len(r), get_seq(r))
 
+            if get_len(r) > max_len:
+                max_len = get_len(r)
 
             found = False
             if chrom not in sv_dict:
@@ -170,11 +177,12 @@ try:
                         else:
                             len_2000 += 1
 
-                        align_sequences(sv.seq, new_sv.seq)
+                        #align_sequences(sv.seq, new_sv.seq)
                         seq = r.split("\t")[7].split(";")[5][4:]
-                        print(seq)
-                        print(chrom)
-                        print(pos)
+                        #print(seq)
+                        #print(chrom)
+                        #print(pos)
+                        break
 except:
     pass
 for sv_vect in sv_dict.values():
@@ -191,6 +199,7 @@ print("300-500 " + str(len_300_500))
 print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print(">=2000 " + str(len_2000))
+print("Max isnertion length " + str(max_len))
 len_50_300 = 0
 len_300_500 = 0
 len_500_1000 = 0
@@ -213,18 +222,21 @@ popins_dict = {}
 near = 0
 not_near = 0
 ins = 0
+max_len = 0
 try:
 
-    with open("./../results/19240/popins.vcf", "r") as popins_vcf:
+    with open("results/19240/popins.vcf", "r") as popins_vcf:
         for r in popins_vcf.readlines():
+            #break
             if r.startswith("#"):
                 continue
             chrom = r.split("\t")[0]
             pos = int(r.split("\t")[1])
             new_sv = SV(chrom, pos, get_popins_len(r))
             found = False
-
-            if get_popins_len(r) >= 50:
+            if get_popins_len(r) > max_len:
+                max_len = get_popins_len(r)
+            if get_popins_len(r) >= 300:
                 ins += 1
             if chrom not in sv_dict:
                 sv_dict[chrom] = []
@@ -255,8 +267,8 @@ try:
                         #seq = r.split("\t")[7].split(";")[5][4:]
                         #print(seq)
                         sv.checked = True
-                        print(chrom)
-                        print(pos)
+                        #print(chrom)
+                        #print(pos)
                         break
 except:
     pass
@@ -273,38 +285,42 @@ print("300-500 " + str(len_300_500))
 print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print(">=2000 " + str(len_2000))
+print("Max insertion length " + str(max_len))
+
 len_50_300 = 0
 len_300_500 = 0
 len_500_1000 = 0
 len_1000_2000 = 0
 len_2000 = 0
-
+max_len = 0
 
 def get_len_nui(line):
     return int(line[4])
 
 
 near = 0
-
+ins = 0
 try:
-    with open("./../results/19240/nui.txt", "r") as nui:
+    with open("results/19240/NUI.txt", "r") as nui:
         for r in nui.readlines():
             splitted = r.split("\t")
             length = get_len_nui(splitted)
-            if length == 0:
+            if length < 50:
                 continue
-            new_sv = SV("chr" + splitted[0], int(splitted[1]), get_len_nui(splitted))
-
-            chrom = "chr" + splitted[0]
+            new_sv = SV(splitted[0], int(splitted[1]), get_len_nui(splitted))
+            ins+=1
+            chrom = splitted[0]
             pos = int(splitted[1])
 
+            if get_len_nui(splitted) > max_len:
+                max_len = get_len_nui(splitted)
 
             for sv in sv_dict[chrom]:
                 if Near(sv, new_sv):
 
                     if sv.checked:
-                        pass
                         continue
+                    near += 1
                     if get_len_nui(splitted) < 300:
                         len_50_300 += 1
                     elif get_len_nui(splitted) < 500:
@@ -324,12 +340,14 @@ except:
     pass
 
 print("NUI")
-
+print("Total " + str(ins))
+print("Shared " + str(near))
 print("50-300 " + str(len_50_300) )
 print("300-500 " + str(len_300_500))
 print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print(">=2000 " + str(len_2000))
+print("Max insertion length " + str(max_len))
 len_50_300 = 0
 len_300_500 = 0
 len_500_1000 = 0
@@ -346,31 +364,36 @@ near = 0
 not_near = 0
 num = 0
 ins = 0
-
+max_len = 0
 lengths = []
 anchors = []
-with open("./../results/19240/novelx.vcf", "r") as my_vcf:
+with open("results/19240/novelx.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
+        #break
         if r.startswith("#"):
             continue
         chrom = r.split("\t")[0]
         pos = int(r.split("\t")[1])
         new_sv = SV(chrom, pos, len(r.split("\t")[4]), r.split("\t")[4])
 
-        if chrom.startswith("chrUn_"):
+        if len(chrom) > 10:
             continue
         total += len(r.split("\t")[4])
+        if len(r.split("\t")[4]) > max_len:
+            max_len = len(r.split("\t")[4])
         num += 1
         found = False
         if chrom not in sv_dict:
             sv_dict[chrom] = []
         if int(r.split("\t")[9]) == 0 or int(r.split("\t")[10]) == 0:
             continue
+
         if len(r.split("\t")[4]) >= 300:
             ins += 1
             lengths.append(len(r.split("\t")[4]))
             anchors.append(int(r.split("\t")[9]) + int(r.split("\t")[10]))
-
+        else:
+            continue
 
         for sv in sv_dict[chrom]:
             if sv.checked:
@@ -395,11 +418,11 @@ with open("./../results/19240/novelx.vcf", "r") as my_vcf:
                     #seq = r.split("\t")[7].split(";")[5][4:]
                     #print(seq)
                     sv.checked = True
-                    print(chrom)
-                    print(pos)
+                    #print(chrom)
+                    #print(pos)
                     break
         if not found:
-            print("Not found")
+            print(r)
 
 
 
@@ -415,7 +438,7 @@ print("300-500 " + str(len_300_500))
 print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print(">=2000 " + str(len_2000))
-
+print("Max insertion length " + str(max_len))
 print("Mean length - " + str(np.mean(lengths)))
 print("Sum length - " + str(sum(lengths)))
 
