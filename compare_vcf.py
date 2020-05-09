@@ -1,6 +1,6 @@
 import sys
 from Bio import pairwise2
-
+dataset = "chm1"
 import numpy as np
 class SV:
     def __init__(self, chrom, pos, length, seq = ""):
@@ -87,7 +87,7 @@ print(sv_dict)
 # print(len(sv_dict))
 max_len = 0
 
-with open("results/19240/pacbio_filtered.vcf", "r") as pacbio:
+with open("results/" + dataset + "/pacbio_filtered.vcf", "r") as pacbio:
      for r in pacbio.readlines():
          #chm13break
          #if r.startswith("#") or r.find("DEL") != -1 or r.find("Tandem") != -1 or r.find("Alu") != -1 or r.find("ANN=L1") != -1:
@@ -138,7 +138,7 @@ len_2000 = 0
 max_len = 0
 
 try:
-    with open("results/19240/pamir.vcf", "r") as pamir_vcf:
+    with open("results/" + dataset + "/pamir.vcf", "r") as pamir_vcf:
         for r in pamir_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -225,7 +225,7 @@ ins = 0
 max_len = 0
 try:
 
-    with open("results/19240/popins.vcf", "r") as popins_vcf:
+    with open("results/" + dataset + "/popins.vcf", "r") as popins_vcf:
         for r in popins_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -301,15 +301,15 @@ def get_len_nui(line):
 near = 0
 ins = 0
 try:
-    with open("results/19240/NUI.txt", "r") as nui:
+    with open("results/" + dataset + "/nui.txt", "r") as nui:
         for r in nui.readlines():
             splitted = r.split("\t")
             length = get_len_nui(splitted)
-            if length < 50:
+            if length < 300:
                 continue
             new_sv = SV(splitted[0], int(splitted[1]), get_len_nui(splitted))
             ins+=1
-            chrom = splitted[0]
+            chrom = "chr" + splitted[0]
             pos = int(splitted[1])
 
             if get_len_nui(splitted) > max_len:
@@ -367,7 +367,7 @@ ins = 0
 max_len = 0
 lengths = []
 anchors = []
-with open("results/19240/novelx.vcf", "r") as my_vcf:
+with open("results/" + dataset + "/novelx.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         #break
         if r.startswith("#"):
@@ -402,7 +402,6 @@ with open("results/19240/novelx.vcf", "r") as my_vcf:
                 if len(r.split("\t")[4]) >=  300:
                     found = True
                     near += 1
-
                     if len(r.split("\t")[4]) < 300:
                         len_50_300 += 1
                     elif len(r.split("\t")[4]) < 500:
