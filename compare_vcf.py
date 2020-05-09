@@ -89,7 +89,7 @@ print(sv_dict)
 
 with open("./../results/19240/pacbio.vcf", "r") as pacbio:
      for r in pacbio.readlines():
-         #break
+         #chm13break
          #if r.startswith("#") or r.find("DEL") != -1 or r.find("Tandem") != -1 or r.find("Alu") != -1 or r.find("ANN=L1") != -1:
          #    continue
          if r.startswith("#") or r.find("DEL") != -1:
@@ -364,14 +364,14 @@ with open("./../results/19240/novelx.vcf", "r") as my_vcf:
         found = False
         if chrom not in sv_dict:
             sv_dict[chrom] = []
-
+        if int(r.split("\t")[9]) == 0 or int(r.split("\t")[10]) == 0:
+            continue
         if len(r.split("\t")[4]) >= 300:
             ins += 1
             lengths.append(len(r.split("\t")[4]))
             anchors.append(int(r.split("\t")[9]) + int(r.split("\t")[10]))
 
-        if int(r.split("\t")[9]) == 0 or int(r.split("\t")[10]) == 0:
-            continue
+
         for sv in sv_dict[chrom]:
             if sv.checked:
                 continue
