@@ -1,5 +1,5 @@
 insertions = []
-with open("chm1_novel.txt") as file:
+with open("insertions.txt") as file:
     for line in file.readlines():
         position = int(line.split("\t")[0].split("/")[1])
         chrom = line.split("\t")[0].split("/")[0]
@@ -12,7 +12,7 @@ total_nucls = {}
 
 from Bio import SeqIO, Seq
 
-records_dict = SeqIO.to_dict(SeqIO.parse("hg38.fa", "fasta"))
+records_dict = SeqIO.to_dict(SeqIO.parse("hg.withoutadditional.fa", "fasta"))
 
 with open("hg.withoutadditional.fa", "w") as output_handle:
     for record in records_dict.values():

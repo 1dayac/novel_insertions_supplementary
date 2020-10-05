@@ -13,7 +13,7 @@ with open(filename1, "r") as file1, open(filename2, "r") as file2:
         chrom = line.split("\t")[0]
         pos =  line.split("\t")[1]
         ins_len = len(line.split("\t")[4])
-        if ins_len < 300:
+        if ins_len < 50:
             continue
         vcf_dict[chrom + "_" + pos] = line
     for line in file2.readlines():
@@ -22,7 +22,7 @@ with open(filename1, "r") as file1, open(filename2, "r") as file2:
         chrom = line.split("\t")[0]
         pos =  line.split("\t")[1]
         ins_len = len(line.split("\t")[4])
-        if ins_len < 300:
+        if ins_len < 50:
             continue
         if chrom + "_" + pos not in vcf_dict:
             vcf_dict[chrom + "_" + pos] = line
