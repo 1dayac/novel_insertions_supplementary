@@ -2,6 +2,7 @@
 
 This repository contains data that didn't show up in "Novel sequence insertion detection using Linked-Reads" paper. It is not structured at the moment but will be.
 
+**10X_insertions_supplementary.pdf** contains supplementary tables and figures for Novel-X paper. 
 
 ### Novel-X flowchart
 
