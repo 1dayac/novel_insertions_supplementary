@@ -37,7 +37,7 @@ with open(sys.argv[2], "w") as pacbio_fasta:
                     continue
 
                 splitted = r.split("\t")
-                sv = SV(splitted[0], int(splitted[1]), get_len(r), get_seq(r))
+                sv = SV(splitted[0], int(splitted[1]), len(splitted[4]), splitted[4])
                 if len(sv.seq) >= 300:
                     pacbio_fasta.write(">" + splitted[0] + "_" + splitted[1] + "\n")
                     pacbio_fasta.write(sv.seq + "\n")

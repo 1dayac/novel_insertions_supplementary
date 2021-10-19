@@ -1,6 +1,6 @@
 import sys
 from Bio import pairwise2
-dataset = "simulated"
+dataset = "HG002"
 import numpy as np
 class SV:
     def __init__(self, chrom, pos, length, seq = ""):
@@ -66,7 +66,7 @@ len_1000_2000 = 0
 len_2000 = 0
 with open("./results/simulated/insertions.txt", "r") as pacbio:
      for r in pacbio.readlines():
-         #break
+         break
          #if r[0] == "#":
          #    continue
          if r.split("\t")[0].split("/")[0] not in sv_dict:
@@ -92,16 +92,16 @@ print(sv_dict)
 max_len = 0
 
 try:
-    with open("results/" + dataset + "/pacbio_filtered.vcf", "r") as pacbio:
+    with open("results/" + dataset + "/pacbio.vcf", "r") as pacbio:
          for r in pacbio.readlines():
-             break
+             #break
              #if r.startswith("#") or r.find("DEL") != -1 or r.find("Tandem") != -1 or r.find("Alu") != -1 or r.find("ANN=L1") != -1:
              #    continue
-             if r.startswith("#") or r.find("DEL") != -1:
+             if r.startswith("#"):
                  continue
 
              splitted = r.split("\t")
-             sv = SV(splitted[0], int(splitted[1]), get_len(r))
+             sv = SV("chr" + splitted[0], int(splitted[1]), get_len(r))
              if get_len(r) > max_len:
                  max_len = get_len(r)
              if get_len(r) < 300:
@@ -118,12 +118,12 @@ try:
                  len_2000 += 1
 
 
-             if splitted[0] not in sv_dict:
-                 sv_dict[splitted[0]] = []
-             sv_dict[splitted[0]].append(sv)
+             if "chr" + splitted[0] not in sv_dict:
+                 sv_dict["chr" + splitted[0]] = []
+             sv_dict["chr" +  splitted[0]].append(sv)
 except:
     pass
-
+    
 print("50-300 " + str(len_50_300) )
 print("300-500 " + str(len_300_500))
 print("500-1000 " + str(len_500_1000) )
@@ -355,6 +355,7 @@ print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print(">=2000 " + str(len_2000))
 print("Max insertion length " + str(max_len))
+
 len_50_300 = 0
 len_300_500 = 0
 len_500_1000 = 0
@@ -374,7 +375,92 @@ ins = 0
 max_len = 0
 lengths = []
 anchors = []
-with open("results/" + dataset + "/phased_possorted_bam.vcf", "r") as my_vcf:
+with open("results/" + dataset + "/paftools.vcf", "r") as my_vcf:
+    for r in my_vcf.readlines():
+        #break
+        if r.startswith("#"):
+            continue
+        chrom = r.split("\t")[0]
+        pos = int(r.split("\t")[1])
+        new_sv = SV(chrom, pos, len(r.split("\t")[4]), r.split("\t")[4])
+
+        if len(chrom) > 10:
+            continue
+        total += len(r.split("\t")[4])
+        if len(r.split("\t")[4]) > max_len:
+            max_len = len(r.split("\t")[4])
+        num += 1
+        found = False
+        if chrom not in sv_dict:
+            sv_dict[chrom] = []
+
+        if len(r.split("\t")[4]) >= 300:
+            ins += 1
+        else:
+            continue
+
+        for sv in sv_dict[chrom]:
+            if sv.checked:
+                continue
+            if Near(sv, new_sv):
+                if len(r.split("\t")[4]) >=  300 and abs(sv.length - new_sv.length) < 10:
+                    found = True
+                    near += 1
+                    if len(r.split("\t")[4]) < 300:
+                        len_50_300 += 1
+                    elif len(r.split("\t")[4]) < 500:
+                        len_300_500 += 1
+                    elif len(r.split("\t")[4]) < 1000:
+                        len_500_1000 += 1
+                    elif len(r.split("\t")[4]) < 2000:
+                        len_1000_2000 += 1
+                    else:
+                        len_2000 += 1
+                        print(chrom + " " + str(pos))
+
+                    #align_sequences(sv.seq, new_sv.seq)
+                    #seq = r.split("\t")[7].split(";")[5][4:]
+                    #print(seq)
+                    sv.checked = True
+                    #print(chrom)
+                    #print(pos)
+                    break
+                else:
+                    print(abs(sv.length - new_sv.length))
+
+print(ins)
+
+print("Paftools")
+print("Total - " + str(ins))
+print("Shared - " + str(near))
+print("50-300 " + str(len_50_300) )
+print("300-500 " + str(len_300_500))
+print("500-1000 " + str(len_500_1000) )
+print("1000-2000 " + str(len_1000_2000) )
+print(">=2000 " + str(len_2000))
+
+
+
+len_50_300 = 0
+len_300_500 = 0
+len_500_1000 = 0
+len_1000_2000 = 0
+len_2000 = 0
+
+for sv_vect in sv_dict.values():
+    for sv in sv_vect:
+        sv.checked = False
+
+
+total = 0
+near = 0
+not_near = 0
+num = 0
+ins = 0
+max_len = 0
+lengths = []
+anchors = []
+with open("results/" + dataset + "/novelx.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         #break
         if r.startswith("#"):
@@ -395,7 +481,7 @@ with open("results/" + dataset + "/phased_possorted_bam.vcf", "r") as my_vcf:
         if int(r.split("\t")[9]) == 0 or int(r.split("\t")[10]) == 0:
             continue
 
-        if len(r.split("\t")[4]) >= 50:
+        if len(r.split("\t")[4]) >= 300:
             ins += 1
             lengths.append(len(r.split("\t")[4]))
             anchors.append(int(r.split("\t")[9]) + int(r.split("\t")[10]))
@@ -419,6 +505,7 @@ with open("results/" + dataset + "/phased_possorted_bam.vcf", "r") as my_vcf:
                         len_1000_2000 += 1
                     else:
                         len_2000 += 1
+                        print(str(chrom) + "_" + str(pos))
 
                     #align_sequences(sv.seq, new_sv.seq)
                     #seq = r.split("\t")[7].split(";")[5][4:]
@@ -428,8 +515,8 @@ with open("results/" + dataset + "/phased_possorted_bam.vcf", "r") as my_vcf:
                     #print(pos)
                     break
         if not found:
-            print(r)
-
+            #print(r)
+            pass
 
 
 
@@ -455,7 +542,7 @@ print("Max ins length - " + str(max(lengths)))
 
 
 
-for sv_vect in sv_dict.values():
-    for sv in sv_vect:
-        if not sv.checked:
-            print(sv)
+#for sv_vect in sv_dict.values():
+#    for sv in sv_vect:
+#        if not sv.checked:
+#            print(sv)

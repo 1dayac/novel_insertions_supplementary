@@ -8,13 +8,13 @@ class SV:
         self.checked = False
         self.seq = seq.upper()
 
-#fn = "../gencode.v24.annotation.gtf"
-#db = gffutils.create_db(fn, dbfn='test.db', force=True, keep_order=True, merge_strategy='merge', disable_infer_transcripts = True, disable_infer_genes=True)
+fn = "gencode.v24.annotation.gtf"
+db = gffutils.create_db(fn, dbfn='test.db', force=True, keep_order=True, merge_strategy='merge', disable_infer_transcripts = True, disable_infer_genes=True)
 
 db = gffutils.FeatureDB('test.db', keep_order=True)
 overlap = 0
 non_overlap = 0
-with open("./../results/chm1/novelx.vcf", "r") as my_vcf:
+with open("results/chm1/novelx.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue

@@ -1,4 +1,5 @@
 from Bio import pairwise2
+import sys
 
 class SV:
     def __init__(self, chrom, pos, length, seq = ""):
@@ -50,20 +51,22 @@ def get_popins_len(line):
     return int(ans) - 55
 
 positions = []
-with open("results/19240/idxstats.txt", "r") as idxstats:
+with open(sys.argv[2], "r") as idxstats:
     for r in idxstats.readlines():
         splitted = r.split("\t")
-        if int(splitted[2]) >= 20:
-            positions.append(splitted[0])
-
+        try:
+            if int(splitted[2])*130/int(splitted[1]) > 20:
+                positions.append(splitted[0])
+        except:
+            pass
 print(len(positions))
 
-with open("results/19240/pacbio.vcf", "r") as pacbio:
-    with open("results/19240/pacbio_filtered.vcf", "w") as pacbio_filtered:
+with open(sys.argv[1], "r") as pacbio:
+    with open(sys.argv[3], "w") as pacbio_filtered:
 
         for r in pacbio.readlines():
-         if r.find("DEL") != -1:
-             continue
+#         if r.find("DEL") != -1:
+#             continue
          if r.startswith("#"):
              pacbio_filtered.write(r)
              continue

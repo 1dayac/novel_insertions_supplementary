@@ -24,7 +24,7 @@ def get_my_len(s):
 
 is_repeat = 0
 non_repeat = 0
-with open("../results/na/novelx.vcf", "r") as my_vcf:
+with open("../results/chm13/novelx_80.vcf", "r") as my_vcf:
     for r in my_vcf.readlines():
         if r.startswith("#"):
             continue
