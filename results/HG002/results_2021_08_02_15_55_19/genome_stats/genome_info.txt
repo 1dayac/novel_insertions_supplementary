@@ -1,0 +1,22 @@
+reference chromosomes:
+	chr7_98817520 (total length: 5690 bp, total length without N's: 5690 bp, maximal covered length: 956 bp)
+	chr2_120451522 (total length: 393 bp, total length without N's: 393 bp, maximal covered length: 393 bp)
+	chr2_205138874 (total length: 331 bp, total length without N's: 331 bp, maximal covered length: 143 bp)
+	chr4_115152142 (total length: 359 bp, total length without N's: 359 bp, maximal covered length: 359 bp)
+	chr1_20259425 (total length: 325 bp, total length without N's: 325 bp, maximal covered length: 219 bp)
+	chr6_160025900 (total length: 340 bp, total length without N's: 340 bp, maximal covered length: 195 bp)
+	chr16_88383468 (total length: 366 bp, total length without N's: 366 bp, maximal covered length: 366 bp)
+	chr8_48676598 (total length: 498 bp, total length without N's: 498 bp, maximal covered length: 436 bp)
+	chr9_126109964 (total length: 469 bp, total length without N's: 469 bp, maximal covered length: 469 bp)
+
+total genome size: 8771
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+pos_sorted_bam_filtered_ | 40.315    | 1.561       | 6         | -         | -         | -         | -         |

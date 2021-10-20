@@ -1,0 +1,15 @@
+reference chromosomes:
+	chr18_3618666 (total length: 888 bp, total length without N's: 888 bp, maximal covered length: 365 bp)
+	chr12_130539585 (total length: 668 bp, total length without N's: 668 bp, maximal covered length: 212 bp)
+
+total genome size: 1556
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+pos_sorted_bam_filtered_ | 37.082    | 1.234       | 2         | -         | -         | -         | -         |

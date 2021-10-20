@@ -1,0 +1,119 @@
+/programs/quast-5.0.2/quast.py -R for_stlfr_small.fasta filtered/pos_sorted_bam_filtered.long.fasta --min-contig 300
+
+Version: 5.0.2, 0bb1dd1b
+
+System information:
+  OS: Linux-3.10.0-957.el7.x86_64-x86_64-with-centos-7.6.1810-Core (linux_64)
+  Python version: 3.6.8
+  CPUs number: 80
+
+Started: 2021-08-25 09:28:52
+
+Logging to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/quast.log
+NOTICE: Maximum number of threads is set to 20 (use --threads option to set it manually)
+
+CWD: /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2
+Main parameters: 
+  MODE: default, threads: 20, minimum contig length: 300, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/for_stlfr_small.fasta ==> for_stlfr_small
+
+Contigs:
+  Pre-processing...
+  filtered/pos_sorted_bam_filtered.long.fasta ==> pos_sorted_bam_filtered.long
+
+2021-08-25 09:28:52
+Running Basic statistics processor...
+  Reference genome:
+    for_stlfr_small.fasta, length = 1556, num fragments = 2, GC % = 50.90
+  Contig files: 
+    pos_sorted_bam_filtered.long
+  Calculating N50 and L50...
+    pos_sorted_bam_filtered.long, N50 = 447, L50 = 882, Total length = 1160941, GC % = 43.83, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/basic_stats/GC_content_plot.pdf
+  Drawing pos_sorted_bam_filtered.long GC content plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/basic_stats/pos_sorted_bam_filtered.long_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/basic_stats/coverage_histogram.pdf
+  Drawing pos_sorted_bam_filtered.long coverage histogram (bin size: 1x)...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/basic_stats/pos_sorted_bam_filtered-long_coverage_histogram.pdf
+Done.
+
+2021-08-25 09:28:53
+Running Contig analyzer...
+  pos_sorted_bam_filtered.long
+  Logging to files /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/contigs_reports/contigs_report_pos_sorted_bam_filtered-long.stdout and contigs_report_pos_sorted_bam_filtered-long.stderr...
+  Aligning contigs to the reference
+  /programs/quast-5.0.2/quast_libs/minimap2/minimap2 -c -x asm5 -B5 -O4,16 --no-long-join \
+  -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs \
+  -t 20 quast_results/results_2021_08_25_09_28_52/quast_corrected_input/for_stlfr_small.fasta \
+  quast_results/results_2021_08_25_09_28_52/quast_corrected_input/pos_sorted_bam_filtered_long.fasta \
+  > quast_results/results_2021_08_25_09_28_52/contigs_reports/minimap_output/pos_sorted_bam_filtered-long.coords_tmp \
+  2>> quast_results/results_2021_08_25_09_28_52/contigs_reports/contigs_report_pos_sorted_bam_filtered-long.stderr
+  Analysis is finished.
+
+  Creating total report...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2021-08-25 09:28:54
+Running NA-NGA calculation...
+  pos_sorted_bam_filtered.long, Largest alignment = 365, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/aligned_stats/NGAx_plot.pdf
+Done.
+
+2021-08-25 09:28:57
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  pos_sorted_bam_filtered.long
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2021-08-25 09:28:57
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2021-08-25 09:28:58
+RESULTS:
+  Text versions of total report are saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/report.html
+  PDF version (tables and plots) is saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/report.pdf
+  Icarus (contig browser) is saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/icarus.html
+  Log is saved to /local/workdir/dmm2017/novel-x-paper/hg002_stlfr_novelx_reverse_2/quast_results/results_2021_08_25_09_28_52/quast.log
+
+Finished: 2021-08-25 09:28:58
+Elapsed time: 0:00:06.308422
+NOTICEs: 4; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

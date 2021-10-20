@@ -1,0 +1,2 @@
+NODE_405182_length_358_cov_13.983240	406	0	365	+	chr18_3618666	888	523	888	359	365	60	NM:i:6	ms:i:329	AS:i:329	nn:i:0	tp:A:P	cm:i:28	s1:i:310	s2:i:0	dv:f:0.0174	cg:Z:365M	cs:Z::81*tg:64*tg:40*ct*ga:82*ag*ca:92
+NODE_3303014_length_258_cov_6.937984	306	0	206	-	chr12_130539585	668	0	212	206	212	60	NM:i:6	ms:i:180	AS:i:180	nn:i:0	tp:A:P	cm:i:16	s1:i:165	s2:i:0	dv:f:0.0062	cg:Z:110M3D57M3D39M	cs:Z::110-acg:57-aca:39
