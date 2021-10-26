@@ -1,6 +1,6 @@
 import sys
 from Bio import pairwise2
-dataset = "NA"
+dataset = "HG002_tellseq"
 postfix = ""
 
 import numpy as np
@@ -80,30 +80,43 @@ len_500_1000 = 0
 len_1000_2000 = 0
 len_2000_5000 = 0
 len_5000 = 0
-with open("./results/simulated/insertions.txt", "r") as pacbio:
-     for r in pacbio.readlines():
-         if not dataset.startswith("simulated"):
-             break
-         #if r[0] == "#":
-         #    continue
-         if r.split("\t")[0].split("/")[0] not in sv_dict:
-             sv_dict[r.split("\t")[0].split("/")[0]] = []
-         sv = SV(r.split("\t")[0].split("/")[0], int(r.split("\t")[0].split("/")[1]), len(r.split("\t")[1]), r.split("\t")[1])
-         if len(r.split("\t")[1]) >= 50:
-            sv_dict[r.split("\t")[0].split("/")[0]].append(sv)
-            len_300 += 1
-            if len(r.split("\t")[1]) < 300:
-                len_50_300 += 1
-            elif len(r.split("\t")[1]) < 500:
-                len_300_500 += 1
-            elif len(r.split("\t")[1]) < 1000:
-                len_500_1000 += 1
-            elif len(r.split("\t")[1]) < 2000:
-                len_1000_2000 += 1
-            elif len(r.split("\t")[1]) < 5000:
-                len_2000_5000 += 1
-            else:
-                len_5000 += 1
+
+total_len_50_300 = 0
+total_len_300_500 = 0
+total_len_500_1000 = 0
+total_len_1000_2000 = 0
+total_len_2000_5000 = 0
+total_len_5000 = 0
+
+
+
+try:
+    with open("./results/simulated/insertions.txt", "r") as pacbio:
+         for r in pacbio.readlines():
+             if not dataset.startswith("simulated"):
+                 break
+             #if r[0] == "#":
+             #    continue
+             if r.split("\t")[0].split("/")[0] not in sv_dict:
+                 sv_dict[r.split("\t")[0].split("/")[0]] = []
+             sv = SV(r.split("\t")[0].split("/")[0], int(r.split("\t")[0].split("/")[1]), len(r.split("\t")[1]), r.split("\t")[1])
+             if len(r.split("\t")[1]) >= 50:
+                sv_dict[r.split("\t")[0].split("/")[0]].append(sv)
+                len_300 += 1
+                if len(r.split("\t")[1]) < 300:
+                    len_50_300 += 1
+                elif len(r.split("\t")[1]) < 500:
+                    len_300_500 += 1
+                elif len(r.split("\t")[1]) < 1000:
+                    len_500_1000 += 1
+                elif len(r.split("\t")[1]) < 2000:
+                    len_1000_2000 += 1
+                elif len(r.split("\t")[1]) < 5000:
+                    len_2000_5000 += 1
+                else:
+                    len_5000 += 1
+except:
+    pass
 
 print(len_300)
 print(sv_dict)
@@ -126,7 +139,7 @@ try:
 
              length = len(splitted[-1])
              chrom = splitted[0]
-             if dataset == "HG002":
+             if dataset.startswith("HG002"):
                 chrom = "chr" + chrom
                 length = len(splitted[4])
              if dataset == "19240" or dataset.startswith("chm") :
@@ -177,6 +190,13 @@ len_500_1000 = 0
 len_1000_2000 = 0
 len_2000_5000 = 0
 len_5000 = 0
+
+total_len_50_300 = 0
+total_len_300_500 = 0
+total_len_500_1000 = 0
+total_len_1000_2000 = 0
+total_len_2000_5000 = 0
+total_len_5000 = 0
 max_len = 0
 
 try:
@@ -253,6 +273,13 @@ len_500_1000 = 0
 len_1000_2000 = 0
 len_2000_5000 = 0
 len_5000 = 0
+
+total_len_50_300 = 0
+total_len_300_500 = 0
+total_len_500_1000 = 0
+total_len_1000_2000 = 0
+total_len_2000_5000 = 0
+total_len_5000 = 0
 
 
 
@@ -339,6 +366,13 @@ len_500_1000 = 0
 len_1000_2000 = 0
 len_2000_5000 = 0
 len_5000 = 0
+
+total_len_50_300 = 0
+total_len_300_500 = 0
+total_len_500_1000 = 0
+total_len_1000_2000 = 0
+total_len_2000_5000 = 0
+total_len_5000 = 0
 max_len = 0
 ins = 0
 
@@ -362,7 +396,7 @@ max_len = 0
 
 try:
 
-    with open("results/" + dataset + "/popins_new.vcf", "r") as popins_vcf:
+    with open("results/" + dataset + "/popins.vcf", "r") as popins_vcf:
         for r in popins_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -378,7 +412,20 @@ try:
             if chrom not in popins_dict:
                 popins_dict[chrom] = []
             popins_dict[chrom].append(new_sv)
-
+            if get_popins_len(r) < 50:
+                pass
+            elif get_popins_len(r) < 300:
+                total_len_50_300 += 1
+            elif get_popins_len(r) < 500:
+                total_len_300_500 += 1
+            elif get_popins_len(r) < 1000:
+                total_len_500_1000 += 1
+            elif get_popins_len(r) < 2000:
+                total_len_1000_2000 += 1
+            elif get_popins_len(r) < 5000:
+                total_len_2000_5000 += 1
+            else:
+                total_len_5000 += 1
             for sv in sv_dict[chrom]:
                 if sv.checked:
                     continue
@@ -430,12 +477,26 @@ print("2000-5000 " + str(len_2000_5000))
 print(">=5000 " + str(len_5000))
 print("Max insertion length " + str(max_len))
 
+print("Total: 50-300 " + str(total_len_50_300) )
+print("Total: 300-500 " + str(total_len_300_500))
+print("Total: 500-1000 " + str(total_len_500_1000) )
+print("Total: 1000-2000 " + str(total_len_1000_2000) )
+print("Total: 2000-5000 " + str(total_len_2000_5000))
+print("Total: >=5000 " + str(total_len_5000))
+
 len_50_300 = 0
 len_300_500 = 0
 len_500_1000 = 0
 len_1000_2000 = 0
 len_2000_5000 = 0
 len_5000 = 0
+
+total_len_50_300 = 0
+total_len_300_500 = 0
+total_len_500_1000 = 0
+total_len_1000_2000 = 0
+total_len_2000_5000 = 0
+total_len_5000 = 0
 max_len = 0
 
 def get_len_nui(line):
@@ -456,6 +517,18 @@ try:
             new_sv = SV(splitted[0], int(splitted[1]), get_len_nui(splitted))
             ins+=1
             pos = int(splitted[1])
+            if get_len_nui(splitted) < 300:
+                total_len_50_300 += 1
+            elif get_len_nui(splitted) < 500:
+                total_len_300_500 += 1
+            elif get_len_nui(splitted) < 1000:
+                total_len_500_1000 += 1
+            elif get_len_nui(splitted) < 2000:
+                total_len_1000_2000 += 1
+            elif get_len_nui(splitted) < 5000:
+                total_len_2000_5000 += 1
+            else:
+                total_len_5000 += 1
 
             if get_len_nui(splitted) > max_len:
                 max_len = get_len_nui(splitted)
@@ -495,6 +568,14 @@ print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print("2000-5000 " + str(len_2000_5000))
 print(">=5000 " + str(len_5000))
+
+print("Total: 50-300 " + str(total_len_50_300) )
+print("Total: 300-500 " + str(total_len_300_500))
+print("Total: 500-1000 " + str(total_len_500_1000) )
+print("Total: 1000-2000 " + str(total_len_1000_2000) )
+print("Total: 2000-5000 " + str(total_len_2000_5000))
+print("Total: >=5000 " + str(total_len_5000))
+
 print("Max insertion length " + str(max_len))
 
 
@@ -504,6 +585,13 @@ len_500_1000 = 0
 len_1000_2000 = 0
 len_2000_5000 = 0
 len_5000 = 0
+
+total_len_50_300 = 0
+total_len_300_500 = 0
+total_len_500_1000 = 0
+total_len_1000_2000 = 0
+total_len_2000_5000 = 0
+total_len_5000 = 0
 
 for sv_vect in sv_dict.values():
     for sv in sv_vect:
@@ -519,7 +607,7 @@ max_len = 0
 lengths = []
 anchors = []
 try:
-    with open("results/" + dataset + "/paftools/paftools_filtered.vcf", "r") as my_vcf:
+    with open("results/" + dataset + "/paftools_filtered.vcf", "r") as my_vcf:
         for r in my_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -537,24 +625,23 @@ try:
             found = False
             if chrom not in sv_dict:
                 sv_dict[chrom] = []
-
             if len(r.split("\t")[4]) >= 300:
                 ins += 1
             else:
                 continue
             if len(r.split("\t")[4]) < 300:
-                len_50_300 += 1
+                total_len_50_300 += 1
             elif len(r.split("\t")[4]) < 500:
-                len_300_500 += 1
+                total_len_300_500 += 1
             elif len(r.split("\t")[4]) < 1000:
-                len_500_1000 += 1
+                total_len_500_1000 += 1
             elif len(r.split("\t")[4]) < 2000:
-                len_1000_2000 += 1
+                total_len_1000_2000 += 1
             elif len(r.split("\t")[4]) < 5000:
-                len_2000_5000 += 1
+                total_len_2000_5000 += 1
 
             else:
-                len_5000 += 1
+                total_len_5000 += 1
                 print(chrom + " " + str(pos))
 
             for sv in sv_dict[chrom]:
@@ -565,6 +652,20 @@ try:
                         found = True
                         near += 1
 
+                        if len(r.split("\t")[4]) < 300:
+                            len_50_300 += 1
+                        elif len(r.split("\t")[4]) < 500:
+                            len_300_500 += 1
+                        elif len(r.split("\t")[4]) < 1000:
+                            len_500_1000 += 1
+                        elif len(r.split("\t")[4]) < 2000:
+                            len_1000_2000 += 1
+                        elif len(r.split("\t")[4]) < 5000:
+                            len_2000_5000 += 1
+
+                        else:
+                            len_5000 += 1
+                            print(chrom + " " + str(pos))
                         #align_sequences(sv.seq, new_sv.seq)
                         #seq = r.split("\t")[7].split(";")[5][4:]
                         #print(seq)
@@ -591,6 +692,12 @@ print(">=5000 " + str(len_5000))
 print("Max insertion length " + str(max_len))
 
 
+print("Total: 50-300 " + str(total_len_50_300) )
+print("Total: 300-500 " + str(total_len_300_500))
+print("Total: 500-1000 " + str(total_len_500_1000) )
+print("Total: 1000-2000 " + str(total_len_1000_2000) )
+print("Total: 2000-5000 " + str(total_len_2000_5000))
+print("Total: >=5000 " + str(total_len_5000))
 
 
 len_50_300 = 0
@@ -599,6 +706,14 @@ len_500_1000 = 0
 len_1000_2000 = 0
 len_2000_5000 = 0
 len_5000 = 0
+
+
+total_len_50_300 = 0
+total_len_300_500 = 0
+total_len_500_1000 = 0
+total_len_1000_2000 = 0
+total_len_2000_5000 = 0
+total_len_5000 = 0
 
 for sv_vect in sv_dict.values():
     for sv in sv_vect:
@@ -614,7 +729,7 @@ max_len = 0
 lengths = []
 anchors = []
 try:
-    with open("results/" + dataset + "/novelx_tellseq2.vcf", "r") as my_vcf:
+    with open("results/" + dataset + "/novelx2.vcf", "r") as my_vcf:
         for r in my_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -634,6 +749,21 @@ try:
             if int(r.split("\t")[9]) == 0 or int(r.split("\t")[10]) == 0:
                 continue
 
+            if len(r.split("\t")[4]) < 300:
+                total_len_50_300 += 1
+
+            elif len(r.split("\t")[4]) < 500:
+                total_len_300_500 += 1
+            # print(new_sv)
+            #                            print(sv)
+            elif len(r.split("\t")[4]) < 1000:
+                total_len_500_1000 += 1
+            elif len(r.split("\t")[4]) < 2000:
+                total_len_1000_2000 += 1
+            elif len(r.split("\t")[4]) < 5000:
+                total_len_2000_5000 += 1
+            else:
+                total_len_5000 += 1
 
             if len(r.split("\t")[4]) >= 300:
                 ins += 1
@@ -699,6 +829,15 @@ print("500-1000 " + str(len_500_1000) )
 print("1000-2000 " + str(len_1000_2000) )
 print("2000-5000 " + str(len_2000_5000))
 print(">=5000 " + str(len_5000))
+
+
+print("Total: 50-300 " + str(total_len_50_300) )
+print("Total: 300-500 " + str(total_len_300_500))
+print("Total: 500-1000 " + str(total_len_500_1000) )
+print("Total: 1000-2000 " + str(total_len_1000_2000) )
+print("Total: 2000-5000 " + str(total_len_2000_5000))
+print("Total: >=5000 " + str(total_len_5000))
+
 print("Max insertion length " + str(max_len))
 print("Mean length - " + str(np.mean(lengths)))
 print("Sum length - " + str(sum(lengths)))
