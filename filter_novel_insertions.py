@@ -51,11 +51,13 @@ def get_popins_len(line):
     return int(ans) - 55
 
 positions = []
-with open(sys.argv[2], "r") as idxstats:
-    for r in idxstats.readlines():
+with open(sys.argv[2], "r") as coverage_stats:
+    for r in coverage_stats.readlines():
         splitted = r.split("\t")
+        if r[0] == "#rname":
+            continue
         try:
-            if int(splitted[2])*130/int(splitted[1]) > 20:
+            if int(splitted[3])*130/int(splitted[2]) > 20 and float(splitted[5]) > 50.0:
                 positions.append(splitted[0])
         except:
             pass
