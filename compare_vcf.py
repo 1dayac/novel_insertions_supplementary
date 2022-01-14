@@ -1,6 +1,6 @@
 import sys
 from Bio import pairwise2
-dataset = "HG002_tellseq"
+dataset = "simulated"
 postfix = ""
 
 import numpy as np
@@ -19,7 +19,8 @@ class SV:
 def align_sequences(s1, s2):
     alignments = pairwise2.align.globalxx(s1, s2)
     print(float(alignments[0][2])/max(len(alignments[0][0]), len(alignments[0][1])))
-    print(pairwise2.format_alignment(*alignments[0]))
+    return float(alignments[0][2])/max(len(alignments[0][0]), len(alignments[0][1]))
+    #print(pairwise2.format_alignment(*alignments[0]))
 
 sv_dict = {}
 
@@ -198,20 +199,23 @@ total_len_1000_2000 = 0
 total_len_2000_5000 = 0
 total_len_5000 = 0
 max_len = 0
-
+ins = 0
+identity_vector = []
 try:
-    with open("results/" + dataset + "/pamir_new.vcf", "r") as pamir_vcf:
+    with open("results/" + dataset + "/pamir.vcf", "r") as pamir_vcf:
         for r in pamir_vcf.readlines():
             #break
             if r.startswith("#"):
                 continue
             chrom = r.split("\t")[0]
             pos = int(r.split("\t")[1])
-#            new_sv = SV(chrom, pos, get_len(r), get_seq(r))
-            new_sv = SV(chrom, pos, len(r.split("\t")[4]), r.split("\t")[4])
+            new_sv = SV(chrom, pos, get_len(r), get_seq(r))
+#            new_sv = SV(chrom, pos, get_len(r), r.split("\t")[4])
             if new_sv.length > max_len:
                 max_len = new_sv.length
-
+            if (new_sv.length < 50):
+                continue
+            ins += 1
             found = False
             if chrom not in sv_dict:
                 sv_dict[chrom] = []
@@ -242,7 +246,7 @@ try:
                         else:
                             len_5000 += 1
 
-                        #align_sequences(sv.seq, new_sv.seq)
+                        #identity_vector.append(align_sequences(sv.seq, new_sv.seq))
                         seq = r.split("\t")[7].split(";")[5][4:]
                         #print(seq)
                         #print(chrom)
@@ -255,9 +259,12 @@ for sv_vect in sv_dict.values():
     for sv in sv_vect:
         sv.checked = False
 
+identity_vector = []
+print("Incorrect sequence - " + str(sum(i < 0.8 for i in identity_vector)))
 
 print("pamir")
 print(near)
+print(ins)
 
 
 print("50-300 " + str(len_50_300) )
@@ -394,18 +401,20 @@ not_near = 0
 ins = 0
 max_len = 0
 
+identity_vector = []
+
 try:
 
-    with open("results/" + dataset + "/popins.vcf", "r") as popins_vcf:
+    with open("results/" + dataset + "/popins_extended.vcf", "r") as popins_vcf:
         for r in popins_vcf.readlines():
             #break
             if r.startswith("#"):
                 continue
             chrom = r.split("\t")[0]
             pos = int(r.split("\t")[1])
-            new_sv = SV(chrom, pos, get_popins_len(r))
+            new_sv = SV(chrom, pos, get_popins_len(r), r.strip().split("\t")[-1])
             found = False
-            if get_popins_len(r) >= 300:
+            if get_popins_len(r) >= 50:
                 ins += 1
             if chrom not in sv_dict:
                 sv_dict[chrom] = []
@@ -431,7 +440,7 @@ try:
                     continue
                 if Near(sv, new_sv):
 
-                    if get_popins_len(r) >= 300  and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
+                    if get_popins_len(r) >= 50  and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
                         near += 1
                         if get_popins_len(r) > max_len:
                             max_len = get_popins_len(r)
@@ -454,6 +463,8 @@ try:
                         #seq = r.split("\t")[7].split(";")[5][4:]
                         #print(seq)
                         sv.checked = True
+                        identity_vector.append(align_sequences(sv.seq, new_sv.seq))
+
                         #print(chrom)
                         #print(pos)
                         break
@@ -484,6 +495,10 @@ print("Total: 1000-2000 " + str(total_len_1000_2000) )
 print("Total: 2000-5000 " + str(total_len_2000_5000))
 print("Total: >=5000 " + str(total_len_5000))
 
+print("Incorrect sequence - " + str(sum(i < 0.8 for i in identity_vector)))
+
+identity_vector = []
+
 len_50_300 = 0
 len_300_500 = 0
 len_500_1000 = 0
@@ -502,19 +517,19 @@ max_len = 0
 def get_len_nui(line):
     return int(line[4])
 
-
+identity_vector = []
 near = 0
 ins = 0
 try:
-    with open("results/" + dataset + "/NUI.txt", "r") as nui:
+    with open("results/" + dataset + "/NUI_extended.txt", "r") as nui:
         for r in nui.readlines():
             splitted = r.split("\t")
             length = get_len_nui(splitted)
-            if length < 300:
+            if length < 50:
                 continue
             chrom = splitted[0]
 
-            new_sv = SV(splitted[0], int(splitted[1]), get_len_nui(splitted))
+            new_sv = SV(splitted[0], int(splitted[1]), get_len_nui(splitted), splitted[-1])
             ins+=1
             pos = int(splitted[1])
             if get_len_nui(splitted) < 300:
@@ -553,7 +568,7 @@ try:
                         len_5000 += 1
                         print(chrom)
                         print(pos)
-
+                    #identity_vector.append(align_sequences(sv.seq, new_sv.seq))
                     sv.checked = True
                     break
 except:
@@ -578,6 +593,9 @@ print("Total: >=5000 " + str(total_len_5000))
 
 print("Max insertion length " + str(max_len))
 
+
+print("Incorrect sequence - " + str(sum(i < 0.8 for i in identity_vector)))
+identity_vector = []
 
 len_50_300 = 0
 len_300_500 = 0
@@ -728,8 +746,9 @@ ins = 0
 max_len = 0
 lengths = []
 anchors = []
+identity_vector = []
 try:
-    with open("results/" + dataset + "/novelx2.vcf", "r") as my_vcf:
+    with open("results/" + dataset + "/novelx.vcf", "r") as my_vcf:
         for r in my_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -765,7 +784,7 @@ try:
             else:
                 total_len_5000 += 1
 
-            if len(r.split("\t")[4]) >= 300:
+            if len(r.split("\t")[4]) >= 50:
                 ins += 1
                 lengths.append(len(r.split("\t")[4]))
                 anchors.append(int(r.split("\t")[9]) + int(r.split("\t")[10]))
@@ -775,7 +794,7 @@ try:
                 if sv.checked:
                     continue
                 if Near(sv, new_sv):
-                    if len(r.split("\t")[4]) >=  300 and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
+                    if len(r.split("\t")[4]) >=  50 and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
                         if len(r.split("\t")[4]) > max_len:
                             max_len = len(r.split("\t")[4])
                         found = True
@@ -799,7 +818,7 @@ try:
 
                             #print(new_sv)
 
-                        #align_sequences(sv.seq, new_sv.seq)
+                        #identity_vector.append(align_sequences(sv.seq, new_sv.seq))
                         #seq = r.split("\t")[7].split(";")[5][4:]
                         #print(seq)
                         sv.checked = True
@@ -816,7 +835,7 @@ except:
     pass
 
 
-
+print("Incorrect sequence - " + str(sum(i < 0.8 for i in identity_vector)))
 
 print(ins)
 
