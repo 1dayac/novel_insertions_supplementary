@@ -1,0 +1,47 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     TELL_Seq_BX10X_NA12878_phased_possorted_bam_filtered.long
+# contigs (>= 0 bp)          11373                                                    
+# contigs (>= 1000 bp)       1524                                                     
+# contigs (>= 5000 bp)       40                                                       
+# contigs (>= 10000 bp)      2                                                        
+# contigs (>= 25000 bp)      0                                                        
+# contigs (>= 50000 bp)      0                                                        
+Total length (>= 0 bp)       6727059                                                  
+Total length (>= 1000 bp)    2918551                                                  
+Total length (>= 5000 bp)    263156                                                   
+Total length (>= 10000 bp)   26619                                                    
+Total length (>= 25000 bp)   0                                                        
+Total length (>= 50000 bp)   0                                                        
+# contigs                    3761                                                     
+Largest contig               15334                                                    
+Total length                 4446467                                                  
+Reference length             45867                                                    
+GC (%)                       54.63                                                    
+Reference GC (%)             39.17                                                    
+N50                          1372                                                     
+NG50                         11285                                                    
+N75                          817                                                      
+NG75                         9858                                                     
+L50                          927                                                      
+LG50                         2                                                        
+L75                          1986                                                     
+LG75                         3                                                        
+# misassemblies              0                                                        
+# misassembled contigs       0                                                        
+Misassembled contigs length  0                                                        
+# local misassemblies        0                                                        
+# scaffold gap ext. mis.     0                                                        
+# scaffold gap loc. mis.     0                                                        
+# unaligned mis. contigs     0                                                        
+# unaligned contigs          3742 + 2 part                                            
+Unaligned length             4422115                                                  
+Genome fraction (%)          49.777                                                   
+Duplication ratio            1.067                                                    
+# N's per 100 kbp            0.00                                                     
+# mismatches per 100 kbp     113.88                                                   
+# indels per 100 kbp         8.76                                                     
+Largest alignment            4815                                                     
+Total aligned length         23435                                                    
+NGA50                        542                                                      
+LGA50                        16                                                       

@@ -1,0 +1,49 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     NA12878_GRCh38_phased_possorted_bam_filtered.long
+# contigs (>= 0 bp)          16439                                            
+# contigs (>= 1000 bp)       744                                              
+# contigs (>= 5000 bp)       37                                               
+# contigs (>= 10000 bp)      6                                                
+# contigs (>= 25000 bp)      0                                                
+# contigs (>= 50000 bp)      0                                                
+Total length (>= 0 bp)       6845786                                          
+Total length (>= 1000 bp)    1509135                                          
+Total length (>= 5000 bp)    303957                                           
+Total length (>= 10000 bp)   108928                                           
+Total length (>= 25000 bp)   0                                                
+Total length (>= 50000 bp)   0                                                
+# contigs                    3039                                             
+Largest contig               24414                                            
+Total length                 3039010                                          
+Reference length             45867                                            
+GC (%)                       42.73                                            
+Reference GC (%)             39.17                                            
+N50                          994                                              
+NG50                         24414                                            
+N75                          667                                              
+NG75                         20540                                            
+L50                          755                                              
+LG50                         1                                                
+L75                          1710                                             
+LG75                         2                                                
+# misassemblies              0                                                
+# misassembled contigs       0                                                
+Misassembled contigs length  0                                                
+# local misassemblies        0                                                
+# scaffold gap ext. mis.     0                                                
+# scaffold gap loc. mis.     0                                                
+# unaligned mis. contigs     0                                                
+# unaligned contigs          3024 + 2 part                                    
+Unaligned length             2997964                                          
+Genome fraction (%)          84.006                                           
+Duplication ratio            1.065                                            
+# N's per 100 kbp            0.00                                             
+# mismatches per 100 kbp     41.53                                            
+# indels per 100 kbp         10.38                                            
+Largest alignment            6125                                             
+Total aligned length         38909                                            
+NGA50                        4669                                             
+NGA75                        1618                                             
+LGA50                        5                                                
+LGA75                        9                                                

@@ -1,0 +1,19 @@
+reference chromosomes:
+	chr4_120216286 (total length: 6125 bp, total length without N's: 6125 bp, maximal covered length: 1294 bp)
+	chr15_66102261 (total length: 12147 bp, total length without N's: 12147 bp, maximal covered length: 11697 bp)
+	chr18_43734217 (total length: 5048 bp, total length without N's: 5048 bp, maximal covered length: 4752 bp)
+	chr12_58075719 (total length: 8844 bp, total length without N's: 8844 bp, maximal covered length: 2989 bp)
+	chr4_21594812 (total length: 7121 bp, total length without N's: 7121 bp, maximal covered length: 912 bp)
+	chr6_65851477 (total length: 6582 bp, total length without N's: 6582 bp, maximal covered length: 1187 bp)
+
+total genome size: 45867
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+TELL_Seq_BX10X_NA12878_p | 49.777    | 1.067       | 13        | -         | -         | -         | -         |

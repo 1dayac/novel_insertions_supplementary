@@ -1,0 +1,8 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                       NA12878_GRCh38_phased_possorted_bam_filtered.long
+# fully unaligned contigs      3024                                             
+Fully unaligned length         2987827                                          
+# partially unaligned contigs  2                                                
+Partially unaligned length     10137                                            
+# N's                          0                                                

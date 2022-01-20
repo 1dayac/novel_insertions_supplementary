@@ -1,0 +1,77 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+3312	11053	1	7738	chr15_66102261	NODE_1_length_7739_cov_11.516836	99.81		True
+CONTIG	NODE_1_length_7739_cov_11.516836	7739	correct
+CONTIG	NODE_2_length_2997_cov_6.094863	2997	unaligned
+1	2202	205	2406	chr15_66102261	NODE_3_length_2406_cov_5.542722	100.0		True
+CONTIG	NODE_3_length_2406_cov_5.542722	2406	correct
+CONTIG	NODE_4_length_2012_cov_6.804651	2012	unaligned
+CONTIG	NODE_5_length_1459_cov_4.942113	1459	unaligned
+CONTIG	NODE_6_length_1432_cov_6.112177	1432	unaligned
+CONTIG	NODE_7_length_1409_cov_13.260511	1409	unaligned
+CONTIG	NODE_8_length_1340_cov_4.282660	1340	unaligned
+CONTIG	NODE_9_length_1300_cov_8.959117	1300	unaligned
+CONTIG	NODE_10_length_1209_cov_4.102473	1209	unaligned
+CONTIG	NODE_11_length_1135_cov_7.181474	1135	unaligned
+CONTIG	NODE_12_length_1114_cov_6.494696	1114	unaligned
+CONTIG	NODE_13_length_1065_cov_6.170040	1065	unaligned
+CONTIG	NODE_14_length_1043_cov_5.983437	1043	unaligned
+CONTIG	NODE_15_length_1019_cov_4.038217	1019	unaligned
+CONTIG	NODE_16_length_990_cov_3.851041	990	unaligned
+CONTIG	NODE_17_length_927_cov_3.568235	927	unaligned
+CONTIG	NODE_18_length_914_cov_7.715651	914	unaligned
+CONTIG	NODE_19_length_885_cov_4.508663	885	unaligned
+CONTIG	NODE_20_length_882_cov_7.086957	882	unaligned
+CONTIG	NODE_21_length_878_cov_4.283396	878	unaligned
+2467	3331	865	1	chr15_66102261	NODE_22_length_865_cov_5.115482	99.88		True
+CONTIG	NODE_22_length_865_cov_5.115482	865	correct
+CONTIG	NODE_23_length_788_cov_3.679325	788	unaligned
+CONTIG	NODE_24_length_787_cov_4.919718	787	unaligned
+CONTIG	NODE_25_length_778_cov_6.144080	778	unaligned
+CONTIG	NODE_26_length_771_cov_4.512968	771	unaligned
+CONTIG	NODE_27_length_762_cov_3.049635	762	unaligned
+CONTIG	NODE_28_length_760_cov_5.155198	760	unaligned
+CONTIG	NODE_29_length_757_cov_4.235294	757	unaligned
+CONTIG	NODE_30_length_746_cov_6.819133	746	unaligned
+CONTIG	NODE_31_length_729_cov_3.467791	729	unaligned
+CONTIG	NODE_32_length_726_cov_7.132512	726	unaligned
+1	199	199	1	chr4_21594812	NODE_33_length_725_cov_6.614198	96.98		True
+CONTIG	NODE_33_length_725_cov_6.614198	725	correct_unaligned
+CONTIG	NODE_34_length_719_cov_6.680685	719	unaligned
+CONTIG	NODE_35_length_711_cov_5.231861	711	unaligned
+CONTIG	NODE_36_length_708_cov_5.507132	708	unaligned
+CONTIG	NODE_37_length_705_cov_5.250000	705	unaligned
+CONTIG	NODE_38_length_705_cov_4.872611	705	unaligned
+CONTIG	NODE_39_length_700_cov_4.990369	700	unaligned
+CONTIG	NODE_40_length_696_cov_3.901454	696	unaligned
+CONTIG	NODE_41_length_680_cov_4.132670	680	unaligned
+CONTIG	NODE_42_length_664_cov_5.850085	664	unaligned
+CONTIG	NODE_43_length_645_cov_4.869718	645	unaligned
+CONTIG	NODE_44_length_644_cov_4.259259	644	unaligned
+CONTIG	NODE_45_length_634_cov_4.375224	634	unaligned
+CONTIG	NODE_46_length_634_cov_4.256732	634	unaligned
+11667	12147	1	481	chr15_66102261	NODE_47_length_633_cov_8.455036	99.79		True
+CONTIG	NODE_47_length_633_cov_8.455036	633	correct
+CONTIG	NODE_48_length_632_cov_3.372973	632	unaligned
+CONTIG	NODE_49_length_617_cov_8.314815	617	unaligned
+CONTIG	NODE_50_length_616_cov_3.361781	616	unaligned
+CONTIG	NODE_51_length_615_cov_5.210037	615	unaligned
+CONTIG	NODE_52_length_603_cov_3.846008	603	unaligned
+CONTIG	NODE_53_length_598_cov_3.587332	598	unaligned
+CONTIG	NODE_54_length_597_cov_7.786538	597	unaligned
+11054	11643	590	1	chr15_66102261	NODE_55_length_590_cov_5.497076	100.0		True
+CONTIG	NODE_55_length_590_cov_5.497076	590	correct
+CONTIG	NODE_56_length_586_cov_4.495088	586	unaligned
+CONTIG	NODE_57_length_585_cov_4.124016	585	unaligned
+CONTIG	NODE_58_length_581_cov_5.894841	581	unaligned
+CONTIG	NODE_59_length_579_cov_5.296813	579	unaligned
+CONTIG	NODE_60_length_574_cov_3.698189	574	unaligned
+CONTIG	NODE_61_length_555_cov_10.960251	555	unaligned
+CONTIG	NODE_62_length_555_cov_3.133891	555	unaligned
+CONTIG	NODE_63_length_546_cov_3.202559	546	unaligned
+CONTIG	NODE_64_length_541_cov_6.980603	541	unaligned
+CONTIG	NODE_65_length_540_cov_4.203024	540	unaligned
+CONTIG	NODE_66_length_538_cov_5.314534	538	unaligned
+CONTIG	NODE_67_length_533_cov_3.480263	533	unaligned
+CONTIG	NODE_68_length_531_cov_8.931718	531	unaligned
+CONTIG	NODE_69_length_531_cov_5.110132	531	unaligned
+CONTIG	NODE_70_length_522_cov_6.995506	522	unaligned
