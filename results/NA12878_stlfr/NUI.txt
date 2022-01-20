@@ -1,0 +1,2 @@
+ref_chr	ref_start	ref_end	ID	size	strand	type	ref_gap_size	query_gap_size	query_breakpoint_coord	pseudohap	sample	genotype
+chr13	113176451	113176543	205:2806644-2820683	97	+	Insertion	-92	5	205:2813681-2813686	1	na12878_stlfr	2
