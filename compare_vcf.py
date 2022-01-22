@@ -1,6 +1,14 @@
 import sys
 from Bio import pairwise2
-dataset = "simulated"
+try:
+    dataset = sys.argv[1]
+except:
+    dataset = "simulated"
+
+try:
+    dataset_simple = dataset[:dataset.index("_")]
+except:
+    dataset_simple = dataset
 postfix = ""
 
 import numpy as np
@@ -127,7 +135,7 @@ max_len = 0
 pacbio_name = "pacbio_filtered.vcf"
 
 try:
-    with open("results/" + dataset + "/" + pacbio_name, "r") as pacbio:
+    with open("results/" + dataset_simple + "/" + pacbio_name, "r") as pacbio:
          for r in pacbio.readlines():
              if dataset.startswith("simulated"):
                  break
