@@ -25,6 +25,10 @@ Folder simulated contains different VCFs:
 
 **compare_vcf.py** - scripts that was used to perform event comparison using positions and SV length. In order to run it go to the root repository folder and pass dataset parameter (simulated, HG002, NA12878_tellseq, ...).
 
+### Novel-X enables discovery of novel insertions in a diverse cohort
+
+Folder 68_samples contain vcf files that were used to perform analysis on a diverse cohort.
+
 ### Novel-X flowchart
 
 flowchart.pdf contains a detailed pipeline scheme.
