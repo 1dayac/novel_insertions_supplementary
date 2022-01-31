@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "simulated"
+    dataset = "NA12878_tellseq"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -529,11 +529,13 @@ identity_vector = []
 near = 0
 ins = 0
 try:
-    with open("results/" + dataset + "/NUI_extended.txt", "r") as nui:
+    with open("results/" + dataset + "/NUI.txt", "r") as nui:
         for r in nui.readlines():
+            if r.startswith("ref_chr"):
+                continue
             splitted = r.split("\t")
             length = get_len_nui(splitted)
-            if length < 50:
+            if length < 300:
                 continue
             chrom = splitted[0]
 
