@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "NA12878_tellseq"
+    dataset = "NA12878_stlfr"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -413,7 +413,7 @@ identity_vector = []
 
 try:
 
-    with open("results/" + dataset + "/popins_extended.vcf", "r") as popins_vcf:
+    with open("results/" + dataset + "/popins.vcf", "r") as popins_vcf:
         for r in popins_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -422,7 +422,7 @@ try:
             pos = int(r.split("\t")[1])
             new_sv = SV(chrom, pos, get_popins_len(r), r.strip().split("\t")[-1])
             found = False
-            if get_popins_len(r) >= 50:
+            if get_popins_len(r) >= 300:
                 ins += 1
             if chrom not in sv_dict:
                 sv_dict[chrom] = []
@@ -448,7 +448,7 @@ try:
                     continue
                 if Near(sv, new_sv):
 
-                    if get_popins_len(r) >= 50  and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
+                    if get_popins_len(r) >= 300  and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
                         near += 1
                         if get_popins_len(r) > max_len:
                             max_len = get_popins_len(r)
@@ -529,7 +529,7 @@ identity_vector = []
 near = 0
 ins = 0
 try:
-    with open("results/" + dataset + "/NUI.txt", "r") as nui:
+    with open("results/" + dataset + "/NUI_2.txt", "r") as nui:
         for r in nui.readlines():
             if r.startswith("ref_chr"):
                 continue
@@ -555,11 +555,11 @@ try:
             else:
                 total_len_5000 += 1
 
-            if get_len_nui(splitted) > max_len:
-                max_len = get_len_nui(splitted)
 
             for sv in sv_dict[chrom]:
                 if Near(sv, new_sv) and abs(sv.length - new_sv.length) <= 0.05 * sv.length: #and abs(sv.length - new_sv.length) < 10:
+                    if get_len_nui(splitted) > max_len:
+                        max_len = get_len_nui(splitted)
 
                     if sv.checked:
                         continue
