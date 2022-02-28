@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "chm1"
+    dataset = "chm13"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -209,8 +209,7 @@ total_len_5000 = 0
 max_len = 0
 ins = 0
 identity_vector = []
-try:
-    with open("results/" + dataset + "/pamir.vcf", "r") as pamir_vcf:
+with open("results/" + dataset + "/pamir_new.vcf", "r") as pamir_vcf:
         for r in pamir_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -218,6 +217,7 @@ try:
             chrom = r.split("\t")[0]
             pos = int(r.split("\t")[1])
             new_sv = SV(chrom, pos, get_len(r), get_seq(r))
+            new_sv.length = len(r.split("\t")[4])
 #            new_sv = SV(chrom, pos, get_len(r), r.split("\t")[4])
             if new_sv.length > max_len:
                 max_len = new_sv.length
@@ -260,9 +260,6 @@ try:
                         #print(chrom)
                         #print(pos)
                         break
-except:
-    print("Nooo")
-    pass
 for sv_vect in sv_dict.values():
     for sv in sv_vect:
         sv.checked = False
