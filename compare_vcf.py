@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "NA19240"
+    dataset = "chm1"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
