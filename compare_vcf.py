@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "HG002"
+    dataset = "NA19240"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -132,7 +132,7 @@ print(sv_dict)
 # print(len(sv_dict))
 max_len = 0
 
-pacbio_name = "pacbio_filtered.vcf"
+pacbio_name = "pacbio.vcf"
 
 try:
     with open("results/" + dataset_simple + "/" + pacbio_name, "r") as pacbio:
@@ -151,7 +151,7 @@ try:
              if dataset.startswith("HG002"):
                 chrom = "chr" + chrom
                 length = len(splitted[4])
-             if dataset == "19240" or dataset.startswith("chm") :
+             if dataset == "NA19240" or dataset.startswith("chm") :
                 length = get_len(r)
 
              if pacbio_name == "t2t.vcf":
@@ -221,7 +221,7 @@ try:
 #            new_sv = SV(chrom, pos, get_len(r), r.split("\t")[4])
             if new_sv.length > max_len:
                 max_len = new_sv.length
-            if (new_sv.length < 50):
+            if (new_sv.length < 300):
                 continue
             ins += 1
             found = False
@@ -471,7 +471,7 @@ try:
                         #seq = r.split("\t")[7].split(";")[5][4:]
                         #print(seq)
                         sv.checked = True
-                        identity_vector.append(align_sequences(sv.seq, new_sv.seq))
+                        #identity_vector.append(align_sequences(sv.seq, new_sv.seq))
 
                         #print(chrom)
                         #print(pos)
@@ -479,6 +479,7 @@ try:
                     else:
                         print(sv.length - new_sv.length)
 except:
+    print("Hewe")
     pass
 
 for sv_vect in sv_dict.values():
@@ -538,8 +539,9 @@ try:
             if length < 300:
                 continue
             chrom = splitted[0]
-
-            new_sv = SV(splitted[0], int(splitted[1]), get_len_nui(splitted), splitted[-1])
+            if dataset.startswith("NA19240"):
+                chrom = "chr"+ chrom
+            new_sv = SV(chrom, int(splitted[1]), get_len_nui(splitted), splitted[-1])
             ins+=1
             pos = int(splitted[1])
             if get_len_nui(splitted) < 300:
@@ -583,7 +585,6 @@ try:
                     break
 except:
     pass
-
 print("NUI")
 print("Total " + str(ins))
 print("Shared " + str(near))
@@ -794,7 +795,7 @@ try:
             else:
                 total_len_5000 += 1
 
-            if len(r.split("\t")[4]) >= 50:
+            if len(r.split("\t")[4]) >= 300:
                 ins += 1
                 lengths.append(len(r.split("\t")[4]))
                 anchors.append(int(r.split("\t")[9]) + int(r.split("\t")[10]))
