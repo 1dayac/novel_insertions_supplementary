@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "NA12878_stlfr"
+    dataset = "HG002"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -529,7 +529,7 @@ identity_vector = []
 near = 0
 ins = 0
 try:
-    with open("results/" + dataset + "/NUI_2.txt", "r") as nui:
+    with open("results/" + dataset + "/NUI.txt", "r") as nui:
         for r in nui.readlines():
             if r.startswith("ref_chr"):
                 continue
