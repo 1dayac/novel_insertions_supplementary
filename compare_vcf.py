@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "chm13"
+    dataset = "NA12878"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -132,7 +132,7 @@ print(sv_dict)
 # print(len(sv_dict))
 max_len = 0
 
-pacbio_name = "pacbio.vcf"
+pacbio_name = "pacbio.bed"
 
 try:
     with open("results/" + dataset_simple + "/" + pacbio_name, "r") as pacbio:
@@ -209,7 +209,8 @@ total_len_5000 = 0
 max_len = 0
 ins = 0
 identity_vector = []
-with open("results/" + dataset + "/pamir_new.vcf", "r") as pamir_vcf:
+try:
+    with open("results/" + dataset + "/pamir.vcf", "r") as pamir_vcf:
         for r in pamir_vcf.readlines():
             #break
             if r.startswith("#"):
@@ -217,7 +218,7 @@ with open("results/" + dataset + "/pamir_new.vcf", "r") as pamir_vcf:
             chrom = r.split("\t")[0]
             pos = int(r.split("\t")[1])
             new_sv = SV(chrom, pos, get_len(r), get_seq(r))
-            new_sv.length = len(r.split("\t")[4])
+            #new_sv.length = len(r.split("\t")[4])
 #            new_sv = SV(chrom, pos, get_len(r), r.split("\t")[4])
             if new_sv.length > max_len:
                 max_len = new_sv.length
@@ -260,6 +261,8 @@ with open("results/" + dataset + "/pamir_new.vcf", "r") as pamir_vcf:
                         #print(chrom)
                         #print(pos)
                         break
+except:
+    pass
 for sv_vect in sv_dict.values():
     for sv in sv_vect:
         sv.checked = False
@@ -527,7 +530,7 @@ identity_vector = []
 near = 0
 ins = 0
 try:
-    with open("results/" + dataset + "/NUI.txt", "r") as nui:
+    with open("results/" + dataset + "/NUI_2.txt", "r") as nui:
         for r in nui.readlines():
             if r.startswith("ref_chr"):
                 continue
