@@ -8,9 +8,9 @@ try:
 except:
     pass
 
-iter = bamfile.fetch("chr1", 100000, 1000000)
+iter = bamfile.fetch("chr1", 1000000, 3000000)
 
-max_barcodes = 10000
+max_barcodes = 20000
 current_barcodes = 0
 
 superdict = {}
@@ -71,6 +71,17 @@ bins2 = np.arange(0, 200000, 1000)
 
 print(molecule_length)
 print(molecule_coverage)
+
+with open(sys.argv[2] + "/mol_length.csv") as molecule_length_csv:
+    molecule_length_csv.write("length")
+    for item in molecule_length:
+        molecule_length_csv.write(item+"\n")
+
+with open(sys.argv[2] + "/mol_coverage.csv") as molecule_length_csv:
+    molecule_length_csv.write("coverage")
+    for item in molecule_length:
+        molecule_length_csv.write(item+"\n")
+
 plt.hist(molecule_length, bins=bins2, alpha=0.5)
 plt.title('Molecule length distribution')
 plt.xlabel('Molecule length observed')
