@@ -45,24 +45,24 @@ for barcode, vect in superdict.items():
     if len(superinterval) <= 1:
         continue
 
-    for i in range(len(superinterval) - 1):
-        if superinterval[i + 1].lower - superinterval[i].upper > max_diff:
-            aligned += superinterval[i].upper - superinterval[i].lower
-            if superinterval[i].upper - start > 5000:
+    for i in range(len(vect) - 1):
+        if vect[i + 1][0] - vect[i][1] > max_diff:
+            aligned += vect[i][1] - vect[i][0]
+            if vect[i][1] - start > 5000:
                 molecule_coverage.append(aligned/float(aligned+unaligned))
-            if superinterval[i].upper - start > 5000:
-                molecule_length.append(superinterval[i].upper - start)
-            start = superinterval[i+1].lower
+            if vect[i][1] - start > 5000:
+                molecule_length.append(vect[i][1] - start)
+            start = vect[i+1][0]
             aligned = 0
             unaligned = 0
         else:
-            aligned += superinterval[i].upper - superinterval[i].lower
-            unaligned += superinterval[i+1].lower - superinterval[i].upper
-    aligned += superinterval[-1].upper - superinterval[-1].lower
-    if superinterval[i].upper - start > 5000:
+            aligned += vect[i][1] - vect[i][0]
+            unaligned += vect[i+1][0] - vect[i][1]
+    aligned += vect[-1][1] - vect[-1][0]
+    if vect[i][1] - start > 5000:
         molecule_coverage.append(aligned/float(aligned+unaligned))
-    if superinterval[i].upper - start > 5000:
-        molecule_length.append(superinterval[-1].upper - start)
+    if vect[i][1] - start > 5000:
+        molecule_length.append(vect[-1][1] - start)
 
 from matplotlib import pyplot as plt
 import numpy as np
