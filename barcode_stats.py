@@ -34,7 +34,7 @@ for barcode, vect in superdict.items():
     if len(vect) <= 2:
         continue
     print(barcode)
-    print(vect)
+    #print(vect)
     aligned = 0
     unaligned = 0
     start = vect[0][0]
@@ -72,12 +72,12 @@ bins2 = np.arange(0, 200000, 1000)
 print(molecule_length)
 print(molecule_coverage)
 
-with open(sys.argv[2] + "/mol_length.csv") as molecule_length_csv:
+with open(sys.argv[2] + "/mol_length.csv", 'w') as molecule_length_csv:
     molecule_length_csv.write("length")
     for item in molecule_length:
         molecule_length_csv.write(item+"\n")
 
-with open(sys.argv[2] + "/mol_coverage.csv") as molecule_length_csv:
+with open(sys.argv[2] + "/mol_coverage.csv", 'w') as molecule_length_csv:
     molecule_length_csv.write("coverage")
     for item in molecule_length:
         molecule_length_csv.write(item+"\n")
