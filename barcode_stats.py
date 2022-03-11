@@ -73,13 +73,13 @@ print(molecule_length)
 print(molecule_coverage)
 
 with open(sys.argv[2] + "/mol_length.csv", 'w') as molecule_length_csv:
-    molecule_length_csv.write("length")
+    molecule_length_csv.write("length\n")
     for item in molecule_length:
         molecule_length_csv.write(str(item)+"\n")
 
 with open(sys.argv[2] + "/mol_coverage.csv", 'w') as molecule_length_csv:
-    molecule_length_csv.write("coverage")
-    for item in molecule_length:
+    molecule_length_csv.write("coverage\n")
+    for item in molecule_coverage:
         molecule_length_csv.write(str(item)+"\n")
 
 plt.hist(molecule_length, bins=bins2, alpha=0.5)
