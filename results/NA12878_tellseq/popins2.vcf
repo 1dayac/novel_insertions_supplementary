@@ -1,0 +1,2017 @@
+##fileformat=VCFv4.2
+##fileDate=2022-Apr-01
+##source=PopIns_0.13.0-47964d4
+##assembly=supercontigs.fa
+##reference=genome.fa
+##contig=<ID=chr1,length=248956422>
+##contig=<ID=chr2,length=242193529>
+##contig=<ID=chr3,length=198295559>
+##contig=<ID=chr4,length=190214555>
+##contig=<ID=chr5,length=181538259>
+##contig=<ID=chr6,length=170805979>
+##contig=<ID=chr7,length=159345973>
+##contig=<ID=chr8,length=145138636>
+##contig=<ID=chr9,length=138394717>
+##contig=<ID=chr10,length=133797422>
+##contig=<ID=chr11,length=135086622>
+##contig=<ID=chr12,length=133275309>
+##contig=<ID=chr13,length=114364328>
+##contig=<ID=chr14,length=107043718>
+##contig=<ID=chr15,length=101991189>
+##contig=<ID=chr16,length=90338345>
+##contig=<ID=chr17,length=83257441>
+##contig=<ID=chr18,length=80373285>
+##contig=<ID=chr19,length=58617616>
+##contig=<ID=chr20,length=64444167>
+##contig=<ID=chr21,length=46709983>
+##contig=<ID=chr22,length=50818468>
+##contig=<ID=chrX,length=156040895>
+##contig=<ID=chrY,length=57227415>
+##contig=<ID=chrM,length=16569>
+##contig=<ID=chr1_KI270706v1_random,length=175055>
+##contig=<ID=chr1_KI270707v1_random,length=32032>
+##contig=<ID=chr1_KI270708v1_random,length=127682>
+##contig=<ID=chr1_KI270709v1_random,length=66860>
+##contig=<ID=chr1_KI270710v1_random,length=40176>
+##contig=<ID=chr1_KI270711v1_random,length=42210>
+##contig=<ID=chr1_KI270712v1_random,length=176043>
+##contig=<ID=chr1_KI270713v1_random,length=40745>
+##contig=<ID=chr1_KI270714v1_random,length=41717>
+##contig=<ID=chr2_KI270715v1_random,length=161471>
+##contig=<ID=chr2_KI270716v1_random,length=153799>
+##contig=<ID=chr3_GL000221v1_random,length=155397>
+##contig=<ID=chr4_GL000008v2_random,length=209709>
+##contig=<ID=chr5_GL000208v1_random,length=92689>
+##contig=<ID=chr9_KI270717v1_random,length=40062>
+##contig=<ID=chr9_KI270718v1_random,length=38054>
+##contig=<ID=chr9_KI270719v1_random,length=176845>
+##contig=<ID=chr9_KI270720v1_random,length=39050>
+##contig=<ID=chr11_KI270721v1_random,length=100316>
+##contig=<ID=chr14_GL000009v2_random,length=201709>
+##contig=<ID=chr14_GL000225v1_random,length=211173>
+##contig=<ID=chr14_KI270722v1_random,length=194050>
+##contig=<ID=chr14_GL000194v1_random,length=191469>
+##contig=<ID=chr14_KI270723v1_random,length=38115>
+##contig=<ID=chr14_KI270724v1_random,length=39555>
+##contig=<ID=chr14_KI270725v1_random,length=172810>
+##contig=<ID=chr14_KI270726v1_random,length=43739>
+##contig=<ID=chr15_KI270727v1_random,length=448248>
+##contig=<ID=chr16_KI270728v1_random,length=1872759>
+##contig=<ID=chr17_GL000205v2_random,length=185591>
+##contig=<ID=chr17_KI270729v1_random,length=280839>
+##contig=<ID=chr17_KI270730v1_random,length=112551>
+##contig=<ID=chr22_KI270731v1_random,length=150754>
+##contig=<ID=chr22_KI270732v1_random,length=41543>
+##contig=<ID=chr22_KI270733v1_random,length=179772>
+##contig=<ID=chr22_KI270734v1_random,length=165050>
+##contig=<ID=chr22_KI270735v1_random,length=42811>
+##contig=<ID=chr22_KI270736v1_random,length=181920>
+##contig=<ID=chr22_KI270737v1_random,length=103838>
+##contig=<ID=chr22_KI270738v1_random,length=99375>
+##contig=<ID=chr22_KI270739v1_random,length=73985>
+##contig=<ID=chrY_KI270740v1_random,length=37240>
+##contig=<ID=chrUn_KI270302v1,length=2274>
+##contig=<ID=chrUn_KI270304v1,length=2165>
+##contig=<ID=chrUn_KI270303v1,length=1942>
+##contig=<ID=chrUn_KI270305v1,length=1472>
+##contig=<ID=chrUn_KI270322v1,length=21476>
+##contig=<ID=chrUn_KI270320v1,length=4416>
+##contig=<ID=chrUn_KI270310v1,length=1201>
+##contig=<ID=chrUn_KI270316v1,length=1444>
+##contig=<ID=chrUn_KI270315v1,length=2276>
+##contig=<ID=chrUn_KI270312v1,length=998>
+##contig=<ID=chrUn_KI270311v1,length=12399>
+##contig=<ID=chrUn_KI270317v1,length=37690>
+##contig=<ID=chrUn_KI270412v1,length=1179>
+##contig=<ID=chrUn_KI270411v1,length=2646>
+##contig=<ID=chrUn_KI270414v1,length=2489>
+##contig=<ID=chrUn_KI270419v1,length=1029>
+##contig=<ID=chrUn_KI270418v1,length=2145>
+##contig=<ID=chrUn_KI270420v1,length=2321>
+##contig=<ID=chrUn_KI270424v1,length=2140>
+##contig=<ID=chrUn_KI270417v1,length=2043>
+##contig=<ID=chrUn_KI270422v1,length=1445>
+##contig=<ID=chrUn_KI270423v1,length=981>
+##contig=<ID=chrUn_KI270425v1,length=1884>
+##contig=<ID=chrUn_KI270429v1,length=1361>
+##contig=<ID=chrUn_KI270442v1,length=392061>
+##contig=<ID=chrUn_KI270466v1,length=1233>
+##contig=<ID=chrUn_KI270465v1,length=1774>
+##contig=<ID=chrUn_KI270467v1,length=3920>
+##contig=<ID=chrUn_KI270435v1,length=92983>
+##contig=<ID=chrUn_KI270438v1,length=112505>
+##contig=<ID=chrUn_KI270468v1,length=4055>
+##contig=<ID=chrUn_KI270510v1,length=2415>
+##contig=<ID=chrUn_KI270509v1,length=2318>
+##contig=<ID=chrUn_KI270518v1,length=2186>
+##contig=<ID=chrUn_KI270508v1,length=1951>
+##contig=<ID=chrUn_KI270516v1,length=1300>
+##contig=<ID=chrUn_KI270512v1,length=22689>
+##contig=<ID=chrUn_KI270519v1,length=138126>
+##contig=<ID=chrUn_KI270522v1,length=5674>
+##contig=<ID=chrUn_KI270511v1,length=8127>
+##contig=<ID=chrUn_KI270515v1,length=6361>
+##contig=<ID=chrUn_KI270507v1,length=5353>
+##contig=<ID=chrUn_KI270517v1,length=3253>
+##contig=<ID=chrUn_KI270529v1,length=1899>
+##contig=<ID=chrUn_KI270528v1,length=2983>
+##contig=<ID=chrUn_KI270530v1,length=2168>
+##contig=<ID=chrUn_KI270539v1,length=993>
+##contig=<ID=chrUn_KI270538v1,length=91309>
+##contig=<ID=chrUn_KI270544v1,length=1202>
+##contig=<ID=chrUn_KI270548v1,length=1599>
+##contig=<ID=chrUn_KI270583v1,length=1400>
+##contig=<ID=chrUn_KI270587v1,length=2969>
+##contig=<ID=chrUn_KI270580v1,length=1553>
+##contig=<ID=chrUn_KI270581v1,length=7046>
+##contig=<ID=chrUn_KI270579v1,length=31033>
+##contig=<ID=chrUn_KI270589v1,length=44474>
+##contig=<ID=chrUn_KI270590v1,length=4685>
+##contig=<ID=chrUn_KI270584v1,length=4513>
+##contig=<ID=chrUn_KI270582v1,length=6504>
+##contig=<ID=chrUn_KI270588v1,length=6158>
+##contig=<ID=chrUn_KI270593v1,length=3041>
+##contig=<ID=chrUn_KI270591v1,length=5796>
+##contig=<ID=chrUn_KI270330v1,length=1652>
+##contig=<ID=chrUn_KI270329v1,length=1040>
+##contig=<ID=chrUn_KI270334v1,length=1368>
+##contig=<ID=chrUn_KI270333v1,length=2699>
+##contig=<ID=chrUn_KI270335v1,length=1048>
+##contig=<ID=chrUn_KI270338v1,length=1428>
+##contig=<ID=chrUn_KI270340v1,length=1428>
+##contig=<ID=chrUn_KI270336v1,length=1026>
+##contig=<ID=chrUn_KI270337v1,length=1121>
+##contig=<ID=chrUn_KI270363v1,length=1803>
+##contig=<ID=chrUn_KI270364v1,length=2855>
+##contig=<ID=chrUn_KI270362v1,length=3530>
+##contig=<ID=chrUn_KI270366v1,length=8320>
+##contig=<ID=chrUn_KI270378v1,length=1048>
+##contig=<ID=chrUn_KI270379v1,length=1045>
+##contig=<ID=chrUn_KI270389v1,length=1298>
+##contig=<ID=chrUn_KI270390v1,length=2387>
+##contig=<ID=chrUn_KI270387v1,length=1537>
+##contig=<ID=chrUn_KI270395v1,length=1143>
+##contig=<ID=chrUn_KI270396v1,length=1880>
+##contig=<ID=chrUn_KI270388v1,length=1216>
+##contig=<ID=chrUn_KI270394v1,length=970>
+##contig=<ID=chrUn_KI270386v1,length=1788>
+##contig=<ID=chrUn_KI270391v1,length=1484>
+##contig=<ID=chrUn_KI270383v1,length=1750>
+##contig=<ID=chrUn_KI270393v1,length=1308>
+##contig=<ID=chrUn_KI270384v1,length=1658>
+##contig=<ID=chrUn_KI270392v1,length=971>
+##contig=<ID=chrUn_KI270381v1,length=1930>
+##contig=<ID=chrUn_KI270385v1,length=990>
+##contig=<ID=chrUn_KI270382v1,length=4215>
+##contig=<ID=chrUn_KI270376v1,length=1136>
+##contig=<ID=chrUn_KI270374v1,length=2656>
+##contig=<ID=chrUn_KI270372v1,length=1650>
+##contig=<ID=chrUn_KI270373v1,length=1451>
+##contig=<ID=chrUn_KI270375v1,length=2378>
+##contig=<ID=chrUn_KI270371v1,length=2805>
+##contig=<ID=chrUn_KI270448v1,length=7992>
+##contig=<ID=chrUn_KI270521v1,length=7642>
+##contig=<ID=chrUn_GL000195v1,length=182896>
+##contig=<ID=chrUn_GL000219v1,length=179198>
+##contig=<ID=chrUn_GL000220v1,length=161802>
+##contig=<ID=chrUn_GL000224v1,length=179693>
+##contig=<ID=chrUn_KI270741v1,length=157432>
+##contig=<ID=chrUn_GL000226v1,length=15008>
+##contig=<ID=chrUn_GL000213v1,length=164239>
+##contig=<ID=chrUn_KI270743v1,length=210658>
+##contig=<ID=chrUn_KI270744v1,length=168472>
+##contig=<ID=chrUn_KI270745v1,length=41891>
+##contig=<ID=chrUn_KI270746v1,length=66486>
+##contig=<ID=chrUn_KI270747v1,length=198735>
+##contig=<ID=chrUn_KI270748v1,length=93321>
+##contig=<ID=chrUn_KI270749v1,length=158759>
+##contig=<ID=chrUn_KI270750v1,length=148850>
+##contig=<ID=chrUn_KI270751v1,length=150742>
+##contig=<ID=chrUn_KI270752v1,length=27745>
+##contig=<ID=chrUn_KI270753v1,length=62944>
+##contig=<ID=chrUn_KI270754v1,length=40191>
+##contig=<ID=chrUn_KI270755v1,length=36723>
+##contig=<ID=chrUn_KI270756v1,length=79590>
+##contig=<ID=chrUn_KI270757v1,length=71251>
+##contig=<ID=chrUn_GL000214v1,length=137718>
+##contig=<ID=chrUn_KI270742v1,length=186739>
+##contig=<ID=chrUn_GL000216v2,length=176608>
+##contig=<ID=chrUn_GL000218v1,length=161147>
+##contig=<ID=chrEBV,length=171823>
+##contig=<ID=hs38d1,length=10560522>
+##INFO=<ID=AR,Number=1,Type=Integer,Description="Number of anchoring read pairs.">
+##INFO=<ID=AS,Number=1,Type=Float,Description="Anchoring score.">
+##INFO=<ID=GS,Number=1,Type=Integer,Description="Number of contigs in the contig group.">
+##INFO=<ID=NOANCHOR,Number=0,Type=Flag,Description="Absence of anchoring read pairs for this contig end.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="PHRED-scaled genotype likelihoods">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1	790595	chr1:790595:FP	T	T[contig_1588f:59[	.	.	AR=3;AS=0.3;GS=1
+chr1	790127	chr1:790127:FP	G	]contig_1588f:344]G	.	.	NOANCHOR
+chr1	791556	chr1:791556:FP	A	]contig_174r:358]A	.	.	AR=2;AS=0.666667;GS=1
+chr1	5387166	chr1:5387166:FP	G	G[contig_6105f:159[	.	.	AR=4;AS=0.333333;GS=1
+chr1	11373882	chr1:11373882:FP	G	]contig_9599r:826]G	.	.	AR=6;AS=0.857143;GS=1
+chr1	11373928	chr1:11373928:FP	G	G[contig_9599r:71[	.	.	AR=4;AS=0.666667;GS=1
+chr1	12102816	chr1:12102816:FP	A	A[contig_9891r:42[	.	.	AR=3;AS=0.3;GS=1
+chr1	20463626	chr1:20463626:FP	T	T[contig_4940r:50[	.	.	AR=5;AS=1;GS=1
+chr1	25529281	chr1:25529281:FP	T	T[contig_7185r:55[	.	.	AR=7;AS=1;GS=1
+chr1	19769890	chr1:19769890:FP	A	]contig_2723r:1120]A	.	.	AR=6;AS=1;GS=1
+chr1	30405669	chr1:30405669:FP	C	C[contig_869r:43[	.	.	AR=2;AS=1;GS=1
+chr1	31194708	chr1:31194708:FP	G	G[contig_4203f:45[	.	.	AR=4;AS=0.571429;GS=1
+chr1	35157133	chr1:35157133:FP	A	A[contig_2055r:43[	.	.	AR=9;AS=1;GS=1
+chr1	41425250	chr1:41425250:FP	G	]contig_7177r:521]G	.	.	AR=8;AS=1;GS=1
+chr1	41425251	chr1:41425251:FP	T	T[contig_7177r:41[	.	.	AR=8;AS=1;GS=1
+chr1	55003027	chr1:55003027:FP	A	A[contig_1257f:64[	.	.	AR=8;AS=0.727273;GS=1
+chr1	55336547	chr1:55336547:FP	C	C[contig_10360f:46[	.	.	AR=3;AS=0.6;GS=1
+chr1	63786256	chr1:63786256:FP	A	]contig_9128r:309]A	.	.	AR=7;AS=0.538462;GS=1
+chr1	86642973	chr1:86642973:FP	G	]contig_9453r:388]G	.	.	AR=2;AS=0.333333;GS=1
+chr1	91850763	chr1:91850763:FP	A	A[contig_1147f:80[	.	.	AR=3;AS=0.3;GS=1
+chr1	92514446	chr1:92514446:FP	A	A[contig_4681r:65[	.	.	AR=2;AS=0.666667;GS=1
+chr1	95076452	chr1:95076452:FP	A	A[contig_1147f:110[	.	.	AR=3;AS=0.3;GS=1
+chr1	97024136	chr1:97024136:FP	A	A[contig_1941f:35[	.	.	AR=3;AS=0.6;GS=1
+chr1	97024021	chr1:97024021:FP	C	]contig_7587r:320]C	.	.	AR=8;AS=0.727273;GS=1
+chr1	114765367	chr1:114765367:FP	C	C[contig_623f:44[	.	.	AR=2;AS=0.333333;GS=1
+chr1	145796926	chr1:145796926:FP	T	]contig_9665f:1894]T	.	.	AR=4;AS=0.363636;GS=1
+chr1	154714645	chr1:154714645:FP	G	G[contig_1653r:35[	.	.	AR=8;AS=0.444444;GS=1
+chr1	154714023	chr1:154714023:FP	T	]contig_1653r:1066]T	.	.	AR=9;AS=0.692308;GS=1
+chr1	167056590	chr1:167056590:FP	T	]contig_6742r:355]T	.	.	AR=4;AS=0.571429;GS=1
+chr1	182138471	chr1:182138471:FP	A	]contig_1303f:330]A	.	.	AR=9;AS=1;GS=1
+chr1	200197840	chr1:200197840:FP	G	G[contig_10169f:32[	.	.	AR=4;AS=0.363636;GS=1
+chr1	187287429	chr1:187287429:FP	T	]contig_4608r:539]T	.	.	AR=2;AS=0.333333;GS=1
+chr1	202624773	chr1:202624773:FP	G	]contig_6092r:75]G	.	.	AR=2;AS=0.5;GS=1
+chr1	202625117	chr1:202625117:FP	T	T[contig_6092r:68[	.	.	AR=3;AS=0.75;GS=1
+chr1	224013008	chr1:224013008:FP	A	A[contig_7833r:121[	.	.	AR=3;AS=0.5;GS=1
+chr1	224013125	chr1:224013125:FP	T	T[contig_7641f:81[	.	.	AR=3;AS=0.6;GS=1
+chr1	224013068	chr1:224013068:FP	A	A[contig_7037f:70[	.	.	AR=3;AS=0.428571;GS=1
+chr1	224013753	chr1:224013753:FP	T	T[contig_6983f:141[	.	.	AR=2;AS=0.333333;GS=1
+chr1	224013715	chr1:224013715:FP	G	]contig_6983f:267]G	.	.	NOANCHOR
+chr1	224013782	chr1:224013782:FP	A	A[contig_9716f:66[	.	.	AR=2;AS=0.4;GS=1
+chr1	224013620	chr1:224013620:FP	G	]contig_9716f:208]G	.	.	NOANCHOR
+chr1	224011806	chr1:224011806:FP	A	]contig_4223f:540]A	.	.	AR=3;AS=0.3;GS=1
+chr1	224012224	chr1:224012224:FP	G	G[contig_4223f:60[	.	.	NOANCHOR
+chr1	224015075	chr1:224015075:FP	A	]contig_4984r:335]A	.	.	AR=3;AS=0.333333;GS=1
+chr1	224014933	chr1:224014933:FP	G	G[contig_4984r:131[	.	.	NOANCHOR
+chr1	224015304	chr1:224015304:FP	G	]contig_6764f:96]G	.	.	AR=2;AS=0.4;GS=1
+chr1	224337397	chr1:224337397:FP	C	]contig_4264r:362]C	.	.	AR=3;AS=0.333333;GS=1
+chr1	224014141	chr1:224014141:FP	A	A[contig_10534r:69[	.	.	AR=5;AS=0.555556;GS=1
+chr1	224012985	chr1:224012985:FP	T	]contig_10534r:390]T	.	.	NOANCHOR
+chr1	230335784	chr1:230335784:FP	C	]contig_7777r:272]C	.	.	AR=7;AS=1;GS=1
+chr1	230335673	chr1:230335673:FP	A	A[contig_7777r:96[	.	.	AR=3;AS=1;GS=1
+chr1	234207429	chr1:234207429:FP	T	T[contig_2329f:65[	.	.	AR=3;AS=1;GS=1
+chr1	238051643	chr1:238051643:FP	G	]contig_10177f:246]G	.	.	AR=3;AS=1;GS=1
+chr1	243845529	chr1:243845529:FP	G	G[contig_4945f:116[	.	.	AR=4;AS=1;GS=1
+chr1	245660300	chr1:245660300:FP	G	G[contig_7446r:34[	.	.	AR=6;AS=1;GS=1
+chr1	247222870	chr1:247222870:FP	C	C[contig_8482f:45[	.	.	AR=7;AS=1;GS=1
+chr10	8538533	chr10:8538533:FP	G	]contig_7312r:606]G	.	.	AR=4;AS=0.363636;GS=1
+chr10	16323448	chr10:16323448:FP	A	]contig_3147r:332]A	.	.	AR=13;AS=1;GS=1
+chr10	26647620	chr10:26647620:FP	G	G[contig_8255f:81[	.	.	AR=3;AS=1;GS=1
+chr10	26937414	chr10:26937414:FP	A	]contig_5381r:332]A	.	.	AR=3;AS=0.6;GS=1
+chr10	38490532	chr10:38490532:FP	T	]contig_8221f:740]T	.	.	AR=6;AS=0.375;GS=1
+chr10	38490385	chr10:38490385:FP	C	C[contig_8221f:86[	.	.	NOANCHOR
+chr10	38493390	chr10:38493390:FP	G	]contig_3800r:475]G	.	.	AR=2;AS=0.666667;GS=1
+chr10	38506944	chr10:38506944:FP	G	G[contig_10216f:63[	.	.	AR=4;AS=0.4;GS=1
+chr10	38507290	chr10:38507290:FP	G	G[contig_5589f:75[	.	.	AR=2;AS=0.5;GS=1
+chr10	38507570	chr10:38507570:FP	A	A[contig_8531f:44[	.	.	AR=4;AS=0.4;GS=1
+chr10	38507926	chr10:38507926:FP	T	]contig_8531f:405]T	.	.	NOANCHOR
+chr10	38508099	chr10:38508099:FP	A	A[contig_376f:66[	.	.	AR=5;AS=1;GS=1
+chr10	38508618	chr10:38508618:FP	A	]contig_376f:529]A	.	.	NOANCHOR
+chr10	38511025	chr10:38511025:FP	A	A[contig_3236f:136[	.	.	AR=6;AS=0.428571;GS=1
+chr10	38517695	chr10:38517695:FP	T	T[contig_4445r:88[	.	.	AR=2;AS=0.5;GS=1
+chr10	38518320	chr10:38518320:FP	A	A[contig_8199r:89[	.	.	AR=3;AS=0.333333;GS=1
+chr10	38522981	chr10:38522981:FP	A	]contig_2427f:255]A	.	.	NOANCHOR
+chr10	38576948	chr10:38576948:FP	A	A[contig_432r:60[	.	.	AR=2;AS=0.333333;GS=1
+chr10	38576377	chr10:38576377:FP	A	]contig_432r:228]A	.	.	NOANCHOR
+chr10	38577833	chr10:38577833:FP	T	T[contig_5068r:82[	.	.	AR=2;AS=0.333333;GS=1
+chr10	38577665	chr10:38577665:FP	G	]contig_5068r:243]G	.	.	NOANCHOR
+chr10	38579081	chr10:38579081:FP	A	A[contig_5032f:68[	.	.	AR=9;AS=0.333333;GS=1
+chr10	38501208	chr10:38501208:FP	A	]contig_7936f:405]A	.	.	AR=3;AS=0.375;GS=1
+chr10	38501211	chr10:38501211:FP	G	G[contig_7936f:79[	.	.	NOANCHOR
+chr10	38580152	chr10:38580152:FP	A	A[contig_4657f:120[	.	.	AR=2;AS=0.5;GS=1
+chr10	38579526	chr10:38579526:FP	G	]contig_4657f:258]G	.	.	NOANCHOR
+chr10	38581394	chr10:38581394:FP	G	]contig_7641f:276]G	.	.	AR=2;AS=0.333333;GS=1
+chr10	38783977	chr10:38783977:FP	C	C[contig_7381r:73[	.	.	AR=2;AS=0.333333;GS=1
+chr10	38816607	chr10:38816607:FP	T	T[contig_1214f:96[	.	.	AR=3;AS=0.3;GS=1
+chr10	38800423	chr10:38800423:FP	T	]contig_9381f:504]T	.	.	AR=5;AS=0.5;GS=1
+chr10	38827610	chr10:38827610:FP	T	T[contig_9657r:58[	.	.	AR=2;AS=0.333333;GS=1
+chr10	38826695	chr10:38826695:FP	G	]contig_9657r:269]G	.	.	NOANCHOR
+chr10	38919957	chr10:38919957:FP	G	G[contig_10346f:64[	.	.	AR=2;AS=0.5;GS=1
+chr10	38919855	chr10:38919855:FP	T	]contig_9110r:657]T	.	.	AR=7;AS=0.368421;GS=2
+chr10	38919672	chr10:38919672:FP	G	]contig_10180f:323]G	.	.	AR=2;AS=0.4;GS=1
+chr10	38919633	chr10:38919633:FP	A	]contig_4302f:258]A	.	.	AR=2;AS=0.333333;GS=1
+chr10	38920217	chr10:38920217:FP	T	T[contig_4302f:88[	.	.	NOANCHOR
+chr10	38920248	chr10:38920248:FP	G	G[contig_9639f:85[	.	.	AR=2;AS=0.333333;GS=1
+chr10	38920172	chr10:38920172:FP	T	]contig_9639f:343]T	.	.	NOANCHOR
+chr10	38919858	chr10:38919858:FP	A	]contig_3666r:164]A	.	.	AR=2;AS=0.666667;GS=1
+chr10	38920143	chr10:38920143:FP	G	]contig_5988r:238]G	.	.	AR=2;AS=0.333333;GS=1
+chr10	41862330	chr10:41862330:FP	A	]contig_8624f:339]A	.	.	AR=2;AS=0.666667;GS=1
+chr10	41859925	chr10:41859925:FP	G	G[contig_3000f:56[	.	.	AR=3;AS=0.5;GS=1
+chr10	41859894	chr10:41859894:FP	T	]contig_3000f:194]T	.	.	NOANCHOR
+chr10	41879204	chr10:41879204:FP	A	]contig_7833r:780]A	.	.	AR=4;AS=0.666667;GS=1
+chr10	41885896	chr10:41885896:FP	G	]contig_9980r:306]G	.	.	AR=3;AS=0.3;GS=1
+chr10	41886198	chr10:41886198:FP	A	A[contig_9980r:59[	.	.	NOANCHOR
+chr10	41886312	chr10:41886312:FP	G	]contig_10475f:224]G	.	.	AR=2;AS=0.5;GS=1
+chr10	41885654	chr10:41885654:FP	A	A[contig_10475f:33[	.	.	NOANCHOR
+chr10	41884050	chr10:41884050:FP	T	T[contig_7166r:73[	.	.	AR=3;AS=0.3;GS=1
+chr10	41883996	chr10:41883996:FP	G	]contig_7166r:243]G	.	.	NOANCHOR
+chr10	41886960	chr10:41886960:FP	G	]contig_756f:377]G	.	.	AR=4;AS=0.5;GS=1
+chr10	41914558	chr10:41914558:FP	A	]contig_9610r:459]A	.	.	AR=6;AS=0.428571;GS=1
+chr10	41897937	chr10:41897937:FP	A	A[contig_2071r:48[	.	.	AR=6;AS=0.375;GS=1
+chr10	41897448	chr10:41897448:FP	T	]contig_2071r:453]T	.	.	NOANCHOR
+chr10	42302382	chr10:42302382:FP	T	T[contig_3280r:86[	.	.	AR=7;AS=0.466667;GS=1
+chr10	42302462	chr10:42302462:FP	T	]contig_3280r:210]T	.	.	NOANCHOR
+chr10	46525982	chr10:46525982:FP	C	C[contig_4834f:47[	.	.	AR=14;AS=1;GS=1
+chr10	46526439	chr10:46526439:FP	C	]contig_4834f:296]C	.	.	AR=13;AS=1;GS=1
+chr10	63783076	chr10:63783076:FP	A	A[contig_7476f:29[	.	.	AR=11;AS=0.846154;GS=1
+chr10	57181273	chr10:57181273:FP	G	]contig_9957f:290]G	.	.	AR=7;AS=1;GS=1
+chr10	75761648	chr10:75761648:FP	C	C[contig_601f:48[	.	.	AR=2;AS=0.333333;GS=1
+chr10	84601962	chr10:84601962:FP	A	]contig_1479f:778]A	.	.	AR=15;AS=1;GS=1
+chr10	84601947	chr10:84601947:FP	C	C[contig_1479f:93[	.	.	NOANCHOR
+chr10	99055011	chr10:99055011:FP	C	C[contig_627r:35[	.	.	AR=4;AS=0.8;GS=1
+chr10	102568887	chr10:102568887:FP	A	A[contig_8388f:43[	.	.	AR=2;AS=0.333333;GS=1
+chr10	123254473	chr10:123254473:FP	A	A[contig_7843r:175[	.	.	AR=4;AS=0.666667;GS=1
+chr10	123254963	chr10:123254963:FP	C	]contig_7843r:244]C	.	.	AR=6;AS=1;GS=1
+chr10	126892070	chr10:126892070:FP	C	]contig_9807f:665]C	.	.	AR=8;AS=1;GS=1
+chr10	127263367	chr10:127263367:FP	T	]contig_10102f:305]T	.	.	AR=3;AS=1;GS=1
+chr10	131046294	chr10:131046294:FP	C	]contig_8876r:284]C	.	.	AR=4;AS=1;GS=1
+chr10	131512521	chr10:131512521:FP	T	]contig_702r:288]T	.	.	AR=3;AS=1;GS=1
+chr10	133065951	chr10:133065951:FP	G	G[contig_9385f:48[	.	.	AR=4;AS=0.8;GS=1
+chr11	1939665	chr11:1939665:FP	A	A[contig_8691f:123[	.	.	AR=4;AS=0.444444;GS=1
+chr11	4986512	chr11:4986512:FP	T	]contig_5082r:626]T	.	.	AR=8;AS=0.4;GS=1
+chr11	2187930	chr11:2187930:FP	C	C[contig_3235r:28[	.	.	AR=4;AS=0.666667;GS=1
+chr11	2187934	chr11:2187934:FP	A	]contig_3235r:269]A	.	.	NOANCHOR
+chr11	9559515	chr11:9559515:FP	T	T[contig_1034f:86[	.	.	AR=2;AS=0.666667;GS=1
+chr11	19618926	chr11:19618926:FP	A	A[contig_5735r:44[	.	.	AR=4;AS=1;GS=1
+chr11	25222979	chr11:25222979:FP	A	]contig_3395r:3291]A	.	.	AR=3;AS=1;GS=1
+chr11	22243904	chr11:22243904:FP	C	C[contig_6775f:36[	.	.	AR=12;AS=1;GS=1
+chr11	33403395	chr11:33403395:FP	A	A[contig_9516r:88[	.	.	AR=6;AS=0.857143;GS=1
+chr11	34872294	chr11:34872294:FP	G	G[contig_7959r:84[	.	.	AR=5;AS=0.714286;GS=1
+chr11	33403327	chr11:33403327:FP	A	]contig_9516r:319]A	.	.	AR=3;AS=1;GS=1
+chr11	47618718	chr11:47618718:FP	C	]contig_2634r:342]C	.	.	AR=4;AS=0.571429;GS=1
+chr11	62745440	chr11:62745440:FP	T	]contig_9844r:293]T	.	.	AR=2;AS=0.333333;GS=1
+chr11	64221759	chr11:64221759:FP	T	]contig_6748f:320]T	.	.	AR=2;AS=0.666667;GS=1
+chr11	68580781	chr11:68580781:FP	T	]contig_5815r:366]T	.	.	AR=2;AS=0.4;GS=1
+chr11	68580825	chr11:68580825:FP	G	G[contig_5815r:62[	.	.	NOANCHOR
+chr11	69766554	chr11:69766554:FP	G	]contig_8846r:494]G	.	.	AR=2;AS=0.333333;GS=1
+chr11	96794926	chr11:96794926:FP	T	]contig_8636f:586]T	.	.	AR=6;AS=1;GS=1
+chr11	96794927	chr11:96794927:FP	C	C[contig_8636f:28[	.	.	AR=9;AS=1;GS=1
+chr11	126799195	chr11:126799195:FP	T	]contig_8005r:402]T	.	.	AR=9;AS=1;GS=1
+chr11	126799259	chr11:126799259:FP	T	T[contig_8005r:86[	.	.	AR=4;AS=1;GS=1
+chr11	133027786	chr11:133027786:FP	T	]contig_8452r:1328]T	.	.	NOANCHOR
+chr12	55533	chr12:55533:FP	G	G[contig_2537r:26[	.	.	AR=10;AS=1;GS=1
+chr11	132125730	chr11:132125730:FP	G	]contig_4110r:1026]G	.	.	AR=9;AS=1;GS=1
+chr12	2682851	chr12:2682851:FP	A	]contig_5846r:1452]A	.	.	AR=7;AS=1;GS=1
+chr12	2682915	chr12:2682915:FP	C	C[contig_5846r:130[	.	.	AR=11;AS=1;GS=1
+chr12	2757721	chr12:2757721:FP	T	T[contig_8368r:78[	.	.	AR=2;AS=1;GS=1
+chr12	2756628	chr12:2756628:FP	T	]contig_4885f:274]T	.	.	AR=3;AS=1;GS=1
+chr12	5481455	chr12:5481455:FP	C	]contig_8186f:349]C	.	.	AR=12;AS=1;GS=1
+chr12	5481761	chr12:5481761:FP	C	C[contig_8186f:94[	.	.	AR=7;AS=1;GS=1
+chr12	10002450	chr12:10002450:FP	T	]contig_1062f:262]T	.	.	AR=9;AS=0.9;GS=1
+chr12	32498899	chr12:32498899:FP	C	C[contig_3779r:36[	.	.	AR=3;AS=0.3;GS=1
+chr12	31822005	chr12:31822005:FP	G	]contig_9891f:2309]G	.	.	AR=3;AS=0.3;GS=1
+chr12	47159843	chr12:47159843:FP	T	]contig_7275f:318]T	.	.	AR=2;AS=0.333333;GS=1
+chr12	52283469	chr12:52283469:FP	C	]contig_9121r:371]C	.	.	AR=4;AS=0.4;GS=1
+chr12	66553701	chr12:66553701:FP	T	T[contig_7587r:56[	.	.	AR=2;AS=0.666667;GS=1
+chr12	67568425	chr12:67568425:FP	G	]contig_2311f:574]G	.	.	AR=7;AS=1;GS=1
+chr12	101747636	chr12:101747636:FP	T	T[contig_3419f:37[	.	.	AR=6;AS=1;GS=1
+chr12	110880736	chr12:110880736:FP	G	]contig_10411r:398]G	.	.	NOANCHOR
+chr12	130055587	chr12:130055587:FP	C	C[contig_939f:138[	.	.	AR=5;AS=1;GS=1
+chr12	132133106	chr12:132133106:FP	G	G[contig_8335r:43[	.	.	AR=3;AS=1;GS=1
+chr12	132742763	chr12:132742763:FP	C	]contig_6670f:572]C	.	.	AR=14;AS=1;GS=1
+chr13	19068241	chr13:19068241:FP	C	]contig_8069f:262]C	.	.	AR=15;AS=1;GS=1
+chr13	19068445	chr13:19068445:FP	T	T[contig_8069f:122[	.	.	AR=4;AS=1;GS=1
+chr13	24522931	chr13:24522931:FP	C	C[contig_98r:36[	.	.	AR=5;AS=0.833333;GS=1
+chr13	24682110	chr13:24682110:FP	G	]contig_3235f:255]G	.	.	AR=2;AS=0.333333;GS=1
+chr13	24682127	chr13:24682127:FP	G	G[contig_3235f:60[	.	.	NOANCHOR
+chr13	25812496	chr13:25812496:FP	A	]contig_2650r:828]A	.	.	AR=7;AS=1;GS=1
+chr13	27301455	chr13:27301455:FP	G	]contig_6981r:751]G	.	.	AR=4;AS=0.444444;GS=1
+chr13	25812490	chr13:25812490:FP	T	T[contig_3338r:37[	.	.	AR=6;AS=1;GS=1
+chr13	64251734	chr13:64251734:FP	A	]contig_7576f:358]A	.	.	AR=3;AS=1;GS=1
+chr13	70371442	chr13:70371442:FP	C	]contig_9946f:934]C	.	.	AR=11;AS=1;GS=1
+chr13	70371446	chr13:70371446:FP	A	A[contig_9720f:45[	.	.	AR=4;AS=1;GS=1
+chr13	104244968	chr13:104244968:FP	T	T[contig_7108f:86[	.	.	AR=3;AS=0.6;GS=1
+chr13	112870676	chr13:112870676:FP	C	C[contig_4203r:30[	.	.	AR=3;AS=0.3;GS=1
+chr14	22413265	chr14:22413265:FP	G	G[contig_9967r:39[	.	.	AR=12;AS=1;GS=1
+chr14	53466475	chr14:53466475:FP	C	C[contig_7881f:99[	.	.	AR=2;AS=1;GS=1
+chr14	69728963	chr14:69728963:FP	T	]contig_9684f:1445]T	.	.	AR=3;AS=0.428571;GS=1
+chr14	70486105	chr14:70486105:FP	G	]contig_7164r:470]G	.	.	AR=4;AS=0.8;GS=1
+chr14	76963258	chr14:76963258:FP	A	A[contig_8934f:50[	.	.	AR=2;AS=0.333333;GS=1
+chr14	91634749	chr14:91634749:FP	C	]contig_1304f:1547]C	.	.	AR=13;AS=1;GS=1
+chr14	95419895	chr14:95419895:FP	T	]contig_2053r:322]T	.	.	AR=11;AS=0.846154;GS=1
+chr14	95419918	chr14:95419918:FP	A	A[contig_2053r:136[	.	.	NOANCHOR
+chr15	26893415	chr15:26893415:FP	T	]contig_8278r:583]T	.	.	AR=5;AS=0.833333;GS=1
+chr15	44515875	chr15:44515875:FP	A	A[contig_5405r:30[	.	.	AR=3;AS=0.375;GS=1
+chr15	52283971	chr15:52283971:FP	G	G[contig_6846r:32[	.	.	AR=2;AS=0.5;GS=1
+chr15	52142899	chr15:52142899:FP	A	]contig_2935f:918]A	.	.	AR=3;AS=0.3;GS=1
+chr15	66102260	chr15:66102260:FP	C	]contig_4846r:1456]C	.	.	AR=4;AS=1;GS=1
+chr15	78993298	chr15:78993298:FP	T	T[contig_10429r:77[	.	.	AR=3;AS=1;GS=1
+chr15	83695265	chr15:83695265:FP	G	G[contig_6094f:57[	.	.	AR=10;AS=1;GS=1
+chr15	83695229	chr15:83695229:FP	T	]contig_6094f:472]T	.	.	AR=10;AS=1;GS=1
+chr15	94051591	chr15:94051591:FP	A	A[contig_8177r:185[	.	.	AR=10;AS=0.714286;GS=1
+chr15	94052117	chr15:94052117:FP	C	]contig_928r:294]C	.	.	AR=6;AS=0.857143;GS=1
+chr15	94051497	chr15:94051497:FP	A	A[contig_928r:178[	.	.	NOANCHOR
+chr16	10040077	chr16:10040077:FP	C	]contig_9210r:340]C	.	.	AR=9;AS=1;GS=1
+chr16	10040235	chr16:10040235:FP	A	A[contig_9210r:105[	.	.	AR=3;AS=1;GS=1
+chr16	27306384	chr16:27306384:FP	A	A[contig_5859r:49[	.	.	AR=3;AS=0.5;GS=1
+chr16	34062629	chr16:34062629:FP	G	G[contig_5627r:74[	.	.	AR=4;AS=0.307692;GS=1
+chr16	34062615	chr16:34062615:FP	A	]contig_6011r:630]A	.	.	AR=30;AS=0.4;GS=3
+chr16	34064022	chr16:34064022:FP	T	]contig_2738r:683]T	.	.	AR=6;AS=0.6;GS=1
+chr16	34073331	chr16:34073331:FP	G	G[contig_9429f:43[	.	.	NOANCHOR
+chr16	34064263	chr16:34064263:FP	G	G[contig_6323f:68[	.	.	AR=4;AS=0.307692;GS=3
+chr16	34064045	chr16:34064045:FP	A	]contig_6323f:855]A	.	.	NOANCHOR
+chr16	34064275	chr16:34064275:FP	A	A[contig_9232r:93[	.	.	AR=7;AS=0.388889;GS=1
+chr16	34064878	chr16:34064878:FP	G	]contig_9232r:295]G	.	.	NOANCHOR
+chr16	34064083	chr16:34064083:FP	G	G[contig_5047f:74[	.	.	AR=3;AS=0.3;GS=1
+chr16	34064690	chr16:34064690:FP	T	]contig_5047f:207]T	.	.	NOANCHOR
+chr16	34085131	chr16:34085131:FP	T	]contig_3367f:936]T	.	.	AR=7;AS=0.35;GS=1
+chr16	34085187	chr16:34085187:FP	T	]contig_10456f:352]T	.	.	AR=2;AS=0.4;GS=1
+chr16	34085271	chr16:34085271:FP	C	C[contig_10456f:117[	.	.	NOANCHOR
+chr16	34085295	chr16:34085295:FP	A	A[contig_3900r:81[	.	.	AR=7;AS=0.388889;GS=1
+chr16	34085230	chr16:34085230:FP	A	A[contig_5244f:115[	.	.	AR=2;AS=0.4;GS=2
+chr16	34097195	chr16:34097195:FP	T	T[contig_8369r:72[	.	.	AR=2;AS=0.4;GS=1
+chr16	34099353	chr16:34099353:FP	A	A[contig_4687f:74[	.	.	AR=2;AS=0.333333;GS=1
+chr16	53010926	chr16:53010926:FP	T	]contig_8885f:317]T	.	.	AR=3;AS=0.333333;GS=1
+chr16	65322412	chr16:65322412:FP	T	]contig_4094r:464]T	.	.	AR=2;AS=0.666667;GS=1
+chr16	65321729	chr16:65321729:FP	T	T[contig_4094r:59[	.	.	NOANCHOR
+chr16	86013963	chr16:86013963:FP	T	T[contig_2713r:77[	.	.	AR=7;AS=0.7;GS=1
+chr16	86419443	chr16:86419443:FP	G	G[contig_5376r:75[	.	.	AR=2;AS=0.333333;GS=1
+chr16	87503087	chr16:87503087:FP	T	T[contig_55f:50[	.	.	AR=3;AS=1;GS=1
+chr16	87502451	chr16:87502451:FP	T	]contig_55f:285]T	.	.	AR=3;AS=1;GS=1
+chr16	89068950	chr16:89068950:FP	G	G[contig_5217r:82[	.	.	AR=2;AS=0.333333;GS=1
+chr16	88349862	chr16:88349862:FP	C	]contig_3953f:328]C	.	.	AR=4;AS=1;GS=1
+chr17	21856628	chr17:21856628:FP	T	T[contig_602r:144[	.	.	AR=3;AS=0.333333;GS=1
+chr17	21856685	chr17:21856685:FP	G	]contig_602r:190]G	.	.	NOANCHOR
+chr17	21871912	chr17:21871912:FP	G	G[contig_602r:46[	.	.	AR=5;AS=0.555556;GS=1
+chr17	21871962	chr17:21871962:FP	G	]contig_602r:130]G	.	.	NOANCHOR
+chr17	21888048	chr17:21888048:FP	T	]contig_6922r:134]T	.	.	AR=2;AS=0.4;GS=1
+chr17	21910608	chr17:21910608:FP	G	G[contig_1214r:188[	.	.	AR=3;AS=0.375;GS=1
+chr17	21897743	chr17:21897743:FP	G	]contig_1214r:322]G	.	.	AR=3;AS=0.3;GS=1
+chr17	21921449	chr17:21921449:FP	T	T[contig_2143r:80[	.	.	AR=3;AS=0.6;GS=1
+chr17	21920776	chr17:21920776:FP	G	]contig_2143r:231]G	.	.	NOANCHOR
+chr17	21976563	chr17:21976563:FP	G	]contig_1080r:254]G	.	.	AR=3;AS=0.375;GS=1
+chr17	21983936	chr17:21983936:FP	G	G[contig_10139f:48[	.	.	AR=5;AS=0.357143;GS=1
+chr17	21983234	chr17:21983234:FP	A	]contig_10139f:234]A	.	.	NOANCHOR
+chr17	21989906	chr17:21989906:FP	T	]contig_1918f:269]T	.	.	AR=3;AS=0.333333;GS=1
+chr17	21990549	chr17:21990549:FP	A	A[contig_1918f:98[	.	.	NOANCHOR
+chr17	21990052	chr17:21990052:FP	G	]contig_10089f:379]G	.	.	AR=2;AS=0.666667;GS=1
+chr17	21989961	chr17:21989961:FP	T	T[contig_10089f:137[	.	.	NOANCHOR
+chr17	21990976	chr17:21990976:FP	T	T[contig_514f:112[	.	.	AR=18;AS=0.418605;GS=1
+chr17	21990887	chr17:21990887:FP	C	]contig_514f:301]C	.	.	NOANCHOR
+chr17	26937347	chr17:26937347:FP	T	]contig_2458r:419]T	.	.	NOANCHOR
+chr17	26936101	chr17:26936101:FP	G	]contig_8498r:349]G	.	.	AR=2;AS=0.4;GS=1
+chr17	26936842	chr17:26936842:FP	T	T[contig_8498r:48[	.	.	NOANCHOR
+chr17	26937798	chr17:26937798:FP	G	G[contig_6291f:43[	.	.	AR=5;AS=0.384615;GS=2
+chr17	26938604	chr17:26938604:FP	G	]contig_6291f:729]G	.	.	NOANCHOR
+chr17	26937579	chr17:26937579:FP	G	]contig_2282f:676]G	.	.	AR=4;AS=0.307692;GS=1
+chr17	26938271	chr17:26938271:FP	A	A[contig_2282f:30[	.	.	NOANCHOR
+chr17	26938217	chr17:26938217:FP	A	A[contig_9712r:50[	.	.	AR=7;AS=0.777778;GS=1
+chr17	26938392	chr17:26938392:FP	A	A[contig_10110r:51[	.	.	AR=5;AS=0.357143;GS=1
+chr17	26937592	chr17:26937592:FP	T	]contig_4368r:232]T	.	.	NOANCHOR
+chr17	26938712	chr17:26938712:FP	G	]contig_3114r:384]G	.	.	AR=2;AS=0.333333;GS=4
+chr17	26938875	chr17:26938875:FP	G	G[contig_6864r:59[	.	.	AR=4;AS=0.363636;GS=1
+chr17	26938890	chr17:26938890:FP	G	G[contig_2273f:73[	.	.	AR=3;AS=0.375;GS=1
+chr17	26938138	chr17:26938138:FP	T	]contig_2273f:419]T	.	.	NOANCHOR
+chr17	26938745	chr17:26938745:FP	T	T[contig_7055r:87[	.	.	AR=3;AS=0.375;GS=1
+chr17	26938605	chr17:26938605:FP	T	]contig_7055r:405]T	.	.	NOANCHOR
+chr17	26940022	chr17:26940022:FP	G	]contig_9141r:467]G	.	.	AR=5;AS=0.625;GS=3
+chr17	26939641	chr17:26939641:FP	A	]contig_10097f:362]A	.	.	AR=2;AS=0.666667;GS=3
+chr17	26940301	chr17:26940301:FP	G	]contig_1690r:294]G	.	.	AR=3;AS=0.6;GS=1
+chr17	26939955	chr17:26939955:FP	T	]contig_4939f:207]T	.	.	AR=3;AS=0.3;GS=1
+chr17	26940015	chr17:26940015:FP	T	T[contig_4939f:138[	.	.	NOANCHOR
+chr17	26940385	chr17:26940385:FP	T	T[contig_3900f:57[	.	.	AR=4;AS=0.571429;GS=1
+chr17	26940755	chr17:26940755:FP	A	A[contig_4719f:85[	.	.	AR=5;AS=0.714286;GS=1
+chr17	26940757	chr17:26940757:FP	T	]contig_4719f:770]T	.	.	NOANCHOR
+chr17	26939969	chr17:26939969:FP	G	]contig_2674r:250]G	.	.	NOANCHOR
+chr17	26939951	chr17:26939951:FP	G	]contig_2967r:227]G	.	.	AR=2;AS=0.5;GS=4
+chr17	26940802	chr17:26940802:FP	T	T[contig_838r:83[	.	.	AR=4;AS=0.444444;GS=2
+chr17	26940787	chr17:26940787:FP	T	]contig_838r:302]T	.	.	NOANCHOR
+chr17	26940900	chr17:26940900:FP	A	A[contig_2827f:64[	.	.	AR=4;AS=0.444444;GS=2
+chr17	26940739	chr17:26940739:FP	G	]contig_7012r:202]G	.	.	NOANCHOR
+chr17	40523190	chr17:40523190:FP	G	G[contig_8995r:43[	.	.	AR=7;AS=1;GS=1
+chr17	41633802	chr17:41633802:FP	T	T[contig_4362f:88[	.	.	AR=11;AS=0.785714;GS=1
+chr17	56281152	chr17:56281152:FP	G	G[contig_1446r:38[	.	.	AR=2;AS=0.5;GS=1
+chr17	70066384	chr17:70066384:FP	A	A[contig_5724f:34[	.	.	AR=6;AS=0.6;GS=1
+chr17	66798420	chr17:66798420:FP	T	]contig_5376r:120]T	.	.	AR=2;AS=0.4;GS=1
+chr17	79893718	chr17:79893718:FP	A	]contig_5217f:111]A	.	.	AR=2;AS=0.333333;GS=1
+chr17	81207928	chr17:81207928:FP	C	]contig_3134f:1009]C	.	.	AR=9;AS=0.529412;GS=1
+chr17	81207964	chr17:81207964:FP	C	C[contig_3134f:77[	.	.	NOANCHOR
+chr17	81531436	chr17:81531436:FP	T	]contig_956r:277]T	.	.	AR=4;AS=0.444444;GS=1
+chr17	81531851	chr17:81531851:FP	G	G[contig_956r:110[	.	.	NOANCHOR
+chr17	82355473	chr17:82355473:FP	A	A[contig_2130f:33[	.	.	AR=6;AS=0.5;GS=1
+chr17_KI270729v1_random	938	chr17_KI270729v1_random:938:FP	A	]contig_650r:165]A	.	.	NOANCHOR
+chr17	81830355	chr17:81830355:FP	G	]contig_7709r:357]G	.	.	AR=4;AS=0.5;GS=1
+chr17_KI270729v1_random	2173	chr17_KI270729v1_random:2173:FP	T	]contig_1868r:223]T	.	.	NOANCHOR
+chr17_KI270729v1_random	57072	chr17_KI270729v1_random:57072:FP	A	A[contig_9594r:66[	.	.	AR=2;AS=1;GS=1
+chr17_KI270729v1_random	56126	chr17_KI270729v1_random:56126:FP	G	]contig_9594r:247]G	.	.	NOANCHOR
+chr17_KI270729v1_random	57029	chr17_KI270729v1_random:57029:FP	T	]contig_3045r:521]T	.	.	NOANCHOR
+chr17_KI270730v1_random	81582	chr17_KI270730v1_random:81582:FP	A	]contig_9712r:187]A	.	.	AR=2;AS=0.333333;GS=1
+chr17_KI270730v1_random	82916	chr17_KI270730v1_random:82916:FP	T	]contig_9712r:273]T	.	.	AR=3;AS=0.5;GS=1
+chr17_KI270730v1_random	83424	chr17_KI270730v1_random:83424:FP	G	]contig_7714r:827]G	.	.	AR=2;AS=0.4;GS=1
+chr17_KI270730v1_random	82939	chr17_KI270730v1_random:82939:FP	A	A[contig_7714r:83[	.	.	NOANCHOR
+chr17_KI270730v1_random	84948	chr17_KI270730v1_random:84948:FP	T	]contig_679r:162]T	.	.	AR=2;AS=1;GS=1
+chr17_KI270730v1_random	92479	chr17_KI270730v1_random:92479:FP	G	]contig_4309f:256]G	.	.	AR=2;AS=0.4;GS=1
+chr17_KI270730v1_random	85907	chr17_KI270730v1_random:85907:FP	G	G[contig_10288f:98[	.	.	AR=3;AS=0.375;GS=1
+chr17_KI270730v1_random	98438	chr17_KI270730v1_random:98438:FP	G	G[contig_1473r:40[	.	.	AR=3;AS=0.375;GS=1
+chr17_KI270730v1_random	105110	chr17_KI270730v1_random:105110:FP	A	A[contig_7173r:41[	.	.	AR=3;AS=0.5;GS=1
+chr17_KI270730v1_random	104350	chr17_KI270730v1_random:104350:FP	T	T[contig_2261r:84[	.	.	AR=4;AS=0.333333;GS=1
+chr17_KI270730v1_random	105095	chr17_KI270730v1_random:105095:FP	A	A[contig_1166r:60[	.	.	AR=4;AS=0.444444;GS=1
+chr17_KI270730v1_random	104481	chr17_KI270730v1_random:104481:FP	G	]contig_3114r:383]G	.	.	AR=2;AS=0.333333;GS=1
+chr17_KI270730v1_random	105497	chr17_KI270730v1_random:105497:FP	T	T[contig_4610f:150[	.	.	AR=2;AS=0.666667;GS=1
+chr17_KI270730v1_random	105210	chr17_KI270730v1_random:105210:FP	A	]contig_4610f:312]A	.	.	NOANCHOR
+chr17_KI270730v1_random	107416	chr17_KI270730v1_random:107416:FP	T	T[contig_6250f:36[	.	.	AR=2;AS=0.5;GS=1
+chr17_KI270730v1_random	106557	chr17_KI270730v1_random:106557:FP	T	]contig_6250f:240]T	.	.	NOANCHOR
+chr17_KI270730v1_random	107296	chr17_KI270730v1_random:107296:FP	T	]contig_4959r:187]T	.	.	AR=8;AS=0.380952;GS=1
+chr17_KI270730v1_random	107354	chr17_KI270730v1_random:107354:FP	A	]contig_1675f:332]A	.	.	AR=6;AS=0.375;GS=1
+chr17_KI270730v1_random	106928	chr17_KI270730v1_random:106928:FP	G	G[contig_1675f:118[	.	.	NOANCHOR
+chr17_KI270730v1_random	109231	chr17_KI270730v1_random:109231:FP	G	]contig_2376r:573]G	.	.	AR=5;AS=0.333333;GS=1
+chr17_KI270730v1_random	107086	chr17_KI270730v1_random:107086:FP	G	]contig_9822f:316]G	.	.	NOANCHOR
+chr17_KI270730v1_random	110120	chr17_KI270730v1_random:110120:FP	T	T[contig_3114r:45[	.	.	AR=2;AS=1;GS=1
+chr17_KI270730v1_random	110027	chr17_KI270730v1_random:110027:FP	G	]contig_3405r:336]G	.	.	AR=2;AS=0.4;GS=1
+chr17_KI270730v1_random	110015	chr17_KI270730v1_random:110015:FP	T	T[contig_3405r:131[	.	.	NOANCHOR
+chr18	854879	chr18:854879:FP	C	]contig_8399f:343]C	.	.	AR=5;AS=1;GS=1
+chr18	3515496	chr18:3515496:FP	A	]contig_4450f:322]A	.	.	AR=5;AS=0.714286;GS=1
+chr18	4874671	chr18:4874671:FP	A	]contig_1594r:256]A	.	.	AR=4;AS=1;GS=1
+chr18	13982054	chr18:13982054:FP	T	]contig_8405r:586]T	.	.	AR=8;AS=1;GS=1
+chr18	22452208	chr18:22452208:FP	C	]contig_2770f:352]C	.	.	AR=8;AS=1;GS=1
+chr18	13982057	chr18:13982057:FP	T	T[contig_8405r:47[	.	.	AR=13;AS=1;GS=1
+chr18	37283978	chr18:37283978:FP	A	A[contig_7787f:80[	.	.	AR=2;AS=1;GS=1
+chr18	43734217	chr18:43734217:FP	G	G[contig_3028f:33[	.	.	AR=10;AS=1;GS=1
+chr18	78238498	chr18:78238498:FP	G	G[contig_6403f:34[	.	.	AR=5;AS=1;GS=1
+chr19	7715054	chr19:7715054:FP	G	]contig_66f:363]G	.	.	AR=3;AS=0.375;GS=1
+chr19	11464712	chr19:11464712:FP	A	]contig_972f:1041]A	.	.	AR=5;AS=0.384615;GS=1
+chr19	13388242	chr19:13388242:FP	C	]contig_6156r:293]C	.	.	AR=3;AS=0.428571;GS=1
+chr19	11465227	chr19:11465227:FP	A	A[contig_7294f:86[	.	.	AR=6;AS=0.857143;GS=1
+chr19	18442582	chr19:18442582:FP	C	C[contig_10215f:98[	.	.	AR=3;AS=1;GS=1
+chr19	28603161	chr19:28603161:FP	C	]contig_3022f:577]C	.	.	AR=2;AS=0.333333;GS=1
+chr19	29010199	chr19:29010199:FP	A	]contig_7900r:363]A	.	.	AR=2;AS=1;GS=1
+chr19	29010254	chr19:29010254:FP	C	C[contig_7900r:74[	.	.	AR=4;AS=1;GS=1
+chr19	34249299	chr19:34249299:FP	G	G[contig_6806f:105[	.	.	AR=7;AS=0.875;GS=1
+chr19	37242124	chr19:37242124:FP	A	A[contig_2786r:99[	.	.	AR=3;AS=1;GS=1
+chr19	34546758	chr19:34546758:FP	G	]contig_8393f:1124]G	.	.	AR=3;AS=0.428571;GS=1
+chr19	41510088	chr19:41510088:FP	T	T[contig_353r:47[	.	.	AR=5;AS=1;GS=1
+chr19	41510089	chr19:41510089:FP	T	]contig_353r:502]T	.	.	AR=6;AS=1;GS=1
+chr19	50492778	chr19:50492778:FP	G	]contig_6010r:211]G	.	.	NOANCHOR
+chr19	55424302	chr19:55424302:FP	G	]contig_9688f:424]G	.	.	AR=5;AS=0.5;GS=1
+chr2	1221956	chr2:1221956:FP	T	T[contig_8846r:68[	.	.	AR=2;AS=0.4;GS=1
+chr19	55448352	chr19:55448352:FP	C	]contig_4901f:393]C	.	.	AR=3;AS=0.333333;GS=1
+chr2	3046026	chr2:3046026:FP	T	T[contig_1155r:37[	.	.	AR=7;AS=1;GS=1
+chr2	4452460	chr2:4452460:FP	C	C[contig_10314f:82[	.	.	AR=5;AS=0.833333;GS=1
+chr2	4452616	chr2:4452616:FP	T	]contig_10314f:189]T	.	.	NOANCHOR
+chr2	3046008	chr2:3046008:FP	G	]contig_1155r:309]G	.	.	AR=4;AS=0.666667;GS=1
+chr2	75379082	chr2:75379082:FP	T	]contig_958r:188]T	.	.	AR=3;AS=0.3;GS=1
+chr2	89795698	chr2:89795698:FP	T	T[contig_4723f:96[	.	.	AR=5;AS=0.416667;GS=1
+chr2	89794837	chr2:89794837:FP	T	]contig_4723f:330]T	.	.	NOANCHOR
+chr2	89830914	chr2:89830914:FP	G	]contig_3846f:232]G	.	.	AR=3;AS=0.375;GS=1
+chr2	89830989	chr2:89830989:FP	C	C[contig_3846f:58[	.	.	NOANCHOR
+chr2	89836360	chr2:89836360:FP	A	]contig_8372f:296]A	.	.	AR=2;AS=0.5;GS=1
+chr2	96796131	chr2:96796131:FP	C	]contig_9950f:259]C	.	.	AR=4;AS=0.571429;GS=1
+chr2	99121451	chr2:99121451:FP	G	]contig_1001r:296]G	.	.	AR=11;AS=0.733333;GS=2
+chr2	119694041	chr2:119694041:FP	C	C[contig_607f:70[	.	.	AR=3;AS=1;GS=1
+chr2	121296241	chr2:121296241:FP	C	C[contig_8829r:121[	.	.	AR=3;AS=0.5;GS=1
+chr2	121478928	chr2:121478928:FP	C	C[contig_9769f:65[	.	.	AR=3;AS=0.75;GS=1
+chr2	119693911	chr2:119693911:FP	A	]contig_607f:350]A	.	.	AR=7;AS=1;GS=1
+chr2	169355988	chr2:169355988:FP	T	]contig_1052r:315]T	.	.	AR=2;AS=0.5;GS=1
+chr2	207692198	chr2:207692198:FP	A	A[contig_8934f:35[	.	.	AR=3;AS=0.5;GS=1
+chr2	207692010	chr2:207692010:FP	C	]contig_8934f:231]C	.	.	NOANCHOR
+chr2	217805553	chr2:217805553:FP	C	C[contig_1766f:84[	.	.	AR=4;AS=0.571429;GS=1
+chr2	218082956	chr2:218082956:FP	T	]contig_5925f:706]T	.	.	AR=6;AS=1;GS=1
+chr2	221169370	chr2:221169370:FP	A	]contig_5290r:292]A	.	.	AR=2;AS=0.666667;GS=1
+chr2	226715724	chr2:226715724:FP	G	G[contig_4473r:115[	.	.	AR=3;AS=1;GS=1
+chr2	231005497	chr2:231005497:FP	C	]contig_4940r:278]C	.	.	AR=4;AS=0.307692;GS=1
+chr2	231005534	chr2:231005534:FP	A	A[contig_9063r:330[	.	.	AR=3;AS=0.428571;GS=1
+chr2	234515198	chr2:234515198:FP	T	T[contig_9769r:46[	.	.	AR=9;AS=0.9;GS=1
+chr20	61445	chr20:61445:FP	A	A[contig_7656r:89[	.	.	AR=2;AS=0.4;GS=1
+chr20	62706	chr20:62706:FP	C	C[contig_3623r:163[	.	.	AR=2;AS=0.333333;GS=1
+chr20	62914	chr20:62914:FP	T	]contig_3623r:185]T	.	.	NOANCHOR
+chr20	63051	chr20:63051:FP	C	C[contig_9725f:88[	.	.	AR=4;AS=0.363636;GS=1
+chr20	62105	chr20:62105:FP	T	]contig_9725f:478]T	.	.	NOANCHOR
+chr20	62632	chr20:62632:FP	C	]contig_1016r:274]C	.	.	AR=4;AS=0.571429;GS=1
+chr20	65172	chr20:65172:FP	C	C[contig_10015f:58[	.	.	AR=9;AS=0.409091;GS=1
+chr20	65741	chr20:65741:FP	C	]contig_10015f:613]C	.	.	NOANCHOR
+chr20	65439	chr20:65439:FP	T	]contig_2629f:246]T	.	.	AR=2;AS=0.4;GS=1
+chr20	22471994	chr20:22471994:FP	A	A[contig_7226r:32[	.	.	AR=2;AS=1;GS=1
+chr20	22472010	chr20:22472010:FP	A	]contig_7226r:453]A	.	.	NOANCHOR
+chr20	25067240	chr20:25067240:FP	C	]contig_4133r:279]C	.	.	AR=6;AS=1;GS=1
+chr20	31064717	chr20:31064717:FP	A	A[contig_7613f:85[	.	.	AR=2;AS=0.4;GS=1
+chr20	31064013	chr20:31064013:FP	T	]contig_7613f:219]T	.	.	NOANCHOR
+chr20	31063787	chr20:31063787:FP	C	]contig_6173r:309]C	.	.	AR=3;AS=0.428571;GS=1
+chr20	31068139	chr20:31068139:FP	T	T[contig_6547r:122[	.	.	AR=4;AS=0.363636;GS=1
+chr20	31068072	chr20:31068072:FP	A	]contig_6547r:144]A	.	.	NOANCHOR
+chr20	31071919	chr20:31071919:FP	T	T[contig_5233f:54[	.	.	AR=5;AS=0.3125;GS=1
+chr20	31071232	chr20:31071232:FP	A	]contig_5233f:235]A	.	.	NOANCHOR
+chr20	31074900	chr20:31074900:FP	A	A[contig_7938r:187[	.	.	AR=5;AS=0.454545;GS=1
+chr20	31071673	chr20:31071673:FP	T	]contig_5528f:212]T	.	.	AR=3;AS=1;GS=1
+chr20	31071704	chr20:31071704:FP	G	G[contig_5528f:64[	.	.	NOANCHOR
+chr20	31086590	chr20:31086590:FP	A	A[contig_8199r:33[	.	.	AR=4;AS=0.444444;GS=1
+chr20	31157717	chr20:31157717:FP	G	]contig_5010r:265]G	.	.	AR=8;AS=0.571429;GS=1
+chr20	31173915	chr20:31173915:FP	G	]contig_676f:482]G	.	.	AR=3;AS=0.75;GS=1
+chr20	31173397	chr20:31173397:FP	A	A[contig_676f:75[	.	.	NOANCHOR
+chr20	31171590	chr20:31171590:FP	A	A[contig_3129r:47[	.	.	AR=2;AS=1;GS=1
+chr20	31171865	chr20:31171865:FP	T	]contig_3129r:252]T	.	.	NOANCHOR
+chr20	31201543	chr20:31201543:FP	T	]contig_4762f:316]T	.	.	AR=3;AS=0.333333;GS=1
+chr20	31231385	chr20:31231385:FP	A	]contig_4614f:376]A	.	.	AR=2;AS=0.666667;GS=1
+chr20	31208275	chr20:31208275:FP	T	T[contig_2144f:95[	.	.	AR=3;AS=0.375;GS=1
+chr20	31241664	chr20:31241664:FP	G	G[contig_7021r:58[	.	.	AR=11;AS=0.354839;GS=2
+chr20	31241628	chr20:31241628:FP	T	]contig_7021r:876]T	.	.	NOANCHOR
+chr20	36642198	chr20:36642198:FP	G	G[contig_6408r:26[	.	.	AR=7;AS=1;GS=1
+chr20	36642164	chr20:36642164:FP	T	]contig_6408r:473]T	.	.	AR=12;AS=1;GS=1
+chr20	38676146	chr20:38676146:FP	C	C[contig_855r:27[	.	.	AR=2;AS=0.333333;GS=1
+chr20	48888186	chr20:48888186:FP	A	]contig_7440r:712]A	.	.	AR=2;AS=0.5;GS=1
+chr20	63158469	chr20:63158469:FP	T	]contig_1070f:242]T	.	.	AR=3;AS=1;GS=1
+chr21	7257977	chr21:7257977:FP	A	A[contig_3666r:85[	.	.	AR=2;AS=0.333333;GS=1
+chr20	63441145	chr20:63441145:FP	T	]contig_9560f:309]T	.	.	AR=5;AS=1;GS=1
+chr21	7258279	chr21:7258279:FP	G	]contig_2967r:227]G	.	.	AR=2;AS=0.5;GS=1
+chr21	7258725	chr21:7258725:FP	G	]contig_8382r:278]G	.	.	AR=3;AS=0.3;GS=2
+chr21	7258948	chr21:7258948:FP	A	]contig_6347r:305]A	.	.	AR=3;AS=0.3;GS=1
+chr21	7259091	chr21:7259091:FP	G	G[contig_6347r:40[	.	.	NOANCHOR
+chr21	7259003	chr21:7259003:FP	A	A[contig_5975r:81[	.	.	AR=5;AS=0.384615;GS=1
+chr21	7259755	chr21:7259755:FP	G	]contig_5975r:189]G	.	.	NOANCHOR
+chr21	7261187	chr21:7261187:FP	T	]contig_1662r:226]T	.	.	AR=2;AS=0.333333;GS=2
+chr21	7261309	chr21:7261309:FP	G	G[contig_1662r:114[	.	.	NOANCHOR
+chr21	7261321	chr21:7261321:FP	A	A[contig_8580r:58[	.	.	AR=2;AS=0.666667;GS=1
+chr21	7261237	chr21:7261237:FP	T	]contig_8580r:373]T	.	.	NOANCHOR
+chr21	7924546	chr21:7924546:FP	C	]contig_6922f:243]C	.	.	AR=4;AS=0.5;GS=1
+chr21	7923858	chr21:7923858:FP	A	]contig_9657f:254]A	.	.	AR=2;AS=0.333333;GS=1
+chr21	7935122	chr21:7935122:FP	A	A[contig_3315r:215[	.	.	AR=2;AS=1;GS=1
+chr21	7935201	chr21:7935201:FP	A	]contig_3315r:304]A	.	.	NOANCHOR
+chr21	7944666	chr21:7944666:FP	C	C[contig_1017f:75[	.	.	AR=13;AS=0.302326;GS=1
+chr21	7944066	chr21:7944066:FP	T	]contig_1017f:1447]T	.	.	NOANCHOR
+chr21	7938254	chr21:7938254:FP	A	]contig_8109f:239]A	.	.	AR=3;AS=0.333333;GS=1
+chr21	7938591	chr21:7938591:FP	T	T[contig_8109f:62[	.	.	NOANCHOR
+chr21	7956775	chr21:7956775:FP	T	T[contig_7173f:74[	.	.	AR=4;AS=0.333333;GS=1
+chr21	7957246	chr21:7957246:FP	C	C[contig_6924f:62[	.	.	AR=9;AS=0.310345;GS=1
+chr21	7957648	chr21:7957648:FP	A	]contig_6924f:408]A	.	.	NOANCHOR
+chr21	9247344	chr21:9247344:FP	T	T[contig_9781r:92[	.	.	AR=7;AS=0.538462;GS=2
+chr21	10653631	chr21:10653631:FP	T	T[contig_5589r:73[	.	.	AR=3;AS=1;GS=1
+chr21	10655756	chr21:10655756:FP	C	C[contig_8199f:128[	.	.	AR=3;AS=0.3;GS=1
+chr21	7955922	chr21:7955922:FP	T	]contig_3406r:595]T	.	.	AR=59;AS=0.307292;GS=1
+chr21	7956230	chr21:7956230:FP	C	C[contig_3406r:78[	.	.	NOANCHOR
+chr21	10663932	chr21:10663932:FP	A	]contig_7420f:235]A	.	.	AR=3;AS=0.333333;GS=1
+chr21	10663989	chr21:10663989:FP	T	T[contig_7420f:98[	.	.	NOANCHOR
+chr21	10673274	chr21:10673274:FP	T	]contig_2358r:315]T	.	.	AR=3;AS=0.428571;GS=1
+chr21	10668226	chr21:10668226:FP	C	C[contig_1950r:77[	.	.	AR=5;AS=0.333333;GS=1
+chr21	10668166	chr21:10668166:FP	C	]contig_1950r:441]C	.	.	NOANCHOR
+chr21	10668178	chr21:10668178:FP	A	A[contig_8899f:120[	.	.	AR=2;AS=0.333333;GS=1
+chr21	10678762	chr21:10678762:FP	A	A[contig_7008r:171[	.	.	AR=8;AS=0.5;GS=1
+chr21	10678332	chr21:10678332:FP	A	]contig_7008r:375]A	.	.	NOANCHOR
+chr21	10673276	chr21:10673276:FP	C	]contig_4614r:347]C	.	.	AR=2;AS=0.666667;GS=1
+chr21	10692348	chr21:10692348:FP	A	]contig_9974r:307]A	.	.	AR=2;AS=0.666667;GS=1
+chr21	10692828	chr21:10692828:FP	A	A[contig_9974r:79[	.	.	NOANCHOR
+chr21	10686576	chr21:10686576:FP	A	A[contig_8732f:87[	.	.	AR=3;AS=0.3;GS=1
+chr21	10685739	chr21:10685739:FP	T	]contig_8732f:267]T	.	.	NOANCHOR
+chr21	10692851	chr21:10692851:FP	C	]contig_9141f:502]C	.	.	AR=2;AS=0.5;GS=1
+chr21	10692470	chr21:10692470:FP	T	]contig_6804r:156]T	.	.	AR=5;AS=0.5;GS=1
+chr21	10693575	chr21:10693575:FP	C	C[contig_3043r:37[	.	.	AR=3;AS=0.3;GS=1
+chr21	10692800	chr21:10692800:FP	T	T[contig_10367r:83[	.	.	AR=7;AS=0.318182;GS=1
+chr21	10693534	chr21:10693534:FP	T	]contig_10367r:277]T	.	.	NOANCHOR
+chr21	10693378	chr21:10693378:FP	T	]contig_7958r:226]T	.	.	AR=3;AS=0.3;GS=1
+chr21	10693812	chr21:10693812:FP	A	A[contig_7958r:96[	.	.	NOANCHOR
+chr21	10697961	chr21:10697961:FP	C	]contig_9381f:501]C	.	.	AR=4;AS=0.4;GS=1
+chr21	10700851	chr21:10700851:FP	A	A[contig_7768r:72[	.	.	NOANCHOR
+chr21	10698571	chr21:10698571:FP	C	C[contig_9381f:64[	.	.	AR=7;AS=0.333333;GS=1
+chr21	10703896	chr21:10703896:FP	T	T[contig_10504r:41[	.	.	AR=4;AS=0.8;GS=1
+chr21	10702809	chr21:10702809:FP	A	]contig_10504r:168]A	.	.	NOANCHOR
+chr21	10705294	chr21:10705294:FP	T	]contig_4237r:331]T	.	.	NOANCHOR
+chr21	10703210	chr21:10703210:FP	T	]contig_504r:1043]T	.	.	AR=9;AS=0.6;GS=2
+chr21	10703164	chr21:10703164:FP	A	]contig_5578r:1027]A	.	.	AR=15;AS=0.394737;GS=1
+chr21	10703819	chr21:10703819:FP	A	A[contig_5578r:74[	.	.	NOANCHOR
+chr21	10706772	chr21:10706772:FP	A	]contig_3093r:229]A	.	.	AR=5;AS=0.384615;GS=1
+chr21	10707503	chr21:10707503:FP	T	T[contig_3093r:72[	.	.	NOANCHOR
+chr21	10705717	chr21:10705717:FP	A	A[contig_7053f:87[	.	.	AR=7;AS=0.411765;GS=1
+chr21	10707406	chr21:10707406:FP	G	]contig_8396f:307]G	.	.	AR=2;AS=0.333333;GS=1
+chr21	10707786	chr21:10707786:FP	C	C[contig_8396f:54[	.	.	NOANCHOR
+chr21	10709256	chr21:10709256:FP	A	]contig_8427f:253]A	.	.	AR=3;AS=0.333333;GS=1
+chr21	10710099	chr21:10710099:FP	C	C[contig_3814r:202[	.	.	AR=2;AS=0.333333;GS=1
+chr21	10713051	chr21:10713051:FP	C	C[contig_7159f:194[	.	.	AR=2;AS=0.5;GS=1
+chr21	10712132	chr21:10712132:FP	C	]contig_2869r:307]C	.	.	AR=2;AS=0.4;GS=1
+chr21	10711679	chr21:10711679:FP	T	]contig_8589f:220]T	.	.	AR=3;AS=0.3;GS=1
+chr21	10717823	chr21:10717823:FP	A	]contig_2262f:415]A	.	.	AR=7;AS=0.411765;GS=1
+chr21	10717568	chr21:10717568:FP	A	A[contig_2262f:80[	.	.	NOANCHOR
+chr21	10718929	chr21:10718929:FP	T	]contig_8026f:320]T	.	.	AR=4;AS=0.444444;GS=1
+chr21	10718652	chr21:10718652:FP	A	A[contig_8026f:189[	.	.	NOANCHOR
+chr21	10721538	chr21:10721538:FP	C	]contig_5903f:467]C	.	.	AR=5;AS=0.3125;GS=1
+chr21	10721737	chr21:10721737:FP	C	C[contig_5903f:188[	.	.	NOANCHOR
+chr21	10722102	chr21:10722102:FP	A	]contig_8478f:285]A	.	.	AR=3;AS=0.375;GS=1
+chr21	10722835	chr21:10722835:FP	C	C[contig_8478f:82[	.	.	NOANCHOR
+chr21	10716776	chr21:10716776:FP	C	C[contig_1117r:132[	.	.	AR=14;AS=0.583333;GS=1
+chr21	10726209	chr21:10726209:FP	C	C[contig_3814r:132[	.	.	AR=2;AS=0.333333;GS=1
+chr21	10726270	chr21:10726270:FP	C	]contig_3814r:327]C	.	.	NOANCHOR
+chr21	10730963	chr21:10730963:FP	C	]contig_5203f:319]C	.	.	NOANCHOR
+chr21	10727267	chr21:10727267:FP	T	]contig_10081f:211]T	.	.	AR=3;AS=0.3;GS=2
+chr21	10731974	chr21:10731974:FP	A	A[contig_6003f:79[	.	.	AR=3;AS=0.5;GS=2
+chr21	10731930	chr21:10731930:FP	T	]contig_6003f:869]T	.	.	NOANCHOR
+chr21	10731918	chr21:10731918:FP	C	]contig_306f:267]C	.	.	AR=2;AS=0.4;GS=1
+chr21	10731962	chr21:10731962:FP	C	C[contig_306f:47[	.	.	NOANCHOR
+chr21	10734731	chr21:10734731:FP	T	]contig_7808f:121]T	.	.	AR=2;AS=0.333333;GS=1
+chr21	10735345	chr21:10735345:FP	T	T[contig_7808f:111[	.	.	AR=4;AS=0.4;GS=1
+chr21	10737301	chr21:10737301:FP	C	]contig_7749r:347]C	.	.	NOANCHOR
+chr21	10737179	chr21:10737179:FP	T	]contig_6635r:300]T	.	.	AR=3;AS=0.3;GS=1
+chr21	10738590	chr21:10738590:FP	C	C[contig_6635r:98[	.	.	NOANCHOR
+chr21	25174811	chr21:25174811:FP	A	A[contig_1557f:69[	.	.	AR=2;AS=0.5;GS=1
+chr21	31784782	chr21:31784782:FP	A	]contig_79f:232]A	.	.	AR=2;AS=0.5;GS=1
+chr21	38059660	chr21:38059660:FP	G	G[contig_624f:43[	.	.	AR=11;AS=0.846154;GS=1
+chr21	38508011	chr21:38508011:FP	A	A[contig_1106f:89[	.	.	AR=4;AS=0.571429;GS=1
+chr21	38507981	chr21:38507981:FP	A	]contig_1106f:389]A	.	.	AR=5;AS=1;GS=1
+chr21	38914020	chr21:38914020:FP	A	A[contig_8634f:29[	.	.	AR=4;AS=1;GS=1
+chr21	38914144	chr21:38914144:FP	A	]contig_8634f:877]A	.	.	AR=2;AS=1;GS=1
+chr21	41672828	chr21:41672828:FP	A	A[contig_4351r:35[	.	.	AR=3;AS=0.6;GS=1
+chr21	41806069	chr21:41806069:FP	C	C[contig_624r:118[	.	.	AR=4;AS=0.333333;GS=1
+chr21	41672810	chr21:41672810:FP	C	]contig_4351r:1078]C	.	.	AR=5;AS=1;GS=1
+chr22	10721125	chr22:10721125:FP	T	]contig_7958r:237]T	.	.	AR=5;AS=0.5;GS=1
+chr22	10721076	chr22:10721076:FP	C	C[contig_7958r:104[	.	.	NOANCHOR
+chr22	10729862	chr22:10729862:FP	C	]contig_6173f:271]C	.	.	AR=6;AS=0.375;GS=1
+chr21	43467859	chr21:43467859:FP	C	C[contig_6092f:138[	.	.	AR=2;AS=0.5;GS=1
+chr22	16359733	chr22:16359733:FP	A	]contig_6951f:188]A	.	.	AR=3;AS=0.333333;GS=1
+chr22	16358876	chr22:16358876:FP	C	C[contig_6951f:158[	.	.	NOANCHOR
+chr22	16360927	chr22:16360927:FP	G	G[contig_3728f:67[	.	.	AR=4;AS=0.4;GS=1
+chr22	20164011	chr22:20164011:FP	A	A[contig_1748f:64[	.	.	AR=4;AS=0.5;GS=1
+chr22	23946708	chr22:23946708:FP	C	C[contig_7457f:35[	.	.	AR=3;AS=0.75;GS=1
+chr22	27401346	chr22:27401346:FP	G	]contig_5916r:248]G	.	.	NOANCHOR
+chr22	35735216	chr22:35735216:FP	C	C[contig_7302r:47[	.	.	AR=5;AS=1;GS=1
+chr22	23970990	chr22:23970990:FP	A	]contig_4557f:632]A	.	.	AR=2;AS=1;GS=1
+chr22	36863614	chr22:36863614:FP	G	]contig_7881f:424]G	.	.	AR=17;AS=1;GS=1
+chr22	39156539	chr22:39156539:FP	G	G[contig_3022r:47[	.	.	AR=3;AS=0.5;GS=1
+chr22	39102140	chr22:39102140:FP	T	]contig_442r:413]T	.	.	AR=5;AS=0.714286;GS=1
+chr22_KI270735v1_random	39812	chr22_KI270735v1_random:39812:FP	C	C[contig_2564r:83[	.	.	AR=3;AS=0.3;GS=2
+chr22_KI270735v1_random	39884	chr22_KI270735v1_random:39884:FP	A	A[contig_5307r:89[	.	.	AR=2;AS=0.4;GS=1
+chr22_KI270735v1_random	39883	chr22_KI270735v1_random:39883:FP	C	C[contig_323r:139[	.	.	AR=3;AS=0.6;GS=1
+chr22_KI270735v1_random	39721	chr22_KI270735v1_random:39721:FP	T	]contig_323r:335]T	.	.	NOANCHOR
+chr22_KI270735v1_random	39857	chr22_KI270735v1_random:39857:FP	C	C[contig_9011f:122[	.	.	AR=4;AS=0.363636;GS=1
+chr22_KI270735v1_random	39799	chr22_KI270735v1_random:39799:FP	A	]contig_9011f:228]A	.	.	NOANCHOR
+chr22_KI270735v1_random	39720	chr22_KI270735v1_random:39720:FP	C	]contig_7110f:276]C	.	.	AR=2;AS=0.333333;GS=6
+chr22_KI270735v1_random	39764	chr22_KI270735v1_random:39764:FP	A	]contig_3894r:126]A	.	.	AR=6;AS=0.352941;GS=1
+chr22_KI270735v1_random	39750	chr22_KI270735v1_random:39750:FP	T	]contig_4959f:227]T	.	.	AR=6;AS=0.315789;GS=1
+chr22_KI270735v1_random	40964	chr22_KI270735v1_random:40964:FP	C	]contig_6360f:256]C	.	.	AR=8;AS=0.32;GS=9
+chr22_KI270735v1_random	40988	chr22_KI270735v1_random:40988:FP	A	A[contig_6360f:88[	.	.	NOANCHOR
+chr22_KI270735v1_random	41923	chr22_KI270735v1_random:41923:FP	A	]contig_1690f:296]A	.	.	AR=3;AS=0.333333;GS=2
+chr22_KI270735v1_random	40990	chr22_KI270735v1_random:40990:FP	T	T[contig_2331f:177[	.	.	AR=3;AS=0.333333;GS=6
+chr22_KI270735v1_random	42356	chr22_KI270735v1_random:42356:FP	T	]contig_1678f:540]T	.	.	AR=3;AS=0.3;GS=1
+chr22_KI270735v1_random	42404	chr22_KI270735v1_random:42404:FP	A	A[contig_1678f:139[	.	.	NOANCHOR
+chr22_KI270735v1_random	42468	chr22_KI270735v1_random:42468:FP	C	C[contig_580r:151[	.	.	AR=7;AS=0.318182;GS=1
+chr22_KI270736v1_random	1192	chr22_KI270736v1_random:1192:FP	G	G[contig_9619f:54[	.	.	AR=8;AS=0.421053;GS=1
+chr22_KI270736v1_random	221	chr22_KI270736v1_random:221:FP	G	]contig_890f:283]G	.	.	AR=4;AS=0.666667;GS=2
+chr22_KI270736v1_random	2330	chr22_KI270736v1_random:2330:FP	A	A[contig_5232r:121[	.	.	AR=8;AS=0.333333;GS=1
+chr22_KI270736v1_random	62755	chr22_KI270736v1_random:62755:FP	A	A[contig_2268r:66[	.	.	AR=2;AS=0.4;GS=1
+chr22_KI270736v1_random	58365	chr22_KI270736v1_random:58365:FP	A	]contig_5998r:365]A	.	.	AR=2;AS=0.666667;GS=2
+chr22_KI270736v1_random	58583	chr22_KI270736v1_random:58583:FP	G	]contig_10140r:369]G	.	.	AR=9;AS=0.391304;GS=1
+chr22_KI270736v1_random	58531	chr22_KI270736v1_random:58531:FP	A	A[contig_10140r:48[	.	.	NOANCHOR
+chr22_KI270736v1_random	70212	chr22_KI270736v1_random:70212:FP	G	]contig_7413f:183]G	.	.	NOANCHOR
+chr22_KI270736v1_random	72361	chr22_KI270736v1_random:72361:FP	G	]contig_2202f:158]G	.	.	AR=5;AS=0.384615;GS=1
+chr22_KI270736v1_random	83672	chr22_KI270736v1_random:83672:FP	A	A[contig_5431r:69[	.	.	AR=7;AS=0.5;GS=1
+chr22_KI270736v1_random	83222	chr22_KI270736v1_random:83222:FP	G	]contig_5431r:607]G	.	.	NOANCHOR
+chr22_KI270736v1_random	92483	chr22_KI270736v1_random:92483:FP	A	A[contig_7708f:44[	.	.	AR=3;AS=0.5;GS=1
+chr22_KI270736v1_random	92777	chr22_KI270736v1_random:92777:FP	G	]contig_7708f:681]G	.	.	NOANCHOR
+chr22_KI270736v1_random	99206	chr22_KI270736v1_random:99206:FP	A	A[contig_5977f:60[	.	.	AR=3;AS=0.428571;GS=1
+chr22_KI270736v1_random	98861	chr22_KI270736v1_random:98861:FP	A	]contig_5977f:314]A	.	.	NOANCHOR
+chr22_KI270736v1_random	102921	chr22_KI270736v1_random:102921:FP	T	T[contig_5676r:77[	.	.	AR=4;AS=0.333333;GS=1
+chr22_KI270736v1_random	103151	chr22_KI270736v1_random:103151:FP	T	]contig_5676r:231]T	.	.	NOANCHOR
+chr22_KI270736v1_random	99143	chr22_KI270736v1_random:99143:FP	T	]contig_8283r:257]T	.	.	AR=2;AS=0.5;GS=1
+chr22_KI270736v1_random	99223	chr22_KI270736v1_random:99223:FP	T	T[contig_8283r:63[	.	.	NOANCHOR
+chr22_KI270736v1_random	103211	chr22_KI270736v1_random:103211:FP	T	T[contig_8257r:41[	.	.	AR=3;AS=0.3;GS=1
+chr22_KI270736v1_random	103148	chr22_KI270736v1_random:103148:FP	G	]contig_9907f:253]G	.	.	AR=2;AS=0.666667;GS=1
+chr22_KI270736v1_random	103159	chr22_KI270736v1_random:103159:FP	A	A[contig_9907f:55[	.	.	NOANCHOR
+chr22_KI270736v1_random	145848	chr22_KI270736v1_random:145848:FP	G	]contig_9146r:285]G	.	.	AR=2;AS=0.5;GS=1
+chr22_KI270736v1_random	145196	chr22_KI270736v1_random:145196:FP	A	A[contig_9146r:123[	.	.	NOANCHOR
+chr22_KI270736v1_random	147858	chr22_KI270736v1_random:147858:FP	A	]contig_7507r:342]A	.	.	AR=3;AS=0.333333;GS=1
+chr22_KI270736v1_random	150424	chr22_KI270736v1_random:150424:FP	T	]contig_249f:134]T	.	.	AR=5;AS=0.625;GS=1
+chr22_KI270736v1_random	153847	chr22_KI270736v1_random:153847:FP	G	]contig_1856r:277]G	.	.	AR=2;AS=0.5;GS=1
+chr22_KI270736v1_random	155510	chr22_KI270736v1_random:155510:FP	A	]contig_726r:900]A	.	.	AR=40;AS=0.816327;GS=1
+chr22_KI270736v1_random	156233	chr22_KI270736v1_random:156233:FP	G	G[contig_726r:85[	.	.	NOANCHOR
+chr22_KI270736v1_random	156512	chr22_KI270736v1_random:156512:FP	G	]contig_7544f:270]G	.	.	AR=3;AS=0.3;GS=1
+chr22_KI270736v1_random	157477	chr22_KI270736v1_random:157477:FP	G	G[contig_7544f:81[	.	.	NOANCHOR
+chr22_KI270736v1_random	157557	chr22_KI270736v1_random:157557:FP	G	G[contig_10472r:63[	.	.	AR=2;AS=0.333333;GS=1
+chr22_KI270736v1_random	157655	chr22_KI270736v1_random:157655:FP	T	T[contig_4157r:177[	.	.	AR=4;AS=0.4;GS=1
+chr22_KI270736v1_random	157550	chr22_KI270736v1_random:157550:FP	A	A[contig_8539f:51[	.	.	AR=2;AS=0.333333;GS=1
+chr22_KI270736v1_random	157608	chr22_KI270736v1_random:157608:FP	A	]contig_8539f:288]A	.	.	NOANCHOR
+chr22_KI270736v1_random	157226	chr22_KI270736v1_random:157226:FP	T	]contig_10472r:311]T	.	.	AR=4;AS=0.666667;GS=1
+chr22_KI270736v1_random	157501	chr22_KI270736v1_random:157501:FP	T	]contig_4157r:22]T	.	.	AR=2;AS=0.666667;GS=1
+chr22_KI270736v1_random	158661	chr22_KI270736v1_random:158661:FP	A	A[contig_5749f:277[	.	.	AR=5;AS=0.5;GS=2
+chr22_KI270736v1_random	162648	chr22_KI270736v1_random:162648:FP	G	G[contig_8950r:227[	.	.	AR=2;AS=0.5;GS=1
+chr22_KI270736v1_random	162345	chr22_KI270736v1_random:162345:FP	T	]contig_10081r:157]T	.	.	AR=7;AS=0.388889;GS=2
+chr22_KI270736v1_random	167908	chr22_KI270736v1_random:167908:FP	G	G[contig_9135f:86[	.	.	AR=12;AS=0.333333;GS=1
+chr22_KI270736v1_random	167680	chr22_KI270736v1_random:167680:FP	T	]contig_9135f:418]T	.	.	NOANCHOR
+chr22_KI270736v1_random	173007	chr22_KI270736v1_random:173007:FP	A	]contig_3356f:370]A	.	.	AR=10;AS=0.434783;GS=1
+chr22_KI270736v1_random	180599	chr22_KI270736v1_random:180599:FP	A	A[contig_3466f:86[	.	.	AR=8;AS=0.333333;GS=1
+chr22_KI270736v1_random	180542	chr22_KI270736v1_random:180542:FP	T	]contig_3466f:351]T	.	.	NOANCHOR
+chr22_KI270736v1_random	180581	chr22_KI270736v1_random:180581:FP	G	G[contig_3043f:138[	.	.	AR=2;AS=0.333333;GS=1
+chr22_KI270736v1_random	179908	chr22_KI270736v1_random:179908:FP	G	]contig_7110r:451]G	.	.	AR=3;AS=0.75;GS=1
+chr22_KI270736v1_random	181054	chr22_KI270736v1_random:181054:FP	G	]contig_5236r:116]G	.	.	AR=12;AS=0.428571;GS=3
+chr22_KI270736v1_random	181066	chr22_KI270736v1_random:181066:FP	A	A[contig_5236r:134[	.	.	AR=19;AS=0.431818;GS=1
+chr3	16309521	chr3:16309521:FP	G	G[contig_3664f:39[	.	.	AR=4;AS=1;GS=1
+chr3	46840286	chr3:46840286:FP	A	]contig_897r:264]A	.	.	AR=4;AS=1;GS=1
+chr3	72211325	chr3:72211325:FP	A	A[contig_1803r:30[	.	.	AR=10;AS=1;GS=1
+chr3	72211301	chr3:72211301:FP	A	]contig_1803r:456]A	.	.	AR=3;AS=0.75;GS=1
+chr3	72337530	chr3:72337530:FP	G	G[contig_9287r:41[	.	.	AR=2;AS=0.333333;GS=1
+chr3	72337502	chr3:72337502:FP	T	]contig_9287r:1077]T	.	.	AR=8;AS=0.888889;GS=1
+chr3	79527830	chr3:79527830:FP	A	]contig_8618r:630]A	.	.	AR=16;AS=1;GS=1
+chr3	126539801	chr3:126539801:FP	C	]contig_6373f:298]C	.	.	AR=3;AS=1;GS=1
+chr3	168000813	chr3:168000813:FP	T	]contig_3497r:270]T	.	.	AR=3;AS=0.75;GS=1
+chr3	193498222	chr3:193498222:FP	T	T[contig_2963r:53[	.	.	AR=2;AS=0.5;GS=1
+chr3	196295461	chr3:196295461:FP	T	T[contig_6981r:48[	.	.	AR=4;AS=0.5;GS=1
+chr3	196371761	chr3:196371761:FP	G	G[contig_1744f:35[	.	.	AR=3;AS=0.75;GS=1
+chr4	11378740	chr4:11378740:FP	T	]contig_4023f:419]T	.	.	AR=2;AS=0.333333;GS=1
+chr4	6631700	chr4:6631700:FP	G	G[contig_7667f:64[	.	.	AR=7;AS=1;GS=1
+chr4	37437996	chr4:37437996:FP	T	]contig_3278r:2812]T	.	.	AR=5;AS=0.625;GS=1
+chr4	38754389	chr4:38754389:FP	A	A[contig_7224r:72[	.	.	AR=9;AS=0.9;GS=1
+chr4	49092386	chr4:49092386:FP	C	]contig_7361r:254]C	.	.	NOANCHOR
+chr4	49095263	chr4:49095263:FP	C	C[contig_8759r:64[	.	.	AR=2;AS=0.666667;GS=1
+chr4	49114745	chr4:49114745:FP	A	]contig_530f:239]A	.	.	AR=2;AS=0.666667;GS=1
+chr4	49114459	chr4:49114459:FP	C	C[contig_530f:59[	.	.	NOANCHOR
+chr4	49142140	chr4:49142140:FP	A	]contig_7166f:153]A	.	.	AR=3;AS=0.3;GS=1
+chr4	49142209	chr4:49142209:FP	C	C[contig_7166f:78[	.	.	NOANCHOR
+chr4	49099735	chr4:49099735:FP	C	C[contig_765r:78[	.	.	AR=6;AS=0.461538;GS=1
+chr4	49149432	chr4:49149432:FP	T	]contig_9610f:476]T	.	.	AR=4;AS=0.307692;GS=1
+chr4	49149375	chr4:49149375:FP	C	]contig_5963f:402]C	.	.	AR=3;AS=0.333333;GS=1
+chr4	49149528	chr4:49149528:FP	T	T[contig_7938f:76[	.	.	AR=2;AS=0.4;GS=1
+chr4	49153575	chr4:49153575:FP	A	]contig_6496r:416]A	.	.	AR=3;AS=0.3;GS=1
+chr4	49153567	chr4:49153567:FP	T	T[contig_6496r:81[	.	.	NOANCHOR
+chr4	49153439	chr4:49153439:FP	C	]contig_8711f:101]C	.	.	AR=2;AS=0.5;GS=1
+chr4	49635563	chr4:49635563:FP	T	]contig_765r:395]T	.	.	AR=6;AS=0.3;GS=1
+chr4	49154550	chr4:49154550:FP	C	C[contig_765f:129[	.	.	AR=6;AS=0.3;GS=1
+chr4	49638170	chr4:49638170:FP	G	]contig_8301r:324]G	.	.	AR=2;AS=0.5;GS=1
+chr4	49639082	chr4:49639082:FP	A	A[contig_8301r:113[	.	.	NOANCHOR
+chr4	49642080	chr4:49642080:FP	G	G[contig_8526r:73[	.	.	AR=5;AS=0.384615;GS=1
+chr4	49642273	chr4:49642273:FP	A	]contig_8526r:115]A	.	.	NOANCHOR
+chr4	55746054	chr4:55746054:FP	G	]contig_8512r:2754]G	.	.	AR=24;AS=1;GS=1
+chr4	87869421	chr4:87869421:FP	T	T[contig_2412f:34[	.	.	AR=2;AS=1;GS=1
+chr4	106564230	chr4:106564230:FP	T	T[contig_1921f:31[	.	.	AR=2;AS=0.666667;GS=1
+chr4	102864369	chr4:102864369:FP	A	]contig_8831r:368]A	.	.	AR=5;AS=1;GS=1
+chr4	111279459	chr4:111279459:FP	A	A[contig_3528f:82[	.	.	AR=3;AS=0.375;GS=1
+chr4	157982654	chr4:157982654:FP	T	]contig_3214f:516]T	.	.	AR=8;AS=1;GS=1
+chr4	175199400	chr4:175199400:FP	G	G[contig_4376f:31[	.	.	AR=11;AS=1;GS=1
+chr4	177917308	chr4:177917308:FP	T	T[contig_1989f:39[	.	.	AR=4;AS=0.571429;GS=1
+chr4	185827095	chr4:185827095:FP	A	A[contig_5217f:245[	.	.	AR=2;AS=0.4;GS=1
+chr5	6448622	chr5:6448622:FP	G	G[contig_2690f:27[	.	.	AR=10;AS=1;GS=1
+chr5	20471980	chr5:20471980:FP	A	A[contig_522r:33[	.	.	AR=5;AS=1;GS=1
+chr5	29069521	chr5:29069521:FP	A	]contig_4117r:678]A	.	.	AR=8;AS=1;GS=1
+chr5	37786157	chr5:37786157:FP	A	A[contig_4681f:39[	.	.	AR=3;AS=0.5;GS=1
+chr5	43707118	chr5:43707118:FP	A	A[contig_5735f:31[	.	.	AR=2;AS=0.4;GS=1
+chr5	56198809	chr5:56198809:FP	G	]contig_2345r:1496]G	.	.	AR=6;AS=0.666667;GS=1
+chr5	57286256	chr5:57286256:FP	C	]contig_6854f:229]C	.	.	AR=2;AS=0.666667;GS=1
+chr5	65839688	chr5:65839688:FP	G	]contig_4177f:285]G	.	.	AR=2;AS=0.4;GS=1
+chr5	80251899	chr5:80251899:FP	T	T[contig_5961f:44[	.	.	AR=6;AS=1;GS=1
+chr5	99693078	chr5:99693078:FP	A	A[contig_1457r:45[	.	.	AR=4;AS=0.666667;GS=1
+chr5	115463305	chr5:115463305:FP	A	A[contig_9741r:32[	.	.	AR=11;AS=1;GS=1
+chr5	134441119	chr5:134441119:FP	T	T[contig_3821f:33[	.	.	AR=9;AS=1;GS=1
+chr5	162530741	chr5:162530741:FP	C	C[contig_4023f:36[	.	.	AR=15;AS=1;GS=1
+chr5	170133481	chr5:170133481:FP	A	]contig_1362f:287]A	.	.	AR=7;AS=1;GS=1
+chr5	170133480	chr5:170133480:FP	T	T[contig_1362f:27[	.	.	AR=5;AS=1;GS=1
+chr5	174654920	chr5:174654920:FP	C	]contig_135r:1276]C	.	.	AR=2;AS=1;GS=1
+chr6	3222163	chr6:3222163:FP	A	A[contig_6457f:127[	.	.	AR=4;AS=0.444444;GS=1
+chr6	3222081	chr6:3222081:FP	C	]contig_6457f:263]C	.	.	AR=9;AS=0.9;GS=1
+chr6	14519575	chr6:14519575:FP	C	C[contig_7403f:30[	.	.	AR=4;AS=0.666667;GS=1
+chr6	14523508	chr6:14523508:FP	C	C[contig_4659f:32[	.	.	AR=2;AS=1;GS=1
+chr6	3776790	chr6:3776790:FP	T	]contig_3640f:701]T	.	.	AR=7;AS=1;GS=1
+chr6	17338734	chr6:17338734:FP	A	A[contig_5621f:33[	.	.	AR=3;AS=0.5;GS=1
+chr6	26757955	chr6:26757955:FP	A	A[contig_4023r:32[	.	.	AR=2;AS=0.333333;GS=1
+chr6	32534918	chr6:32534918:FP	G	G[contig_2556f:284[	.	.	AR=3;AS=0.75;GS=1
+chr6	31042319	chr6:31042319:FP	C	]contig_4417f:512]C	.	.	AR=7;AS=1;GS=1
+chr6	34072201	chr6:34072201:FP	A	A[contig_3137r:95[	.	.	AR=5;AS=1;GS=1
+chr6	39845329	chr6:39845329:FP	A	A[contig_2431f:39[	.	.	AR=8;AS=1;GS=1
+chr6	41219284	chr6:41219284:FP	T	T[contig_4472f:49[	.	.	AR=3;AS=1;GS=1
+chr6	41219294	chr6:41219294:FP	T	]contig_4472f:310]T	.	.	AR=7;AS=1;GS=1
+chr6	65851524	chr6:65851524:FP	A	]contig_9774f:319]A	.	.	AR=4;AS=0.571429;GS=1
+chr6	67609218	chr6:67609218:FP	A	A[contig_8356r:38[	.	.	AR=4;AS=1;GS=1
+chr6	77012791	chr6:77012791:FP	A	A[contig_441f:48[	.	.	AR=4;AS=1;GS=1
+chr6	79375186	chr6:79375186:FP	A	]contig_7873f:2028]A	.	.	AR=4;AS=1;GS=1
+chr6	79901555	chr6:79901555:FP	T	T[contig_3376r:31[	.	.	AR=14;AS=1;GS=1
+chr6	79901556	chr6:79901556:FP	A	]contig_3376r:2923]A	.	.	AR=7;AS=1;GS=1
+chr6	89036657	chr6:89036657:FP	G	]contig_264f:1450]G	.	.	AR=6;AS=0.315789;GS=1
+chr6	87422775	chr6:87422775:FP	A	A[contig_66f:60[	.	.	AR=4;AS=0.571429;GS=1
+chr6	89266827	chr6:89266827:FP	T	]contig_6692r:1457]T	.	.	AR=2;AS=1;GS=1
+chr6	116047605	chr6:116047605:FP	G	]contig_3176r:421]G	.	.	AR=10;AS=1;GS=1
+chr6	113772558	chr6:113772558:FP	T	T[contig_693f:36[	.	.	AR=2;AS=0.4;GS=1
+chr6	125467561	chr6:125467561:FP	G	]contig_8371f:2492]G	.	.	AR=3;AS=0.333333;GS=1
+chr6	128005705	chr6:128005705:FP	A	A[contig_7489r:35[	.	.	AR=5;AS=1;GS=1
+chr6	128005706	chr6:128005706:FP	T	]contig_7489r:4170]T	.	.	AR=7;AS=1;GS=1
+chr6	137117318	chr6:137117318:FP	T	T[contig_5850f:66[	.	.	AR=7;AS=1;GS=1
+chr6	150269029	chr6:150269029:FP	A	]contig_3706f:672]A	.	.	AR=2;AS=1;GS=1
+chr6	150269113	chr6:150269113:FP	T	T[contig_3706f:40[	.	.	NOANCHOR
+chr6	157238333	chr6:157238333:FP	G	G[contig_368f:48[	.	.	AR=4;AS=1;GS=1
+chr6	157238376	chr6:157238376:FP	G	]contig_368f:257]G	.	.	AR=4;AS=1;GS=1
+chr6	157270181	chr6:157270181:FP	C	]contig_5791f:909]C	.	.	AR=2;AS=0.666667;GS=1
+chr6	159604832	chr6:159604832:FP	T	]contig_9406f:265]T	.	.	AR=2;AS=1;GS=1
+chr6	160218985	chr6:160218985:FP	C	C[contig_5120f:79[	.	.	AR=5;AS=1;GS=1
+chr6	165678292	chr6:165678292:FP	T	T[contig_7301r:89[	.	.	AR=5;AS=0.833333;GS=1
+chr6	165678188	chr6:165678188:FP	T	]contig_7301r:471]T	.	.	AR=6;AS=0.857143;GS=1
+chr6	166285510	chr6:166285510:FP	G	]contig_654r:1215]G	.	.	AR=5;AS=1;GS=1
+chr6	169372468	chr6:169372468:FP	A	A[contig_10190f:139[	.	.	AR=8;AS=0.8;GS=1
+chr6	169372734	chr6:169372734:FP	A	]contig_10190f:285]A	.	.	NOANCHOR
+chr6	170113725	chr6:170113725:FP	A	A[contig_1235f:133[	.	.	AR=5;AS=0.555556;GS=1
+chr6	170114072	chr6:170114072:FP	T	]contig_1235r:327]T	.	.	AR=4;AS=0.444444;GS=1
+chr6	170183757	chr6:170183757:FP	T	]contig_1537r:474]T	.	.	AR=7;AS=0.318182;GS=1
+chr6	170183808	chr6:170183808:FP	G	G[contig_1537r:73[	.	.	NOANCHOR
+chr6	170114175	chr6:170114175:FP	A	A[contig_1235r:235[	.	.	AR=3;AS=0.428571;GS=1
+chr7	567525	chr7:567525:FP	A	A[contig_5813f:118[	.	.	AR=3;AS=1;GS=1
+chr7	3120272	chr7:3120272:FP	T	T[contig_6688r:31[	.	.	AR=6;AS=1;GS=1
+chr7	9051326	chr7:9051326:FP	T	T[contig_3754r:26[	.	.	AR=14;AS=1;GS=1
+chr7	16708103	chr7:16708103:FP	G	G[contig_1597r:34[	.	.	AR=9;AS=1;GS=1
+chr7	33105320	chr7:33105320:FP	G	G[contig_8425r:71[	.	.	AR=3;AS=0.5;GS=1
+chr7	62343045	chr7:62343045:FP	A	]contig_6131r:347]A	.	.	AR=3;AS=0.3;GS=1
+chr7	62343463	chr7:62343463:FP	G	G[contig_6131r:58[	.	.	NOANCHOR
+chr7	62402921	chr7:62402921:FP	A	A[contig_4630f:78[	.	.	AR=2;AS=0.5;GS=1
+chr7	64829560	chr7:64829560:FP	A	]contig_5209r:265]A	.	.	AR=3;AS=1;GS=1
+chr7	65490077	chr7:65490077:FP	C	C[contig_633r:109[	.	.	AR=7;AS=0.466667;GS=1
+chr7	65489808	chr7:65489808:FP	T	]contig_633r:706]T	.	.	NOANCHOR
+chr7	87516134	chr7:87516134:FP	T	]contig_6839f:234]T	.	.	AR=2;AS=0.666667;GS=1
+chr7	98811610	chr7:98811610:FP	T	T[contig_79r:87[	.	.	AR=2;AS=0.5;GS=1
+chr7	102260388	chr7:102260388:FP	C	C[contig_1995r:52[	.	.	AR=6;AS=1;GS=1
+chr7	98811515	chr7:98811515:FP	T	]contig_79r:288]T	.	.	AR=3;AS=0.75;GS=1
+chr7	102932561	chr7:102932561:FP	T	T[contig_4159r:36[	.	.	AR=3;AS=1;GS=1
+chr7	121665561	chr7:121665561:FP	T	]contig_855f:556]T	.	.	AR=4;AS=0.666667;GS=1
+chr7	110329709	chr7:110329709:FP	A	A[contig_623f:43[	.	.	AR=3;AS=0.5;GS=1
+chr7	124426023	chr7:124426023:FP	C	]contig_6579f:544]C	.	.	AR=11;AS=1;GS=1
+chr7	128798211	chr7:128798211:FP	C	C[contig_10427f:46[	.	.	AR=2;AS=0.4;GS=1
+chr7	135039451	chr7:135039451:FP	T	]contig_4608f:574]T	.	.	AR=2;AS=0.333333;GS=1
+chr7	142304971	chr7:142304971:FP	A	]contig_437f:410]A	.	.	AR=3;AS=0.75;GS=1
+chr7	142343273	chr7:142343273:FP	A	A[contig_4175f:54[	.	.	AR=6;AS=1;GS=1
+chr7	148403080	chr7:148403080:FP	C	]contig_6693f:446]C	.	.	AR=8;AS=1;GS=1
+chr7	150910359	chr7:150910359:FP	G	G[contig_972r:42[	.	.	AR=4;AS=0.307692;GS=1
+chr7	150910025	chr7:150910025:FP	G	G[contig_4901r:267[	.	.	AR=4;AS=0.444444;GS=1
+chr7	155859622	chr7:155859622:FP	T	T[contig_1235r:84[	.	.	AR=3;AS=0.428571;GS=1
+chr7	150910356	chr7:150910356:FP	T	]contig_972r:1035]T	.	.	AR=4;AS=0.571429;GS=2
+chr7	150909967	chr7:150909967:FP	G	]contig_6403f:242]G	.	.	AR=2;AS=1;GS=1
+chr7	156101321	chr7:156101321:FP	T	T[contig_6553f:36[	.	.	AR=4;AS=1;GS=1
+chr7	156101301	chr7:156101301:FP	T	]contig_6553f:566]T	.	.	AR=4;AS=1;GS=1
+chr7	158049095	chr7:158049095:FP	A	]contig_2648f:530]A	.	.	AR=19;AS=0.904762;GS=1
+chr7	158595252	chr7:158595252:FP	T	T[contig_3613f:72[	.	.	AR=3;AS=1;GS=1
+chr8	1337156	chr8:1337156:FP	G	]contig_8110f:287]G	.	.	AR=6;AS=0.75;GS=1
+chr8	17796355	chr8:17796355:FP	A	A[contig_3951f:76[	.	.	AR=4;AS=1;GS=1
+chr8	20621874	chr8:20621874:FP	A	A[contig_5488f:118[	.	.	AR=6;AS=0.75;GS=1
+chr8	29820464	chr8:29820464:FP	A	A[contig_7287r:58[	.	.	AR=5;AS=1;GS=1
+chr8	29820510	chr8:29820510:FP	C	]contig_7287r:421]C	.	.	NOANCHOR
+chr8	38060360	chr8:38060360:FP	C	C[contig_9393f:38[	.	.	AR=5;AS=1;GS=1
+chr8	40820190	chr8:40820190:FP	G	]contig_1935r:463]G	.	.	NOANCHOR
+chr8	47764035	chr8:47764035:FP	G	]contig_8024r:401]G	.	.	AR=13;AS=1;GS=1
+chr8	52276060	chr8:52276060:FP	C	]contig_7470f:271]C	.	.	AR=6;AS=1;GS=1
+chr8	53594022	chr8:53594022:FP	C	C[contig_9098f:44[	.	.	AR=6;AS=1;GS=1
+chr8	53594012	chr8:53594012:FP	A	]contig_9098f:988]A	.	.	AR=6;AS=1;GS=1
+chr8	101652577	chr8:101652577:FP	G	G[contig_1766r:229[	.	.	AR=12;AS=0.75;GS=1
+chr8	130897691	chr8:130897691:FP	A	]contig_7294f:790]A	.	.	AR=7;AS=1;GS=1
+chr8	136026912	chr8:136026912:FP	C	C[contig_1246f:47[	.	.	AR=6;AS=1;GS=1
+chr8	141541015	chr8:141541015:FP	C	C[contig_4351r:56[	.	.	AR=2;AS=0.4;GS=1
+chr8	142256631	chr8:142256631:FP	A	A[contig_3321f:110[	.	.	AR=3;AS=0.333333;GS=1
+chr8	142255524	chr8:142255524:FP	C	]contig_5376f:187]C	.	.	AR=2;AS=0.333333;GS=1
+chr8	142432223	chr8:142432223:FP	C	C[contig_3714r:32[	.	.	AR=2;AS=1;GS=1
+chr9	809010	chr9:809010:FP	G	]contig_4901r:329]G	.	.	AR=6;AS=0.461538;GS=1
+chr9	808972	chr9:808972:FP	G	]contig_4133f:135]G	.	.	AR=2;AS=0.4;GS=1
+chr8	144342917	chr8:144342917:FP	A	A[contig_4437r:27[	.	.	AR=2;AS=0.5;GS=1
+chr9	19036579	chr9:19036579:FP	T	T[contig_6692r:45[	.	.	AR=3;AS=0.375;GS=1
+chr9	29877648	chr9:29877648:FP	A	]contig_9911r:364]A	.	.	AR=5;AS=1;GS=1
+chr9	36764293	chr9:36764293:FP	G	]contig_673r:283]G	.	.	AR=7;AS=0.875;GS=1
+chr9	36764404	chr9:36764404:FP	G	G[contig_673r:75[	.	.	NOANCHOR
+chr9	36764817	chr9:36764817:FP	G	G[contig_6849r:87[	.	.	AR=9;AS=0.818182;GS=1
+chr9	36764774	chr9:36764774:FP	G	]contig_6849r:336]G	.	.	NOANCHOR
+chr9	77452610	chr9:77452610:FP	T	]contig_9074r:484]T	.	.	AR=3;AS=0.333333;GS=1
+chr9	81431675	chr9:81431675:FP	G	G[contig_9019f:30[	.	.	AR=3;AS=1;GS=1
+chr9	90289979	chr9:90289979:FP	C	C[contig_601r:81[	.	.	AR=3;AS=0.428571;GS=1
+chr9	90315458	chr9:90315458:FP	T	]contig_4896f:264]T	.	.	AR=3;AS=0.5;GS=1
+chr9	93208697	chr9:93208697:FP	T	T[contig_5849f:67[	.	.	AR=5;AS=1;GS=1
+chr9	93208750	chr9:93208750:FP	T	]contig_5849f:413]T	.	.	AR=7;AS=1;GS=1
+chr9	93618891	chr9:93618891:FP	G	]contig_7513f:601]G	.	.	AR=7;AS=1;GS=1
+chr9	116936283	chr9:116936283:FP	A	A[contig_116r:73[	.	.	AR=5;AS=1;GS=1
+chr9	116936086	chr9:116936086:FP	A	]contig_116r:245]A	.	.	NOANCHOR
+chr9	121895905	chr9:121895905:FP	T	]contig_8011r:708]T	.	.	AR=5;AS=0.714286;GS=2
+chr9	128379517	chr9:128379517:FP	T	]contig_8388f:347]T	.	.	AR=3;AS=0.375;GS=1
+chr9	131964346	chr9:131964346:FP	G	G[contig_1748r:73[	.	.	AR=5;AS=0.714286;GS=1
+chrUn_GL000216v2	11241	chrUn_GL000216v2:11241:FP	T	T[contig_9563f:74[	.	.	AR=3;AS=0.428571;GS=1
+chrUn_GL000216v2	63949	chrUn_GL000216v2:63949:FP	T	T[contig_4807r:72[	.	.	AR=6;AS=0.857143;GS=1
+chrUn_GL000216v2	41013	chrUn_GL000216v2:41013:FP	A	]contig_2144r:269]A	.	.	AR=3;AS=0.375;GS=1
+chrUn_GL000216v2	80067	chrUn_GL000216v2:80067:FP	T	T[contig_3894r:84[	.	.	AR=4;AS=0.363636;GS=1
+chrUn_KI270435v1	92490	chrUn_KI270435v1:92490:FP	G	G[contig_11r:56[	.	.	AR=2;AS=0.4;GS=1
+chrUn_KI270435v1	92130	chrUn_KI270435v1:92130:FP	G	G[contig_5831r:66[	.	.	AR=2;AS=0.333333;GS=1
+chrUn_KI270435v1	92035	chrUn_KI270435v1:92035:FP	G	]contig_5831r:185]G	.	.	NOANCHOR
+chrUn_KI270435v1	91877	chrUn_KI270435v1:91877:FP	A	]contig_6114f:198]A	.	.	AR=3;AS=0.428571;GS=1
+chrUn_KI270435v1	92510	chrUn_KI270435v1:92510:FP	G	G[contig_6114f:62[	.	.	NOANCHOR
+chrUn_KI270438v1	46727	chrUn_KI270438v1:46727:FP	G	G[contig_8517r:70[	.	.	AR=20;AS=0.3125;GS=1
+chrUn_KI270438v1	46987	chrUn_KI270438v1:46987:FP	G	]contig_8517r:509]G	.	.	NOANCHOR
+chrUn_KI270442v1	111	chrUn_KI270442v1:111:FP	A	]contig_5877r:584]A	.	.	AR=4;AS=0.307692;GS=1
+chrUn_KI270442v1	657	chrUn_KI270442v1:657:FP	A	A[contig_5877r:81[	.	.	NOANCHOR
+chrUn_KI270442v1	235	chrUn_KI270442v1:235:FP	G	]contig_7057r:499]G	.	.	AR=6;AS=0.4;GS=1
+chrUn_KI270442v1	666	chrUn_KI270442v1:666:FP	A	A[contig_7057r:88[	.	.	NOANCHOR
+chrUn_KI270438v1	60907	chrUn_KI270438v1:60907:FP	G	G[contig_6325f:145[	.	.	AR=6;AS=0.75;GS=1
+chrUn_KI270438v1	61087	chrUn_KI270438v1:61087:FP	A	]contig_6325f:271]A	.	.	NOANCHOR
+chrUn_KI270442v1	3	chrUn_KI270442v1:3:FP	T	]contig_7381f:172]T	.	.	AR=2;AS=0.333333;GS=1
+chrUn_KI270442v1	18087	chrUn_KI270442v1:18087:FP	G	]contig_3182r:479]G	.	.	AR=7;AS=0.368421;GS=2
+chrUn_KI270442v1	20382	chrUn_KI270442v1:20382:FP	A	]contig_5966f:349]A	.	.	AR=4;AS=0.571429;GS=1
+chrUn_KI270442v1	27145	chrUn_KI270442v1:27145:FP	G	]contig_10530r:212]G	.	.	AR=3;AS=0.428571;GS=1
+chrUn_KI270442v1	20457	chrUn_KI270442v1:20457:FP	A	]contig_1891r:546]A	.	.	NOANCHOR
+chrUn_KI270442v1	29125	chrUn_KI270442v1:29125:FP	A	]contig_7808r:191]A	.	.	AR=3;AS=0.3;GS=1
+chrUn_KI270442v1	43094	chrUn_KI270442v1:43094:FP	G	]contig_10288f:248]G	.	.	AR=2;AS=0.333333;GS=1
+chrUn_KI270442v1	43977	chrUn_KI270442v1:43977:FP	G	]contig_2638f:244]G	.	.	AR=7;AS=0.777778;GS=1
+chrUn_KI270442v1	44589	chrUn_KI270442v1:44589:FP	A	A[contig_2638f:122[	.	.	NOANCHOR
+chrUn_KI270442v1	32874	chrUn_KI270442v1:32874:FP	A	]contig_4086f:450]A	.	.	NOANCHOR
+chrUn_KI270442v1	44927	chrUn_KI270442v1:44927:FP	T	]contig_4753r:257]T	.	.	AR=7;AS=0.368421;GS=4
+chrUn_KI270442v1	46560	chrUn_KI270442v1:46560:FP	A	]contig_3047f:245]A	.	.	AR=5;AS=0.357143;GS=1
+chrUn_KI270442v1	49788	chrUn_KI270442v1:49788:FP	G	]contig_3184r:400]G	.	.	AR=3;AS=0.428571;GS=1
+chrUn_KI270442v1	45111	chrUn_KI270442v1:45111:FP	T	T[contig_8361r:51[	.	.	AR=5;AS=0.384615;GS=1
+chrUn_KI270442v1	59047	chrUn_KI270442v1:59047:FP	G	]contig_7917r:346]G	.	.	AR=2;AS=1;GS=2
+chrUn_KI270442v1	59196	chrUn_KI270442v1:59196:FP	G	]contig_9471r:393]G	.	.	AR=3;AS=0.3;GS=1
+chrUn_KI270442v1	59649	chrUn_KI270442v1:59649:FP	T	T[contig_9471r:93[	.	.	NOANCHOR
+chrUn_KI270442v1	62129	chrUn_KI270442v1:62129:FP	T	T[contig_5311f:121[	.	.	AR=11;AS=0.55;GS=1
+chrUn_KI270442v1	62669	chrUn_KI270442v1:62669:FP	T	]contig_5310r:366]T	.	.	NOANCHOR
+chrUn_KI270442v1	70919	chrUn_KI270442v1:70919:FP	A	]contig_6038r:221]A	.	.	AR=5;AS=0.5;GS=1
+chrUn_KI270442v1	77195	chrUn_KI270442v1:77195:FP	A	A[contig_3182r:82[	.	.	AR=9;AS=0.5;GS=1
+chrUn_KI270442v1	74895	chrUn_KI270442v1:74895:FP	G	]contig_8171r:438]G	.	.	AR=30;AS=0.638298;GS=3
+chrUn_KI270442v1	84477	chrUn_KI270442v1:84477:FP	G	G[contig_139r:58[	.	.	AR=12;AS=0.857143;GS=1
+chrUn_KI270442v1	84191	chrUn_KI270442v1:84191:FP	T	]contig_139r:339]T	.	.	NOANCHOR
+chrUn_KI270442v1	80594	chrUn_KI270442v1:80594:FP	T	]contig_4623f:268]T	.	.	AR=7;AS=0.583333;GS=1
+chrUn_KI270442v1	85991	chrUn_KI270442v1:85991:FP	G	G[contig_10098r:65[	.	.	AR=3;AS=0.333333;GS=1
+chrUn_KI270442v1	85912	chrUn_KI270442v1:85912:FP	G	]contig_10098r:589]G	.	.	NOANCHOR
+chrUn_KI270512v1	21867	chrUn_KI270512v1:21867:FP	A	A[contig_6257r:45[	.	.	AR=3;AS=0.333333;GS=1
+chrUn_KI270512v1	21328	chrUn_KI270512v1:21328:FP	T	]contig_6257r:130]T	.	.	NOANCHOR
+chrUn_KI270512v1	21616	chrUn_KI270512v1:21616:FP	A	]contig_3287r:250]A	.	.	NOANCHOR
+chrUn_KI270519v1	136353	chrUn_KI270519v1:136353:FP	G	]contig_4687r:381]G	.	.	AR=2;AS=0.333333;GS=1
+chrUn_KI270589v1	42363	chrUn_KI270589v1:42363:FP	T	]contig_3545r:200]T	.	.	AR=2;AS=0.5;GS=1
+chrUn_KI270589v1	42296	chrUn_KI270589v1:42296:FP	A	]contig_1419f:339]A	.	.	AR=3;AS=0.375;GS=1
+chrUn_KI270589v1	41833	chrUn_KI270589v1:41833:FP	C	C[contig_1419f:85[	.	.	NOANCHOR
+chrUn_KI270589v1	42451	chrUn_KI270589v1:42451:FP	A	]contig_2483r:1409]A	.	.	AR=7;AS=0.7;GS=1
+chrUn_KI270751v1	150633	chrUn_KI270751v1:150633:FP	C	]contig_8382f:282]C	.	.	AR=4;AS=0.363636;GS=1
+chrUn_KI270756v1	31502	chrUn_KI270756v1:31502:FP	A	]contig_769f:406]A	.	.	AR=3;AS=0.375;GS=1
+chrUn_KI270756v1	31696	chrUn_KI270756v1:31696:FP	C	C[contig_769f:166[	.	.	NOANCHOR
+chrUn_KI270519v1	137993	chrUn_KI270519v1:137993:FP	A	]contig_6197f:268]A	.	.	NOANCHOR
+chrUn_KI270757v1	15831	chrUn_KI270757v1:15831:FP	G	G[contig_10392f:233[	.	.	AR=3;AS=0.3;GS=3
+chrUn_KI270757v1	14267	chrUn_KI270757v1:14267:FP	A	]contig_9389f:306]A	.	.	AR=20;AS=0.909091;GS=1
+chrUn_KI270757v1	14376	chrUn_KI270757v1:14376:FP	G	G[contig_9389f:126[	.	.	NOANCHOR
+chrUn_KI270757v1	16662	chrUn_KI270757v1:16662:FP	A	A[contig_5749f:138[	.	.	AR=3;AS=0.3;GS=1
+chrUn_KI270757v1	16510	chrUn_KI270757v1:16510:FP	G	]contig_5749f:289]G	.	.	NOANCHOR
+chrX	3335496	chrX:3335496:FP	C	C[contig_4177r:48[	.	.	AR=2;AS=0.4;GS=1
+chrX	2520396	chrX:2520396:FP	C	]contig_8110r:287]C	.	.	AR=3;AS=0.428571;GS=1
+chrX	18281373	chrX:18281373:FP	G	G[contig_6775r:134[	.	.	AR=3;AS=0.75;GS=1
+chrX	30795587	chrX:30795587:FP	T	T[contig_8189f:50[	.	.	AR=6;AS=0.461538;GS=1
+chrX	30801679	chrX:30801679:FP	C	]contig_8189f:263]C	.	.	AR=5;AS=0.833333;GS=1
+chrX	30799348	chrX:30799348:FP	G	G[contig_8189f:208[	.	.	AR=6;AS=0.461538;GS=1
+chrX	99134437	chrX:99134437:FP	A	A[contig_8225f:46[	.	.	AR=11;AS=1;GS=1
+chrX	99134468	chrX:99134468:FP	A	]contig_8225f:634]A	.	.	AR=15;AS=1;GS=1
+chrX	117425244	chrX:117425244:FP	A	]contig_4073f:188]A	.	.	AR=5;AS=0.625;GS=1
+chrX	144093243	chrX:144093243:FP	G	]contig_10003f:2262]G	.	.	AR=6;AS=0.4;GS=1
+chrX	153382567	chrX:153382567:FP	A	]contig_1890r:504]A	.	.	AR=2;AS=1;GS=1
+chrX	153383157	chrX:153383157:FP	C	C[contig_1890r:137[	.	.	NOANCHOR
+chrY	10648093	chrY:10648093:FP	A	A[contig_7942f:79[	.	.	NOANCHOR
+chrY	10657283	chrY:10657283:FP	T	]contig_3052f:551]T	.	.	AR=5;AS=0.454545;GS=1
+chrY	10657320	chrY:10657320:FP	C	]contig_2331f:402]C	.	.	AR=2;AS=0.333333;GS=2
+chrY	10657310	chrY:10657310:FP	C	C[contig_3646f:54[	.	.	AR=9;AS=0.428571;GS=3
+chrY	10673922	chrY:10673922:FP	C	C[contig_5307r:57[	.	.	AR=2;AS=0.4;GS=1
+chrY	10670979	chrY:10670979:FP	T	]contig_9563f:488]T	.	.	AR=2;AS=0.333333;GS=1
+chrY	10683246	chrY:10683246:FP	T	]contig_462r:206]T	.	.	AR=12;AS=0.545455;GS=1
+chrY	10683263	chrY:10683263:FP	C	C[contig_462r:179[	.	.	NOANCHOR
+chrY	10682604	chrY:10682604:FP	T	T[contig_4745r:161[	.	.	AR=2;AS=0.333333;GS=1
+chrY	10682817	chrY:10682817:FP	T	]contig_4745r:166]T	.	.	NOANCHOR
+chrY	10682465	chrY:10682465:FP	T	]contig_8263f:202]T	.	.	NOANCHOR
+chrY	10686122	chrY:10686122:FP	C	]contig_6466r:730]C	.	.	AR=4;AS=0.666667;GS=1
+chrY	10687205	chrY:10687205:FP	T	T[contig_6466r:50[	.	.	NOANCHOR
+chrY	10686679	chrY:10686679:FP	T	T[contig_237f:137[	.	.	AR=2;AS=0.5;GS=1
+chrY	10686508	chrY:10686508:FP	T	]contig_237f:263]T	.	.	NOANCHOR
+chrY	10688061	chrY:10688061:FP	A	A[contig_7948f:33[	.	.	AR=24;AS=0.470588;GS=1
+chrY	10688028	chrY:10688028:FP	T	]contig_7948f:248]T	.	.	NOANCHOR
+chrY	10691415	chrY:10691415:FP	T	T[contig_4302r:51[	.	.	AR=3;AS=0.5;GS=1
+chrY	10755033	chrY:10755033:FP	A	A[contig_3164f:180[	.	.	AR=2;AS=0.4;GS=1
+chrY	10754935	chrY:10754935:FP	T	]contig_3164f:281]T	.	.	NOANCHOR
+chrY	10687965	chrY:10687965:FP	C	]contig_6140r:345]C	.	.	AR=15;AS=0.535714;GS=1
+chrY	10754920	chrY:10754920:FP	T	]contig_9366r:249]T	.	.	AR=8;AS=0.4;GS=1
+chrY	10756535	chrY:10756535:FP	A	]contig_531r:685]A	.	.	AR=2;AS=0.5;GS=1
+chrY	10755363	chrY:10755363:FP	A	A[contig_9803r:89[	.	.	AR=2;AS=0.666667;GS=1
+chrY	10759308	chrY:10759308:FP	C	]contig_3184f:336]C	.	.	AR=2;AS=0.333333;GS=1
+chrY	10759773	chrY:10759773:FP	T	]contig_4056r:205]T	.	.	AR=5;AS=0.357143;GS=2
+chrY	10759836	chrY:10759836:FP	A	A[contig_4056r:124[	.	.	NOANCHOR
+chrY	10760421	chrY:10760421:FP	A	A[contig_10127f:46[	.	.	AR=2;AS=0.333333;GS=1
+chrY	10759788	chrY:10759788:FP	T	]contig_10127f:502]T	.	.	NOANCHOR
+chrY	10760757	chrY:10760757:FP	C	C[contig_6391f:214[	.	.	AR=4;AS=0.8;GS=1
+chrY	10759948	chrY:10759948:FP	T	]contig_6391f:287]T	.	.	NOANCHOR
+chrY	10762298	chrY:10762298:FP	T	]contig_7834r:638]T	.	.	AR=3;AS=0.3;GS=1
+chrY	10767909	chrY:10767909:FP	T	]contig_1419f:366]T	.	.	AR=4;AS=0.5;GS=1
+chrY	10769405	chrY:10769405:FP	C	C[contig_1419f:40[	.	.	NOANCHOR
+chrY	10776490	chrY:10776490:FP	T	]contig_5400r:440]T	.	.	AR=2;AS=0.666667;GS=1
+chrY	10763147	chrY:10763147:FP	A	A[contig_2761f:74[	.	.	AR=3;AS=0.333333;GS=1
+chrY	10763137	chrY:10763137:FP	A	A[contig_448f:124[	.	.	AR=5;AS=0.333333;GS=1
+chrY	10763074	chrY:10763074:FP	T	]contig_448f:868]T	.	.	NOANCHOR
+chrY	10777484	chrY:10777484:FP	C	]contig_4707f:278]C	.	.	AR=3;AS=0.428571;GS=1
+chrY	10790503	chrY:10790503:FP	C	C[contig_3069f:47[	.	.	AR=3;AS=0.428571;GS=2
+chrY	10790214	chrY:10790214:FP	C	]contig_3069f:287]C	.	.	NOANCHOR
+chrY	10796857	chrY:10796857:FP	C	C[contig_9970f:69[	.	.	AR=4;AS=0.307692;GS=1
+chrY	10795859	chrY:10795859:FP	T	]contig_9970f:670]T	.	.	NOANCHOR
+chrY	10797578	chrY:10797578:FP	A	A[contig_7296f:55[	.	.	AR=2;AS=0.4;GS=1
+chrY	10799648	chrY:10799648:FP	T	T[contig_3354f:62[	.	.	AR=4;AS=0.571429;GS=1
+chrY	10799570	chrY:10799570:FP	C	]contig_4295r:293]C	.	.	NOANCHOR
+chrY	10801677	chrY:10801677:FP	C	C[contig_464f:209[	.	.	AR=5;AS=0.714286;GS=1
+chrY	10801658	chrY:10801658:FP	A	]contig_464f:443]A	.	.	NOANCHOR
+chrY	10804044	chrY:10804044:FP	T	T[contig_33r:96[	.	.	AR=3;AS=0.375;GS=1
+chrY	10808152	chrY:10808152:FP	A	A[contig_5101f:134[	.	.	AR=3;AS=0.333333;GS=1
+chrY	10807196	chrY:10807196:FP	T	]contig_493f:307]T	.	.	NOANCHOR
+chrY	10790212	chrY:10790212:FP	T	]contig_7115f:299]T	.	.	AR=3;AS=0.333333;GS=1
+chrY	10809584	chrY:10809584:FP	C	]contig_5998f:376]C	.	.	AR=2;AS=0.333333;GS=1
+chrY	10808627	chrY:10808627:FP	A	A[contig_10392r:56[	.	.	AR=2;AS=0.333333;GS=1
+chrY	10821977	chrY:10821977:FP	C	C[contig_7437r:104[	.	.	AR=2;AS=0.333333;GS=2
+chrY	10821900	chrY:10821900:FP	T	]contig_7437r:326]T	.	.	NOANCHOR
+chrY	10821877	chrY:10821877:FP	C	]contig_3033f:249]C	.	.	AR=3;AS=0.375;GS=1
+chrY	10821951	chrY:10821951:FP	C	C[contig_3033f:81[	.	.	NOANCHOR
+chrY	10825691	chrY:10825691:FP	C	C[contig_6055f:75[	.	.	AR=2;AS=0.5;GS=1
+chrY	10825290	chrY:10825290:FP	C	]contig_6055f:300]C	.	.	NOANCHOR
+chrY	10826938	chrY:10826938:FP	C	C[contig_3943f:52[	.	.	AR=6;AS=0.5;GS=1
+chrY	10826235	chrY:10826235:FP	C	]contig_3943f:231]C	.	.	NOANCHOR
+chrY	10826438	chrY:10826438:FP	A	]contig_33r:260]A	.	.	AR=5;AS=0.3125;GS=1
+chrY	10834237	chrY:10834237:FP	A	A[contig_9931r:55[	.	.	AR=4;AS=1;GS=1
+chrY	10839930	chrY:10839930:FP	T	]contig_7791r:651]T	.	.	AR=2;AS=0.4;GS=2
+chrY	10840006	chrY:10840006:FP	C	C[contig_7791r:68[	.	.	NOANCHOR
+chrY	10839616	chrY:10839616:FP	C	C[contig_2077f:108[	.	.	NOANCHOR
+chrY	10845634	chrY:10845634:FP	T	]contig_9549f:604]T	.	.	AR=3;AS=0.6;GS=1
+chrY	10846094	chrY:10846094:FP	T	T[contig_9549f:185[	.	.	NOANCHOR
+chrY	10845644	chrY:10845644:FP	T	]contig_7710r:244]T	.	.	AR=3;AS=0.428571;GS=1
+chrY	10844913	chrY:10844913:FP	C	C[contig_7710r:63[	.	.	NOANCHOR
+chrY	10859231	chrY:10859231:FP	G	]contig_2915f:256]G	.	.	AR=3;AS=0.333333;GS=1
+chrY	10840036	chrY:10840036:FP	C	C[contig_5627f:100[	.	.	AR=23;AS=0.425926;GS=2
+chrY	10873170	chrY:10873170:FP	T	T[contig_7250f:80[	.	.	AR=8;AS=0.421053;GS=1
+chrY	10873066	chrY:10873066:FP	T	]contig_7250f:255]T	.	.	NOANCHOR
+chrY	10866219	chrY:10866219:FP	T	]contig_4825r:184]T	.	.	AR=3;AS=0.333333;GS=1
+chrY	10885213	chrY:10885213:FP	A	A[contig_880f:34[	.	.	AR=3;AS=0.375;GS=1
+chrY	10885035	chrY:10885035:FP	T	]contig_880f:230]T	.	.	NOANCHOR
+chrY	10880296	chrY:10880296:FP	C	]contig_1598f:361]C	.	.	AR=2;AS=0.333333;GS=1
+chrY	10880277	chrY:10880277:FP	C	]contig_7386r:713]C	.	.	AR=2;AS=0.333333;GS=1
+chrY	10887961	chrY:10887961:FP	C	]contig_9110f:650]C	.	.	AR=9;AS=0.346154;GS=2
+chrY	10892526	chrY:10892526:FP	T	]contig_6732f:461]T	.	.	AR=2;AS=0.333333;GS=1
+chrY	10892903	chrY:10892903:FP	T	T[contig_6732f:78[	.	.	NOANCHOR
+chrY	10895826	chrY:10895826:FP	C	]contig_637r:266]C	.	.	AR=2;AS=0.5;GS=1
+chrY	10888018	chrY:10888018:FP	A	A[contig_7648r:81[	.	.	AR=4;AS=1;GS=1
+chrY	10887937	chrY:10887937:FP	C	]contig_7648r:538]C	.	.	NOANCHOR
+chrY	10888026	chrY:10888026:FP	C	C[contig_4779r:88[	.	.	AR=2;AS=0.333333;GS=1
+chrY	10887938	chrY:10887938:FP	A	]contig_4779r:134]A	.	.	NOANCHOR
+chrY	10898323	chrY:10898323:FP	C	]contig_1180f:242]C	.	.	AR=6;AS=0.857143;GS=1
+chrY	10924433	chrY:10924433:FP	A	A[contig_2545r:136[	.	.	AR=5;AS=0.5;GS=1
+chrY	10924284	chrY:10924284:FP	T	]contig_890r:268]T	.	.	AR=3;AS=0.75;GS=1
+chrY	10935534	chrY:10935534:FP	T	]contig_756r:324]T	.	.	AR=4;AS=0.333333;GS=2
+chrY	10939003	chrY:10939003:FP	T	]contig_7386r:715]T	.	.	AR=2;AS=0.333333;GS=1
+chrY	10930031	chrY:10930031:FP	C	C[contig_5902f:178[	.	.	AR=4;AS=0.666667;GS=1
+chrY	10942711	chrY:10942711:FP	C	C[contig_4552r:37[	.	.	AR=2;AS=0.4;GS=1
+chrY	10942679	chrY:10942679:FP	C	]contig_5250f:383]C	.	.	AR=3;AS=0.5;GS=1
+chrY	10942614	chrY:10942614:FP	C	]contig_4096r:269]C	.	.	AR=4;AS=0.444444;GS=1
+chrY	10942505	chrY:10942505:FP	T	T[contig_4096r:107[	.	.	NOANCHOR
+chrY	10952441	chrY:10952441:FP	A	]contig_8776r:187]A	.	.	AR=2;AS=0.333333;GS=1
+chrY	10946644	chrY:10946644:FP	C	C[contig_3228r:43[	.	.	AR=2;AS=0.333333;GS=2
+chrY	10959010	chrY:10959010:FP	C	C[contig_2357r:54[	.	.	AR=4;AS=0.444444;GS=1
+chrY	10957820	chrY:10957820:FP	T	]contig_2357r:284]T	.	.	NOANCHOR
+chrY	10958604	chrY:10958604:FP	T	T[contig_3642f:77[	.	.	AR=9;AS=0.310345;GS=1
+chrY	10959316	chrY:10959316:FP	C	C[contig_5963f:55[	.	.	AR=2;AS=1;GS=2
+chrY	10958282	chrY:10958282:FP	T	]contig_7115f:309]T	.	.	AR=3;AS=0.333333;GS=1
+chrY	10973901	chrY:10973901:FP	T	]contig_7507f:366]T	.	.	AR=2;AS=0.5;GS=1
+chrY	10973873	chrY:10973873:FP	C	]contig_1678f:602]C	.	.	AR=4;AS=0.4;GS=1
+chrY	10974772	chrY:10974772:FP	C	C[contig_1678f:37[	.	.	NOANCHOR
+chrY	10971976	chrY:10971976:FP	C	C[contig_4652r:47[	.	.	AR=2;AS=0.5;GS=1
+chrY	10987237	chrY:10987237:FP	C	C[contig_1641f:83[	.	.	AR=2;AS=0.4;GS=1
+chrY	10986818	chrY:10986818:FP	A	]contig_1641f:203]A	.	.	NOANCHOR
+chrY	10987726	chrY:10987726:FP	T	]contig_8759r:511]T	.	.	AR=2;AS=0.4;GS=4
+chrY	10987829	chrY:10987829:FP	C	]contig_10180r:273]C	.	.	AR=2;AS=0.333333;GS=1
+chrY	10987847	chrY:10987847:FP	T	]contig_2564r:256]T	.	.	AR=5;AS=0.384615;GS=1
+chrY	10987804	chrY:10987804:FP	C	]contig_4309r:192]C	.	.	AR=2;AS=0.666667;GS=1
+chrY	10987807	chrY:10987807:FP	T	]contig_6526f:185]T	.	.	AR=5;AS=0.416667;GS=1
+chrY	10987796	chrY:10987796:FP	T	]contig_4770f:642]T	.	.	AR=3;AS=0.375;GS=1
+chrY	10987438	chrY:10987438:FP	C	C[contig_4770f:280[	.	.	NOANCHOR
+chrY	10988348	chrY:10988348:FP	C	C[contig_2483r:63[	.	.	AR=4;AS=0.363636;GS=1
+chrY	10987934	chrY:10987934:FP	C	C[contig_9080r:72[	.	.	AR=4;AS=0.363636;GS=2
+chrY	10987866	chrY:10987866:FP	C	]contig_9080r:373]C	.	.	NOANCHOR
+chrY	10987845	chrY:10987845:FP	A	A[contig_6805r:71[	.	.	AR=2;AS=0.5;GS=1
+chrY	10987744	chrY:10987744:FP	C	]contig_6805r:249]C	.	.	NOANCHOR
+chrY	10989192	chrY:10989192:FP	C	C[contig_9483f:69[	.	.	AR=4;AS=0.307692;GS=1
+chrY	10987995	chrY:10987995:FP	A	]contig_9483f:234]A	.	.	NOANCHOR
+chrY	10987817	chrY:10987817:FP	T	]contig_7812f:911]T	.	.	NOANCHOR
+chrY	10989132	chrY:10989132:FP	C	]contig_2757f:1165]C	.	.	AR=3;AS=0.333333;GS=1
+chrY	10987915	chrY:10987915:FP	A	A[contig_2757f:85[	.	.	NOANCHOR
+chrY	10989893	chrY:10989893:FP	C	C[contig_5988f:49[	.	.	AR=2;AS=0.333333;GS=1
+chrY	10989410	chrY:10989410:FP	C	]contig_5988f:230]C	.	.	NOANCHOR
+chrY	10993066	chrY:10993066:FP	C	C[contig_3730r:55[	.	.	AR=3;AS=0.5;GS=1
+chrY	10992967	chrY:10992967:FP	T	]contig_3730r:419]T	.	.	NOANCHOR
+chrY	10994428	chrY:10994428:FP	A	A[contig_3228r:69[	.	.	AR=2;AS=0.333333;GS=1
+chrY	10990679	chrY:10990679:FP	A	]contig_3354f:229]A	.	.	AR=3;AS=0.3;GS=1
+chrY	11013858	chrY:11013858:FP	C	]contig_3842f:313]C	.	.	AR=7;AS=0.538462;GS=2
+chrY	11013959	chrY:11013959:FP	A	A[contig_3842f:44[	.	.	NOANCHOR
+chrY	11001555	chrY:11001555:FP	A	A[contig_9781f:107[	.	.	AR=5;AS=0.357143;GS=1
+chrY	11014415	chrY:11014415:FP	T	]contig_7110f:362]T	.	.	AR=2;AS=0.333333;GS=1
+chrY	11014355	chrY:11014355:FP	T	]contig_5975f:288]T	.	.	AR=4;AS=0.307692;GS=2
+chrY	11014401	chrY:11014401:FP	C	C[contig_5975f:185[	.	.	NOANCHOR
+chrY	11015867	chrY:11015867:FP	C	]contig_6348f:350]C	.	.	AR=2;AS=0.666667;GS=1
+chrY	11016370	chrY:11016370:FP	T	T[contig_6348f:117[	.	.	NOANCHOR
+chrY	11014453	chrY:11014453:FP	A	A[contig_792f:84[	.	.	AR=2;AS=0.4;GS=1
+chrY	11014451	chrY:11014451:FP	C	C[contig_8699r:64[	.	.	AR=3;AS=0.333333;GS=1
+chrY	11014458	chrY:11014458:FP	A	A[contig_5244f:70[	.	.	AR=2;AS=0.4;GS=1
+chrY	11014497	chrY:11014497:FP	C	C[contig_8441f:133[	.	.	AR=3;AS=0.3;GS=1
+chrY	11014367	chrY:11014367:FP	C	]contig_8441f:550]C	.	.	NOANCHOR
+chrY	11022937	chrY:11022937:FP	C	C[contig_10487r:49[	.	.	AR=3;AS=0.3;GS=1
+chrY	11030217	chrY:11030217:FP	C	C[contig_865r:107[	.	.	AR=7;AS=0.333333;GS=1
+chrY	11018214	chrY:11018214:FP	A	]contig_2757f:1176]A	.	.	AR=3;AS=0.333333;GS=1
+chrY	11018800	chrY:11018800:FP	T	T[contig_2757f:87[	.	.	NOANCHOR
+chrY	11036101	chrY:11036101:FP	A	A[contig_6977f:116[	.	.	AR=6;AS=0.6;GS=1
+chrY	11035897	chrY:11035897:FP	T	]contig_6977f:526]T	.	.	NOANCHOR
+chrY	11038702	chrY:11038702:FP	T	]contig_2486r:1876]T	.	.	AR=6;AS=0.428571;GS=1
+chrY	11037989	chrY:11037989:FP	A	A[contig_2486r:35[	.	.	NOANCHOR
+chrY	11293072	chrY:11293072:FP	C	C[contig_8015f:87[	.	.	AR=2;AS=0.666667;GS=1
+chrY	11292596	chrY:11292596:FP	C	]contig_8015f:312]C	.	.	NOANCHOR
+chrY	11292587	chrY:11292587:FP	T	]contig_6011f:565]T	.	.	AR=36;AS=0.48;GS=2
+chrY	11292278	chrY:11292278:FP	T	]contig_5715f:540]T	.	.	AR=3;AS=0.5;GS=1
+chrY	11293101	chrY:11293101:FP	T	T[contig_4562f:31[	.	.	AR=3;AS=0.333333;GS=1
+chrY	11293738	chrY:11293738:FP	C	C[contig_3320f:112[	.	.	AR=5;AS=0.333333;GS=1
+chrY	11292619	chrY:11292619:FP	C	]contig_3320f:532]C	.	.	NOANCHOR
+chrY	11292626	chrY:11292626:FP	T	]contig_3899r:446]T	.	.	AR=2;AS=0.333333;GS=2
+chrY	11292664	chrY:11292664:FP	C	C[contig_3899r:68[	.	.	NOANCHOR
+chrY	11292961	chrY:11292961:FP	T	]contig_378f:285]T	.	.	AR=2;AS=0.333333;GS=1
+chrY	11292639	chrY:11292639:FP	C	C[contig_378f:48[	.	.	NOANCHOR
+chrY	11294383	chrY:11294383:FP	T	]contig_9803r:383]T	.	.	AR=3;AS=0.333333;GS=1
+chrY	11294428	chrY:11294428:FP	C	C[contig_10110f:40[	.	.	AR=2;AS=0.5;GS=1
+chrY	11294421	chrY:11294421:FP	C	C[contig_7107r:77[	.	.	AR=2;AS=0.5;GS=1
+chrY	11294725	chrY:11294725:FP	C	]contig_7107r:303]C	.	.	NOANCHOR
+chrY	11296806	chrY:11296806:FP	C	C[contig_8699r:55[	.	.	AR=3;AS=0.333333;GS=1
+chrY	11296392	chrY:11296392:FP	C	]contig_5683r:153]C	.	.	NOANCHOR
+chrY	11296394	chrY:11296394:FP	C	]contig_3736f:302]C	.	.	AR=5;AS=0.625;GS=1
+chrY	11297186	chrY:11297186:FP	T	]contig_7069r:439]T	.	.	AR=3;AS=0.3;GS=1
+chrY	11297972	chrY:11297972:FP	C	]contig_5010f:149]C	.	.	AR=9;AS=0.321429;GS=1
+chrY	11297209	chrY:11297209:FP	A	A[contig_3736f:52[	.	.	AR=17;AS=1;GS=1
+chrY	11303070	chrY:11303070:FP	C	C[contig_5282f:89[	.	.	AR=5;AS=0.333333;GS=1
+chrY	11303586	chrY:11303586:FP	A	A[contig_3732r:95[	.	.	AR=4;AS=0.4;GS=1
+chrY	11303577	chrY:11303577:FP	T	]contig_3732r:265]T	.	.	NOANCHOR
+chrY	11303673	chrY:11303673:FP	T	T[contig_6935r:82[	.	.	AR=2;AS=0.5;GS=1
+chrY	11302981	chrY:11302981:FP	A	]contig_6935r:184]A	.	.	NOANCHOR
+chrY	11302941	chrY:11302941:FP	A	]contig_4077f:184]A	.	.	AR=3;AS=0.3;GS=1
+chrY	11303056	chrY:11303056:FP	A	A[contig_4077f:60[	.	.	NOANCHOR
+chrY	11646237	chrY:11646237:FP	G	]contig_5726r:585]G	.	.	AR=2;AS=0.666667;GS=1
+chrY	11646282	chrY:11646282:FP	G	G[contig_5726r:58[	.	.	NOANCHOR
+chrY	11643755	chrY:11643755:FP	A	A[contig_5199f:124[	.	.	AR=2;AS=0.4;GS=1
+chrY	11676651	chrY:11676651:FP	G	]contig_1214r:322]G	.	.	AR=3;AS=0.3;GS=1
+chrY	11723320	chrY:11723320:FP	A	A[contig_4894f:235[	.	.	AR=4;AS=0.307692;GS=1
+chrY	11722671	chrY:11722671:FP	A	]contig_4894f:325]A	.	.	NOANCHOR
+chrY	11731360	chrY:11731360:FP	G	G[contig_741f:56[	.	.	AR=2;AS=0.4;GS=2
+chrY	11738677	chrY:11738677:FP	T	]contig_378r:292]T	.	.	NOANCHOR
+chrY	11723022	chrY:11723022:FP	T	]contig_3367r:894]T	.	.	AR=14;AS=0.636364;GS=1
+chrY	11722974	chrY:11722974:FP	G	]contig_2836f:338]G	.	.	AR=4;AS=0.8;GS=1
+chrY	11723371	chrY:11723371:FP	A	A[contig_2836f:81[	.	.	NOANCHOR
+chrY	11743845	chrY:11743845:FP	G	]contig_6461f:1081]G	.	.	AR=3;AS=0.333333;GS=1
+chrY	11743797	chrY:11743797:FP	A	A[contig_6461f:41[	.	.	NOANCHOR
+chrY	11739624	chrY:11739624:FP	G	G[contig_8624f:114[	.	.	AR=2;AS=0.4;GS=1
+chrY	26638953	chrY:26638953:FP	A	A[contig_8281f:45[	.	.	AR=6;AS=0.333333;GS=1
+chrY	26638235	chrY:26638235:FP	A	]contig_8281f:259]A	.	.	NOANCHOR
+chrY	26638223	chrY:26638223:FP	G	]contig_7714r:841]G	.	.	AR=3;AS=0.6;GS=2
+chrY	26638320	chrY:26638320:FP	A	A[contig_7714r:324[	.	.	NOANCHOR
+chrY	26639626	chrY:26639626:FP	A	A[contig_4485f:66[	.	.	AR=3;AS=0.3;GS=1
+chrY	26640500	chrY:26640500:FP	T	]contig_4485f:247]T	.	.	NOANCHOR
+chrY	26640531	chrY:26640531:FP	G	]contig_3737f:418]G	.	.	AR=2;AS=0.4;GS=1
+chrY	26654168	chrY:26654168:FP	T	T[contig_10097f:62[	.	.	AR=2;AS=0.333333;GS=1
+chrY	26654088	chrY:26654088:FP	T	T[contig_3884f:89[	.	.	AR=3;AS=0.428571;GS=1
+chrY	56826025	chrY:56826025:FP	C	]contig_996f:1116]C	.	.	AR=13;AS=0.5;GS=2
+chrY	56826597	chrY:56826597:FP	C	C[contig_996f:128[	.	.	NOANCHOR
+chrY	56826860	chrY:56826860:FP	T	T[contig_1668r:144[	.	.	AR=2;AS=0.666667;GS=1
+chrY	56826359	chrY:56826359:FP	A	]contig_1668r:192]A	.	.	NOANCHOR
+chrY	56830354	chrY:56830354:FP	A	A[contig_500r:104[	.	.	AR=3;AS=0.375;GS=1
+chrY	56833372	chrY:56833372:FP	T	T[contig_361r:164[	.	.	AR=5;AS=0.454545;GS=2
+chrY	56828675	chrY:56828675:FP	A	]contig_769f:406]A	.	.	AR=3;AS=0.375;GS=1
+chrY	56829314	chrY:56829314:FP	C	C[contig_769f:121[	.	.	NOANCHOR
+chrY	56833352	chrY:56833352:FP	A	A[contig_11f:77[	.	.	AR=2;AS=0.4;GS=1
+chrY	56832771	chrY:56832771:FP	C	]contig_2825r:1412]C	.	.	NOANCHOR
+chrY	56833268	chrY:56833268:FP	C	]contig_9295r:297]C	.	.	AR=3;AS=0.333333;GS=1
+chrY	56833287	chrY:56833287:FP	A	A[contig_9295r:107[	.	.	NOANCHOR
+chrY	56834497	chrY:56834497:FP	C	]contig_2093f:425]C	.	.	AR=5;AS=0.714286;GS=1
+chrY	56834627	chrY:56834627:FP	C	C[contig_2093f:82[	.	.	NOANCHOR
+hs38d1	1414330	hs38d1:1414330:FP	A	]contig_2319f:57]A	.	.	AR=2;AS=0.4;GS=1
+chrY	56834571	chrY:56834571:FP	T	T[contig_531r:74[	.	.	AR=2;AS=0.333333;GS=2
+hs38d1	1598533	hs38d1:1598533:FP	T	]contig_294r:143]T	.	.	AR=5;AS=1;GS=1
+hs38d1	1599488	hs38d1:1599488:FP	T	T[contig_294r:69[	.	.	NOANCHOR
+hs38d1	1598160	hs38d1:1598160:FP	C	C[contig_8379r:88[	.	.	AR=3;AS=0.375;GS=1
+hs38d1	1598116	hs38d1:1598116:FP	C	]contig_8379r:303]C	.	.	NOANCHOR
+hs38d1	1951141	hs38d1:1951141:FP	T	]contig_2689r:169]T	.	.	NOANCHOR
+hs38d1	1969141	hs38d1:1969141:FP	A	]contig_4736f:251]A	.	.	AR=4;AS=1;GS=1
+hs38d1	1970154	hs38d1:1970154:FP	C	C[contig_4736f:121[	.	.	NOANCHOR
+hs38d1	1971348	hs38d1:1971348:FP	C	C[contig_6859r:79[	.	.	AR=3;AS=0.3;GS=1
+hs38d1	1978776	hs38d1:1978776:FP	A	]contig_174f:347]A	.	.	AR=2;AS=1;GS=1
+hs38d1	1979397	hs38d1:1979397:FP	T	T[contig_2594f:38[	.	.	NOANCHOR
+hs38d1	1982754	hs38d1:1982754:FP	C	C[contig_7364f:75[	.	.	AR=16;AS=0.941176;GS=1
+hs38d1	1985793	hs38d1:1985793:FP	C	C[contig_1012f:86[	.	.	AR=32;AS=0.470588;GS=1
+hs38d1	1986087	hs38d1:1986087:FP	T	]contig_1012f:880]T	.	.	NOANCHOR
+hs38d1	1981820	hs38d1:1981820:FP	T	]contig_9036r:262]T	.	.	AR=26;AS=0.764706;GS=1
+hs38d1	1997314	hs38d1:1997314:FP	A	]contig_9148r:167]A	.	.	AR=4;AS=0.8;GS=1
+hs38d1	1992829	hs38d1:1992829:FP	A	]contig_8158f:373]A	.	.	NOANCHOR
+hs38d1	2287880	hs38d1:2287880:FP	C	C[contig_9224r:82[	.	.	AR=12;AS=1;GS=1
+hs38d1	4895759	hs38d1:4895759:FP	A	]contig_1261r:309]A	.	.	AR=2;AS=1;GS=1
+hs38d1	5174336	hs38d1:5174336:FP	C	]contig_7496f:498]C	.	.	AR=8;AS=0.8;GS=1
+hs38d1	7856044	hs38d1:7856044:FP	A	A[contig_4325f:185[	.	.	AR=3;AS=0.3;GS=1
+hs38d1	7856071	hs38d1:7856071:FP	C	]contig_4325f:221]C	.	.	NOANCHOR
+hs38d1	7741434	hs38d1:7741434:FP	T	]contig_5021f:291]T	.	.	AR=4;AS=1;GS=1
+hs38d1	9033354	hs38d1:9033354:FP	A	]contig_4073r:178]A	.	.	AR=2;AS=1;GS=1
+hs38d1	9482762	hs38d1:9482762:FP	A	A[contig_4552f:123[	.	.	AR=2;AS=0.666667;GS=1
+hs38d1	9483535	hs38d1:9483535:FP	A	A[contig_7270r:47[	.	.	AR=10;AS=1;GS=1
+hs38d1	9482707	hs38d1:9482707:FP	A	]contig_7270r:1956]A	.	.	NOANCHOR
+hs38d1	10087175	hs38d1:10087175:FP	A	A[contig_9083f:40[	.	.	AR=4;AS=0.307692;GS=1
+hs38d1	10087270	hs38d1:10087270:FP	T	]contig_9083f:128]T	.	.	NOANCHOR
+hs38d1	9482744	hs38d1:9482744:FP	T	]contig_1319f:303]T	.	.	AR=2;AS=0.4;GS=1
+hs38d1	9482743	hs38d1:9482743:FP	G	G[contig_1319f:83[	.	.	NOANCHOR
+hs38d1	10087410	hs38d1:10087410:FP	A	A[contig_11f:57[	.	.	AR=3;AS=0.6;GS=1
+hs38d1	10087388	hs38d1:10087388:FP	C	C[contig_7659f:87[	.	.	AR=3;AS=0.428571;GS=1
+hs38d1	10087494	hs38d1:10087494:FP	C	]contig_7659f:232]C	.	.	NOANCHOR
+hs38d1	10087282	hs38d1:10087282:FP	T	]contig_4752r:707]T	.	.	AR=3;AS=0.375;GS=1
+hs38d1	10087395	hs38d1:10087395:FP	A	A[contig_4752r:87[	.	.	NOANCHOR
+chr1	12102797	chr1:12102797:FP	A	A[contig_7795r[	.	.	NOANCHOR
+chr1	12102726	chr1:12102726:FP	A	]contig_7795r:818]A	.	.	AR=3;AS=0.75;SR=13
+chr1	24521815	chr1:24521815:FP	T	T[contig_10196r[	.	.	AR=3;AS=0.333333
+chr1	24521715	chr1:24521715:FP	G	]contig_10196r]G	.	.	NOANCHOR
+chr1	25529500	chr1:25529500:FP	T	]contig_7185r:693]T	.	.	NOANCHOR;SR=9
+chr1	28099911	chr1:28099911:FP	A	A[contig_5994r[	.	.	AR=2;AS=1
+chr1	28099811	chr1:28099811:FP	A	]contig_5994r]A	.	.	NOANCHOR
+chr1	30405814	chr1:30405814:FP	A	A[contig_8197r[	.	.	NOANCHOR
+chr1	30405534	chr1:30405534:FP	T	]contig_869r]T	.	.	NOANCHOR
+chr1	30405714	chr1:30405714:FP	G	]contig_8197r:350]G	.	.	AR=3;AS=1;SR=7
+chr1	30405966	chr1:30405966:FP	G	G[contig_5020r:22[	.	.	AR=5;AS=1;SR=13
+chr1	30405867	chr1:30405867:FP	C	]contig_5020r]C	.	.	NOANCHOR
+chr1	31978926	chr1:31978926:FP	A	A[contig_5556f[	.	.	NOANCHOR
+chr1	31978826	chr1:31978826:FP	A	]contig_5556f]A	.	.	AR=4;AS=0.444444
+chr1	35157048	chr1:35157048:FP	C	]contig_2055r]C	.	.	NOANCHOR
+chr1	43278866	chr1:43278866:FP	G	G[contig_5067r[	.	.	NOANCHOR
+chr1	43278767	chr1:43278767:FP	T	]contig_5067r:956]T	.	.	AR=5;AS=0.5;SR=7
+chr1	63786360	chr1:63786360:FP	C	C[contig_9128r[	.	.	NOANCHOR
+chr1	91850694	chr1:91850694:FP	T	]contig_1147f]T	.	.	NOANCHOR
+chr1	95076352	chr1:95076352:FP	T	]contig_1147f]T	.	.	NOANCHOR
+chr1	97024042	chr1:97024042:FP	A	]contig_1941f]A	.	.	NOANCHOR
+chr1	100943539	chr1:100943539:FP	C	C[contig_8674f:7[	.	.	AR=2;AS=0.333333;SR=1
+chr1	100943448	chr1:100943448:FP	C	]contig_8674f]C	.	.	NOANCHOR
+chr1	107723638	chr1:107723638:FP	C	C[contig_1614r[	.	.	NOANCHOR
+chr1	107723538	chr1:107723538:FP	A	]contig_1614r:454]A	.	.	AR=4;AS=1;SR=17
+chr1	114765268	chr1:114765268:FP	C	]contig_623f]C	.	.	NOANCHOR
+chr1	120968356	chr1:120968356:FP	G	G[contig_2509r:9[	.	.	AR=2;AS=0.666667;SR=4
+chr1	120968256	chr1:120968256:FP	G	]contig_2509r]G	.	.	NOANCHOR
+chr1	178063347	chr1:178063347:FP	A	A[contig_6226r[	.	.	NOANCHOR
+chr1	178063247	chr1:178063247:FP	T	]contig_6226r]T	.	.	AR=3;AS=0.6
+chr1	182138571	chr1:182138571:FP	T	T[contig_1303f[	.	.	NOANCHOR
+chr1	182138501	chr1:182138501:FP	G	G[contig_9681f:1[	.	.	AR=3;AS=1;SR=19
+chr1	182138310	chr1:182138310:FP	C	]contig_9681f]C	.	.	NOANCHOR
+chr1	224013097	chr1:224013097:FP	G	]contig_7037f]G	.	.	NOANCHOR
+chr1	243845506	chr1:243845506:FP	G	G[contig_4947r[	.	.	NOANCHOR
+chr1	243845321	chr1:243845321:FP	G	]contig_4945f]G	.	.	NOANCHOR
+chr1	243845406	chr1:243845406:FP	C	]contig_4947r]C	.	.	AR=4;AS=0.8
+chr1	245660201	chr1:245660201:FP	A	]contig_7446r]A	.	.	NOANCHOR
+chr10	3226598	chr10:3226598:FP	G	G[contig_3724r[	.	.	NOANCHOR
+chr10	3226498	chr10:3226498:FP	G	]contig_3724r]G	.	.	AR=4;AS=0.363636
+chr10	8538633	chr10:8538633:FP	G	G[contig_7312r[	.	.	NOANCHOR
+chr10	18086566	chr10:18086566:FP	T	T[contig_750r:0[	.	.	AR=4;AS=1;SR=3
+chr10	18086504	chr10:18086504:FP	C	]contig_750r]C	.	.	NOANCHOR
+chr10	18565139	chr10:18565139:FP	C	C[contig_8202r:172[	.	.	NOANCHOR;SR=4
+chr10	18564880	chr10:18564880:FP	T	]contig_8202r]T	.	.	AR=3;AS=0.5
+chr10	26647432	chr10:26647432:FP	T	]contig_8255f]T	.	.	NOANCHOR
+chr10	26937514	chr10:26937514:FP	G	G[contig_5381r[	.	.	NOANCHOR
+chr10	33209190	chr10:33209190:FP	A	A[contig_8978f:0[	.	.	AR=2;AS=0.5;SR=2
+chr10	33209089	chr10:33209089:FP	T	]contig_8978f]T	.	.	NOANCHOR
+chr10	38493597	chr10:38493597:FP	A	A[contig_3800r[	.	.	NOANCHOR
+chr10	38506567	chr10:38506567:FP	G	]contig_10216f]G	.	.	NOANCHOR
+chr10	38510250	chr10:38510250:FP	A	]contig_3236f:340]A	.	.	NOANCHOR;SR=6
+chr10	38517187	chr10:38517187:FP	G	]contig_4445r]G	.	.	NOANCHOR
+chr10	38522974	chr10:38522974:FP	G	G[contig_2427f[	.	.	AR=2;AS=1
+chr10	38578987	chr10:38578987:FP	T	]contig_5032f]T	.	.	NOANCHOR
+chr10	38919036	chr10:38919036:FP	A	]contig_4136f]A	.	.	AR=2;AS=0.4
+chr10	38920284	chr10:38920284:FP	G	G[contig_5988r[	.	.	NOANCHOR
+chr10	41886915	chr10:41886915:FP	G	]contig_2252r]G	.	.	AR=7;AS=0.388889
+chr10	53543693	chr10:53543693:FP	G	G[contig_1290f[	.	.	AR=5;AS=0.416667
+chr10	53543593	chr10:53543593:FP	G	]contig_1290f]G	.	.	NOANCHOR
+chr10	57181276	chr10:57181276:FP	T	T[contig_9957f:41[	.	.	NOANCHOR;SR=2
+chr10	63783073	chr10:63783073:FP	A	]contig_7476f:788]A	.	.	NOANCHOR;SR=21
+chr10	67968578	chr10:67968578:FP	T	]contig_8794f]T	.	.	NOANCHOR
+chr10	67968677	chr10:67968677:FP	A	A[contig_8794f:17[	.	.	AR=2;AS=0.333333;SR=7
+chr10	68590967	chr10:68590967:FP	T	T[contig_4088f[	.	.	NOANCHOR
+chr10	68590867	chr10:68590867:FP	T	]contig_4088f]T	.	.	AR=4;AS=0.4
+chr10	72422934	chr10:72422934:FP	C	C[contig_4489r[	.	.	AR=2;AS=0.4
+chr10	72422942	chr10:72422942:FP	G	]contig_4489r:275]G	.	.	NOANCHOR;SR=25
+chr10	74819436	chr10:74819436:FP	G	G[contig_4228f[	.	.	NOANCHOR
+chr10	74819336	chr10:74819336:FP	G	]contig_4228f:576]G	.	.	AR=20;AS=1;SR=14
+chr10	92039979	chr10:92039979:FP	C	C[contig_9485r[	.	.	AR=2;AS=0.333333
+chr10	92039879	chr10:92039879:FP	C	]contig_9485r]C	.	.	NOANCHOR
+chr10	94247110	chr10:94247110:FP	T	T[contig_2487r:0[	.	.	AR=5;AS=0.454545;SR=6
+chr10	94247031	chr10:94247031:FP	G	]contig_2487r]G	.	.	NOANCHOR
+chr10	99054909	chr10:99054909:FP	T	]contig_627r]T	.	.	NOANCHOR
+chr10	127453537	chr10:127453537:FP	G	G[contig_2560f[	.	.	AR=2;AS=0.333333
+chr10	127453437	chr10:127453437:FP	A	]contig_2560f]A	.	.	NOANCHOR
+chr10	133065561	chr10:133065561:FP	G	]contig_9385f:127]G	.	.	NOANCHOR;SR=1
+chr11	1538034	chr11:1538034:FP	G	G[contig_8002f[	.	.	NOANCHOR
+chr11	1537934	chr11:1537934:FP	A	]contig_8002f]A	.	.	AR=5;AS=1
+chr11	1538057	chr11:1538057:FP	A	A[contig_3429f:1[	.	.	AR=3;AS=0.75;SR=10
+chr11	1537990	chr11:1537990:FP	A	]contig_3429f]A	.	.	NOANCHOR
+chr11	4986612	chr11:4986612:FP	C	C[contig_5082r[	.	.	NOANCHOR
+chr11	7153580	chr11:7153580:FP	A	A[contig_7521r[	.	.	NOANCHOR
+chr11	7153480	chr11:7153480:FP	T	]contig_7521r:1127]T	.	.	AR=7;AS=1;SR=21
+chr11	9559416	chr11:9559416:FP	C	]contig_1034f]C	.	.	NOANCHOR
+chr11	50177213	chr11:50177213:FP	T	]contig_5599r]T	.	.	NOANCHOR
+chr11	50177249	chr11:50177249:FP	A	A[contig_5599r:101[	.	.	AR=3;AS=0.6;SR=2
+chr11	56375733	chr11:56375733:FP	T	T[contig_2514r[	.	.	NOANCHOR
+chr11	56375650	chr11:56375650:FP	G	]contig_2514r:312]G	.	.	AR=4;AS=1;SR=26
+chr11	57060518	chr11:57060518:FP	A	]contig_5541f]A	.	.	NOANCHOR
+chr11	57060617	chr11:57060617:FP	A	A[contig_5541f:8[	.	.	AR=2;AS=0.666667;SR=3
+chr11	69183016	chr11:69183016:FP	T	T[contig_961r[	.	.	NOANCHOR
+chr11	69182900	chr11:69182900:FP	T	]contig_961r:1891]T	.	.	AR=8;AS=0.888889;SR=5
+chr11	72934086	chr11:72934086:FP	G	G[contig_6493f[	.	.	AR=2;AS=0.4
+chr11	72933986	chr11:72933986:FP	G	]contig_6493f]G	.	.	NOANCHOR
+chr11	118871517	chr11:118871517:FP	C	C[contig_6301r:18[	.	.	NOANCHOR;SR=15
+chr11	118871899	chr11:118871899:FP	T	]contig_6301r:349]T	.	.	AR=2;AS=1;SR=14
+chr11	133027793	chr11:133027793:FP	T	T[contig_8452r:14[	.	.	AR=9;AS=1;SR=40
+chr12	2757214	chr12:2757214:FP	A	A[contig_4885f[	.	.	NOANCHOR
+chr12	2757666	chr12:2757666:FP	C	]contig_8368r]C	.	.	NOANCHOR
+chr12	9258319	chr12:9258319:FP	A	A[contig_3430f[	.	.	NOANCHOR
+chr12	9258219	chr12:9258219:FP	C	]contig_3430f:353]C	.	.	AR=3;AS=1;SR=3
+chr12	31381491	chr12:31381491:FP	G	G[contig_9602f[	.	.	AR=2;AS=0.333333
+chr12	31381391	chr12:31381391:FP	G	]contig_9602f]G	.	.	NOANCHOR
+chr12	32498801	chr12:32498801:FP	C	]contig_3779r]C	.	.	NOANCHOR
+chr12	42476120	chr12:42476120:FP	G	G[contig_7593r[	.	.	AR=6;AS=0.315789
+chr12	42476020	chr12:42476020:FP	A	]contig_7593r]A	.	.	NOANCHOR
+chr12	49498892	chr12:49498892:FP	T	T[contig_3394f[	.	.	NOANCHOR
+chr12	49498800	chr12:49498800:FP	T	]contig_3394f:379]T	.	.	AR=4;AS=0.8;SR=8
+chr12	57191929	chr12:57191929:FP	A	]contig_1546f:376]A	.	.	AR=11;AS=0.785714;SR=25
+chr12	58075829	chr12:58075829:FP	G	G[contig_2290r[	.	.	NOANCHOR
+chr12	58075717	chr12:58075717:FP	A	]contig_2290r:906]A	.	.	AR=6;AS=0.857143;SR=1
+chr12	66553700	chr12:66553700:FP	C	C[contig_1941f[	.	.	AR=2;AS=0.4
+chr12	66553600	chr12:66553600:FP	A	]contig_1941f]A	.	.	NOANCHOR
+chr12	94502937	chr12:94502937:FP	T	T[contig_8057r[	.	.	NOANCHOR
+chr12	94502811	chr12:94502811:FP	G	]contig_8057r:1509]G	.	.	AR=2;AS=0.4;SR=2
+chr12	110880724	chr12:110880724:FP	T	T[contig_10411r:20[	.	.	AR=6;AS=0.857143;SR=47
+chr12	126012023	chr12:126012023:FP	A	A[contig_3336r[	.	.	AR=4;AS=0.307692
+chr12	126011923	chr12:126011923:FP	A	]contig_3336r]A	.	.	NOANCHOR
+chr12	126811172	chr12:126811172:FP	G	G[contig_1721f[	.	.	NOANCHOR
+chr12	126811050	chr12:126811050:FP	A	]contig_1721f:1213]A	.	.	AR=2;AS=0.333333;SR=1
+chr13	20708822	chr13:20708822:FP	A	A[contig_6833r[	.	.	NOANCHOR
+chr13	20708752	chr13:20708752:FP	C	]contig_6833r:403]C	.	.	AR=3;AS=0.3;SR=5
+chr13	25812596	chr13:25812596:FP	A	A[contig_2650r[	.	.	NOANCHOR
+chr13	25812487	chr13:25812487:FP	A	]contig_3338r:2429]A	.	.	NOANCHOR;SR=2
+chr13	41352140	chr13:41352140:FP	G	]contig_8411f]G	.	.	NOANCHOR
+chr13	41352240	chr13:41352240:FP	G	G[contig_8411f[	.	.	AR=2;AS=1
+chr13	45018227	chr13:45018227:FP	C	C[contig_4403r[	.	.	NOANCHOR
+chr13	45018127	chr13:45018127:FP	G	]contig_4403r]G	.	.	AR=2;AS=0.333333
+chr13	70371447	chr13:70371447:FP	C	C[contig_9946f:190[	.	.	NOANCHOR;SR=2
+chr13	70371347	chr13:70371347:FP	G	]contig_9720f]G	.	.	NOANCHOR
+chr13	71668854	chr13:71668854:FP	G	G[contig_2668f[	.	.	NOANCHOR
+chr13	71668754	chr13:71668754:FP	G	]contig_2668f]G	.	.	AR=2;AS=0.333333
+chr13	75529436	chr13:75529436:FP	G	G[contig_5397r[	.	.	AR=3;AS=0.5
+chr13	75529336	chr13:75529336:FP	T	]contig_5397r]T	.	.	NOANCHOR
+chr13	85246796	chr13:85246796:FP	C	C[contig_3571f:3[	.	.	AR=11;AS=1;SR=27
+chr13	85246803	chr13:85246803:FP	A	]contig_3571f:545]A	.	.	NOANCHOR;SR=7
+chr13	98163965	chr13:98163965:FP	T	T[contig_114f[	.	.	NOANCHOR
+chr13	98163865	chr13:98163865:FP	C	]contig_114f]C	.	.	AR=2;AS=0.4
+chr13	104244996	chr13:104244996:FP	A	A[contig_6456f:165[	.	.	NOANCHOR;SR=1
+chr13	104244872	chr13:104244872:FP	C	]contig_7108f]C	.	.	NOANCHOR
+chr13	104244983	chr13:104244983:FP	A	]contig_6456f:369]A	.	.	AR=3;AS=1;SR=10
+chr13	109733041	chr13:109733041:FP	C	C[contig_5301r[	.	.	AR=2;AS=0.333333
+chr13	109732941	chr13:109732941:FP	C	]contig_5301r]C	.	.	NOANCHOR
+chr13	112972826	chr13:112972826:FP	A	A[contig_1295f:140[	.	.	AR=8;AS=0.615385;SR=2
+chr13	112972798	chr13:112972798:FP	T	]contig_1295f:225]T	.	.	NOANCHOR;SR=4
+chr14	23557507	chr14:23557507:FP	A	A[contig_5539r:4[	.	.	AR=2;AS=0.5;SR=8
+chr14	23557437	chr14:23557437:FP	T	]contig_5539r]T	.	.	NOANCHOR
+chr14	27296025	chr14:27296025:FP	C	C[contig_2502f:17[	.	.	AR=2;AS=0.5;SR=15
+chr14	27295926	chr14:27295926:FP	T	]contig_2502f]T	.	.	NOANCHOR
+chr14	38262179	chr14:38262179:FP	C	C[contig_7502r[	.	.	NOANCHOR
+chr14	38262159	chr14:38262159:FP	A	]contig_7502r:535]A	.	.	AR=2;AS=0.4;SR=1
+chr14	39972096	chr14:39972096:FP	T	]contig_3580r]T	.	.	NOANCHOR
+chr14	39972183	chr14:39972183:FP	C	C[contig_3580r:3[	.	.	AR=2;AS=1;SR=4
+chr14	61482094	chr14:61482094:FP	A	A[contig_1718r[	.	.	NOANCHOR
+chr14	61481994	chr14:61481994:FP	T	]contig_1718r]T	.	.	AR=3;AS=0.333333
+chr14	69729063	chr14:69729063:FP	C	C[contig_9684f[	.	.	NOANCHOR
+chr14	73294874	chr14:73294874:FP	G	G[contig_10202r[	.	.	AR=3;AS=0.428571
+chr14	73294774	chr14:73294774:FP	C	]contig_10202r]C	.	.	NOANCHOR
+chr14	76963159	chr14:76963159:FP	T	]contig_8934f]T	.	.	NOANCHOR
+chr14	83120931	chr14:83120931:FP	G	G[contig_5286r[	.	.	NOANCHOR
+chr14	83120831	chr14:83120831:FP	T	]contig_5286r:270]T	.	.	AR=4;AS=1;SR=8
+chr14	91634849	chr14:91634849:FP	G	G[contig_1304f[	.	.	NOANCHOR
+chr14	94363765	chr14:94363765:FP	G	G[contig_7425r:15[	.	.	AR=6;AS=0.75;SR=13
+chr14	94363666	chr14:94363666:FP	A	]contig_7425r]A	.	.	NOANCHOR
+chr15	29558680	chr15:29558680:FP	C	C[contig_4151r:37[	.	.	NOANCHOR;SR=4
+chr15	29558694	chr15:29558694:FP	C	]contig_4151r]C	.	.	AR=6;AS=1
+chr15	29561104	chr15:29561104:FP	G	G[contig_1290r[	.	.	NOANCHOR
+chr15	29561004	chr15:29561004:FP	A	]contig_1290r]A	.	.	AR=7;AS=0.583333
+chr15	52283872	chr15:52283872:FP	A	]contig_6846r]A	.	.	NOANCHOR
+chr15	66102360	chr15:66102360:FP	C	C[contig_4846r[	.	.	NOANCHOR
+chr15	70285184	chr15:70285184:FP	G	]contig_2855r:443]G	.	.	AR=15;AS=0.428571;SR=30
+chr15	78993200	chr15:78993200:FP	A	]contig_10429r]A	.	.	NOANCHOR
+chr15	86013354	chr15:86013354:FP	C	C[contig_6687f:13[	.	.	AR=7;AS=1;SR=23
+chr15	86013293	chr15:86013293:FP	T	]contig_6687f:481]T	.	.	NOANCHOR;SR=1
+chr15	90647515	chr15:90647515:FP	T	T[contig_6844r:3[	.	.	NOANCHOR;SR=29
+chr15	90647421	chr15:90647421:FP	T	]contig_6844r]T	.	.	AR=3;AS=1
+chr16	239213	chr16:239213:FP	T	T[contig_259r[	.	.	AR=2;AS=0.333333
+chr16	239113	chr16:239113:FP	C	]contig_259r]C	.	.	NOANCHOR
+chr16	1871995	chr16:1871995:FP	G	G[contig_1134r[	.	.	NOANCHOR
+chr16	1871895	chr16:1871895:FP	G	]contig_1134r]G	.	.	AR=2;AS=1
+chr16	14339488	chr16:14339488:FP	G	G[contig_7063r[	.	.	NOANCHOR
+chr16	14339389	chr16:14339389:FP	T	]contig_7063r:959]T	.	.	AR=7;AS=0.5;SR=7
+chr16	19321813	chr16:19321813:FP	T	T[contig_8121r[	.	.	NOANCHOR
+chr16	19321670	chr16:19321670:FP	T	]contig_8121r:277]T	.	.	AR=2;AS=1;SR=27
+chr16	22632442	chr16:22632442:FP	A	A[contig_4489r[	.	.	AR=2;AS=0.4
+chr16	22632342	chr16:22632342:FP	A	]contig_4489r]A	.	.	NOANCHOR
+chr16	23897007	chr16:23897007:FP	T	T[contig_1295r[	.	.	NOANCHOR
+chr16	23896928	chr16:23896928:FP	T	]contig_1295r:379]T	.	.	AR=5;AS=0.384615;SR=3
+chr16	34073252	chr16:34073252:FP	A	]contig_9429f]A	.	.	AR=3;AS=0.428571
+chr16	34096864	chr16:34096864:FP	T	]contig_10460f]T	.	.	AR=5;AS=0.333333
+chr16	34097102	chr16:34097102:FP	C	]contig_8369r]C	.	.	NOANCHOR
+chr16	35268168	chr16:35268168:FP	A	A[contig_6606f:3[	.	.	AR=2;AS=0.5;SR=9
+chr16	35268070	chr16:35268070:FP	G	]contig_6606f]G	.	.	NOANCHOR
+chr16	54819258	chr16:54819258:FP	C	C[contig_7779r[	.	.	AR=4;AS=0.666667
+chr16	54819158	chr16:54819158:FP	T	]contig_7779r]T	.	.	NOANCHOR
+chr16	58118828	chr16:58118828:FP	G	G[contig_2492r[	.	.	AR=2;AS=0.333333
+chr16	58118728	chr16:58118728:FP	G	]contig_2492r]G	.	.	NOANCHOR
+chr16	71384688	chr16:71384688:FP	C	]contig_1236f:1107]C	.	.	AR=6;AS=0.857143;SR=19
+chr16	78193549	chr16:78193549:FP	T	T[contig_8327r:15[	.	.	AR=3;AS=1;SR=7
+chr16	78193551	chr16:78193551:FP	C	]contig_8327r:429]C	.	.	NOANCHOR;SR=12
+chr16	84799229	chr16:84799229:FP	T	]contig_9602f]T	.	.	NOANCHOR
+chr16	84799329	chr16:84799329:FP	T	T[contig_9602f[	.	.	AR=3;AS=0.5
+chr16	86013835	chr16:86013835:FP	A	]contig_2713r]A	.	.	NOANCHOR
+chr17	490396	chr17:490396:FP	N	N[contig_6084f[	.	.	AR=5;AS=1
+chr17	490296	chr17:490296:FP	G	]contig_6084f]G	.	.	NOANCHOR
+chr17	5196294	chr17:5196294:FP	C	]contig_8674f]C	.	.	NOANCHOR
+chr17	5196397	chr17:5196397:FP	C	C[contig_8674f:14[	.	.	AR=3;AS=0.5;SR=3
+chr17	8166253	chr17:8166253:FP	C	C[contig_1618f[	.	.	NOANCHOR
+chr17	8165805	chr17:8165805:FP	T	]contig_1618f:360]T	.	.	AR=7;AS=1;SR=1
+chr17	10203465	chr17:10203465:FP	T	]contig_6612f]T	.	.	NOANCHOR
+chr17	10203609	chr17:10203609:FP	A	A[contig_6612f:7[	.	.	AR=5;AS=0.384615;SR=1
+chr17	21883657	chr17:21883657:FP	G	]contig_2333r]G	.	.	NOANCHOR
+chr17	21883757	chr17:21883757:FP	G	G[contig_2333r[	.	.	AR=2;AS=1
+chr17	21976700	chr17:21976700:FP	A	A[contig_1080r[	.	.	NOANCHOR
+chr17	26936245	chr17:26936245:FP	G	]contig_1449f]G	.	.	AR=3;AS=0.6
+chr17	26936857	chr17:26936857:FP	A	A[contig_2458r[	.	.	AR=5;AS=0.714286
+chr17	26938213	chr17:26938213:FP	T	T[contig_4368r[	.	.	AR=6;AS=0.461538
+chr17	26940050	chr17:26940050:FP	T	T[contig_2674r[	.	.	AR=2;AS=0.4
+chr17	26940895	chr17:26940895:FP	A	A[contig_7012r[	.	.	AR=6;AS=0.428571
+chr17	56281053	chr17:56281053:FP	C	]contig_1446r]C	.	.	NOANCHOR
+chr17	71649092	chr17:71649092:FP	G	G[contig_2184r:12[	.	.	AR=5;AS=1;SR=8
+chr17	71648993	chr17:71648993:FP	T	]contig_2184r]T	.	.	NOANCHOR
+chr17	81830455	chr17:81830455:FP	G	G[contig_7709r[	.	.	NOANCHOR
+chr17_KI270729v1_random	1066	chr17_KI270729v1_random:1066:FP	C	C[contig_650r[	.	.	AR=2;AS=0.5
+chr17_KI270729v1_random	2314	chr17_KI270729v1_random:2314:FP	C	C[contig_4654f[	.	.	NOANCHOR
+chr17_KI270729v1_random	2275	chr17_KI270729v1_random:2275:FP	T	T[contig_1868r[	.	.	AR=2;AS=0.4
+chr17_KI270729v1_random	2214	chr17_KI270729v1_random:2214:FP	C	]contig_4654f]C	.	.	AR=4;AS=0.5
+chr17_KI270729v1_random	58233	chr17_KI270729v1_random:58233:FP	A	A[contig_3045r:86[	.	.	AR=9;AS=0.321429;SR=4
+chr17_KI270730v1_random	90960	chr17_KI270730v1_random:90960:FP	A	]contig_1043f]A	.	.	AR=3;AS=0.3
+chr17_KI270730v1_random	92698	chr17_KI270730v1_random:92698:FP	A	]contig_5965r]A	.	.	AR=2;AS=0.4
+chr17_KI270730v1_random	107553	chr17_KI270730v1_random:107553:FP	G	G[contig_9822f[	.	.	AR=2;AS=0.4
+chr18	3618767	chr18:3618767:FP	T	T[contig_103r[	.	.	NOANCHOR
+chr18	3618667	chr18:3618667:FP	G	]contig_103r:264]G	.	.	AR=13;AS=0.866667;SR=11
+chr18	9560285	chr18:9560285:FP	C	C[contig_2492r[	.	.	AR=2;AS=0.333333
+chr18	9560185	chr18:9560185:FP	T	]contig_2492r]T	.	.	NOANCHOR
+chr18	9620811	chr18:9620811:FP	T	T[contig_1205f[	.	.	NOANCHOR
+chr18	9620711	chr18:9620711:FP	T	]contig_1205f]T	.	.	AR=2;AS=0.666667
+chr18	22452308	chr18:22452308:FP	A	A[contig_2770f[	.	.	NOANCHOR
+chr18	43734118	chr18:43734118:FP	T	]contig_3028f]T	.	.	NOANCHOR
+chr18	67454008	chr18:67454008:FP	A	A[contig_7998f:0[	.	.	AR=8;AS=1;SR=11
+chr18	67453886	chr18:67453886:FP	G	]contig_7998f]G	.	.	NOANCHOR
+chr18	72209042	chr18:72209042:FP	A	A[contig_5301f[	.	.	NOANCHOR
+chr18	72208942	chr18:72208942:FP	T	]contig_5301f:1766]T	.	.	AR=2;AS=0.333333;SR=1
+chr18	76377824	chr18:76377824:FP	T	T[contig_114f[	.	.	NOANCHOR
+chr18	76377724	chr18:76377724:FP	T	]contig_114f]T	.	.	AR=2;AS=0.4
+chr19	7378997	chr19:7378997:FP	G	G[contig_7850r[	.	.	AR=3;AS=0.333333
+chr19	7378897	chr19:7378897:FP	T	]contig_7850r]T	.	.	NOANCHOR
+chr19	9391505	chr19:9391505:FP	A	A[contig_3747f:12[	.	.	AR=2;AS=0.333333;SR=1
+chr19	9391410	chr19:9391410:FP	C	]contig_3747f]C	.	.	NOANCHOR
+chr19	14317870	chr19:14317870:FP	G	G[contig_5657f[	.	.	NOANCHOR
+chr19	14317812	chr19:14317812:FP	A	]contig_5657f:1339]A	.	.	AR=2;AS=0.5;SR=2
+chr19	32268939	chr19:32268939:FP	T	T[contig_1152r[	.	.	NOANCHOR
+chr19	32268839	chr19:32268839:FP	T	]contig_1152r]T	.	.	AR=2;AS=0.4
+chr19	34546858	chr19:34546858:FP	C	C[contig_8393f[	.	.	NOANCHOR
+chr19	37242105	chr19:37242105:FP	T	]contig_2786r:379]T	.	.	NOANCHOR;SR=30
+chr19	41339787	chr19:41339787:FP	G	G[contig_724r[	.	.	NOANCHOR
+chr19	41339687	chr19:41339687:FP	G	]contig_724r]G	.	.	AR=2;AS=0.5
+chr19	43155752	chr19:43155752:FP	T	T[contig_4896r:12[	.	.	AR=2;AS=0.333333;SR=1
+chr19	43155671	chr19:43155671:FP	T	]contig_4896r]T	.	.	NOANCHOR
+chr19	47488933	chr19:47488933:FP	G	G[contig_259r[	.	.	AR=2;AS=0.333333
+chr19	47488833	chr19:47488833:FP	C	]contig_259r]C	.	.	NOANCHOR
+chr19	50493010	chr19:50493010:FP	T	T[contig_6010r:13[	.	.	AR=9;AS=1;SR=4
+chr19	54779061	chr19:54779061:FP	G	G[contig_3756f[	.	.	AR=2;AS=0.5
+chr19	54778961	chr19:54778961:FP	A	]contig_3756f]A	.	.	NOANCHOR
+chr2	11118679	chr2:11118679:FP	G	G[contig_6326r[	.	.	AR=2;AS=0.666667
+chr2	11118579	chr2:11118579:FP	A	]contig_6326r]A	.	.	NOANCHOR
+chr2	32916574	chr2:32916574:FP	G	G[contig_5753f[	.	.	AR=2;AS=1
+chr2	32916557	chr2:32916557:FP	A	A[contig_3808r[	.	.	AR=2;AS=0.666667
+chr2	32916621	chr2:32916621:FP	G	G[contig_4967f[	.	.	AR=2;AS=1
+chr2	32916424	chr2:32916424:FP	G	G[contig_8061r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_7620r[	.	.	AR=3;AS=0.428571
+chr2	32916588	chr2:32916588:FP	G	G[contig_1781r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_8443r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_262f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_1044r[	.	.	AR=3;AS=1
+chr2	32916557	chr2:32916557:FP	A	A[contig_2356f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_4661r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_64r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_7444f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_786f[	.	.	AR=4;AS=1
+chr2	32916588	chr2:32916588:FP	G	G[contig_5604r[	.	.	AR=6;AS=1
+chr2	32916324	chr2:32916324:FP	G	]contig_8061r]G	.	.	NOANCHOR
+chr2	32916633	chr2:32916633:FP	N	N[contig_5924r[	.	.	AR=6;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_1621f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_4747r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_2907r[	.	.	AR=3;AS=1
+chr2	32916607	chr2:32916607:FP	G	G[contig_9620r[	.	.	AR=3;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_4580f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_1776r[	.	.	AR=2;AS=0.5
+chr2	32916568	chr2:32916568:FP	G	G[contig_7606f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_8968f[	.	.	AR=3;AS=0.75
+chr2	32916591	chr2:32916591:FP	G	G[contig_9109r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_2363f[	.	.	AR=2;AS=0.5
+chr2	32916614	chr2:32916614:FP	G	G[contig_2373r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_3193f[	.	.	AR=4;AS=0.571429
+chr2	32916591	chr2:32916591:FP	G	G[contig_4121f[	.	.	AR=3;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_4536r[	.	.	AR=2;AS=0.333333
+chr2	32916576	chr2:32916576:FP	G	G[contig_5080r[	.	.	AR=2;AS=0.333333
+chr2	32916568	chr2:32916568:FP	G	G[contig_5126f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_5797f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_6540r[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_7676r[	.	.	AR=2;AS=1
+chr2	32916633	chr2:32916633:FP	N	N[contig_7867r[	.	.	AR=2;AS=0.4
+chr2	32916587	chr2:32916587:FP	C	C[contig_7887f[	.	.	AR=2;AS=0.333333
+chr2	32916568	chr2:32916568:FP	G	G[contig_7921r[	.	.	AR=2;AS=1
+chr2	32916595	chr2:32916595:FP	G	G[contig_8205r[	.	.	AR=2;AS=1
+chr2	32916578	chr2:32916578:FP	G	G[contig_8373r[	.	.	AR=2;AS=0.5
+chr2	32916568	chr2:32916568:FP	G	G[contig_962f[	.	.	AR=2;AS=1
+chr2	32916568	chr2:32916568:FP	G	G[contig_9830f[	.	.	AR=2;AS=0.5
+chr2	32916568	chr2:32916568:FP	G	G[contig_9842f[	.	.	AR=2;AS=1
+chr2	32916606	chr2:32916606:FP	G	G[contig_9918f[	.	.	AR=2;AS=0.666667
+chr2	32916617	chr2:32916617:FP	G	G[contig_6777f[	.	.	AR=2;AS=1
+chr2	32916457	chr2:32916457:FP	G	]contig_2356f]G	.	.	NOANCHOR
+chr2	32916457	chr2:32916457:FP	G	]contig_3808r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_1044r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_1621f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_1776r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_2363f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_262f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_2907r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_3193f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_4536r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_4580f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_4661r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_4747r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_5126f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_5797f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_64r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_6540r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_7444f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_7606f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_7620r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_7676r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_786f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_7921r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_8443r]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_8968f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_962f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_9830f]G	.	.	NOANCHOR
+chr2	32916468	chr2:32916468:FP	G	]contig_9842f]G	.	.	NOANCHOR
+chr2	32916474	chr2:32916474:FP	G	]contig_5753f]G	.	.	NOANCHOR
+chr2	32916476	chr2:32916476:FP	G	]contig_5080r]G	.	.	NOANCHOR
+chr2	32916478	chr2:32916478:FP	G	]contig_8373r]G	.	.	NOANCHOR
+chr2	32916487	chr2:32916487:FP	G	]contig_7887f]G	.	.	NOANCHOR
+chr2	32916488	chr2:32916488:FP	G	]contig_1781r]G	.	.	NOANCHOR
+chr2	32916488	chr2:32916488:FP	G	]contig_5604r]G	.	.	NOANCHOR
+chr2	32916491	chr2:32916491:FP	G	]contig_4121f]G	.	.	NOANCHOR
+chr2	32916491	chr2:32916491:FP	G	]contig_9109r]G	.	.	NOANCHOR
+chr2	32916495	chr2:32916495:FP	G	]contig_8205r]G	.	.	NOANCHOR
+chr2	32916506	chr2:32916506:FP	G	]contig_9918f]G	.	.	NOANCHOR
+chr2	32916507	chr2:32916507:FP	G	]contig_9620r]G	.	.	NOANCHOR
+chr2	32916514	chr2:32916514:FP	G	]contig_2373r]G	.	.	NOANCHOR
+chr2	32916517	chr2:32916517:FP	G	]contig_6777f]G	.	.	NOANCHOR
+chr2	32916521	chr2:32916521:FP	G	]contig_4967f]G	.	.	NOANCHOR
+chr2	32916533	chr2:32916533:FP	G	]contig_5924r]G	.	.	NOANCHOR
+chr2	32916533	chr2:32916533:FP	G	]contig_7867r]G	.	.	NOANCHOR
+chr2	42676765	chr2:42676765:FP	C	C[contig_8057f:2[	.	.	AR=2;AS=0.4;SR=1
+chr2	42676632	chr2:42676632:FP	G	]contig_8057f]G	.	.	NOANCHOR
+chr2	47768945	chr2:47768945:FP	A	A[contig_8142f:0[	.	.	AR=10;AS=0.714286;SR=8
+chr2	47768861	chr2:47768861:FP	G	]contig_8142f]G	.	.	NOANCHOR
+chr2	89836365	chr2:89836365:FP	A	A[contig_8372f[	.	.	NOANCHOR
+chr2	96796233	chr2:96796233:FP	C	C[contig_9950f[	.	.	NOANCHOR
+chr2	121296142	chr2:121296142:FP	A	]contig_8829r]A	.	.	NOANCHOR
+chr2	128082462	chr2:128082462:FP	T	T[contig_7220f[	.	.	AR=4;AS=0.333333
+chr2	128082362	chr2:128082362:FP	A	]contig_7220f]A	.	.	NOANCHOR
+chr2	150591129	chr2:150591129:FP	A	A[contig_59f[	.	.	NOANCHOR
+chr2	150591029	chr2:150591029:FP	C	]contig_59f:324]C	.	.	AR=5;AS=1;SR=4
+chr2	157917518	chr2:157917518:FP	G	G[contig_3397f[	.	.	AR=9;AS=0.5625
+chr2	157917418	chr2:157917418:FP	G	]contig_3397f]G	.	.	NOANCHOR
+chr2	159140128	chr2:159140128:FP	T	]contig_2492r]T	.	.	NOANCHOR
+chr2	159140228	chr2:159140228:FP	A	A[contig_2492r[	.	.	AR=2;AS=0.333333
+chr2	168264363	chr2:168264363:FP	A	A[contig_761r[	.	.	NOANCHOR
+chr2	168264251	chr2:168264251:FP	T	]contig_761r:1357]T	.	.	AR=3;AS=1;SR=4
+chr2	169198243	chr2:169198243:FP	A	A[contig_7893r[	.	.	NOANCHOR
+chr2	169198143	chr2:169198143:FP	G	]contig_7893r]G	.	.	AR=2;AS=0.666667
+chr2	170959916	chr2:170959916:FP	G	G[contig_3747r[	.	.	NOANCHOR
+chr2	170959816	chr2:170959816:FP	T	]contig_3747r]T	.	.	AR=2;AS=0.333333
+chr2	175860570	chr2:175860570:FP	C	C[contig_9045f[	.	.	NOANCHOR
+chr2	175860470	chr2:175860470:FP	A	]contig_9045f]A	.	.	AR=6;AS=1
+chr2	205346200	chr2:205346200:FP	T	T[contig_5621r[	.	.	NOANCHOR
+chr2	205346100	chr2:205346100:FP	A	]contig_5621r]A	.	.	AR=2;AS=0.333333
+chr2	217406920	chr2:217406920:FP	G	G[contig_7317r:0[	.	.	AR=4;AS=0.666667;SR=10
+chr2	217406812	chr2:217406812:FP	G	]contig_7317r]G	.	.	NOANCHOR
+chr20	61398	chr20:61398:FP	C	]contig_7656r]C	.	.	NOANCHOR
+chr20	65160	chr20:65160:FP	T	T[contig_4065r[	.	.	NOANCHOR
+chr20	65529	chr20:65529:FP	T	T[contig_2629f[	.	.	NOANCHOR
+chr20	65060	chr20:65060:FP	T	]contig_4065r]T	.	.	AR=7;AS=0.35
+chr20	988793	chr20:988793:FP	C	C[contig_428r[	.	.	AR=2;AS=0.666667
+chr20	988693	chr20:988693:FP	G	]contig_428r]G	.	.	NOANCHOR
+chr20	31201656	chr20:31201656:FP	A	A[contig_4762f[	.	.	NOANCHOR
+chr20	31241607	chr20:31241607:FP	A	]contig_2306r]A	.	.	AR=2;AS=0.5
+chr20	38676047	chr20:38676047:FP	T	]contig_855r]T	.	.	NOANCHOR
+chr20	47537007	chr20:47537007:FP	C	C[contig_5216f[	.	.	AR=2;AS=1
+chr20	47536907	chr20:47536907:FP	A	]contig_5216f]A	.	.	NOANCHOR
+chr20	48888286	chr20:48888286:FP	T	T[contig_7440r[	.	.	NOANCHOR
+chr21	7261224	chr21:7261224:FP	G	]contig_3849r]G	.	.	AR=6;AS=0.352941
+chr21	7924609	chr21:7924609:FP	C	C[contig_9657f[	.	.	NOANCHOR
+chr21	10673253	chr21:10673253:FP	T	T[contig_2358r[	.	.	NOANCHOR
+chr21	10692778	chr21:10692778:FP	A	A[contig_6804r[	.	.	NOANCHOR
+chr21	10701643	chr21:10701643:FP	C	]contig_7768r]C	.	.	AR=2;AS=0.666667
+chr21	10705076	chr21:10705076:FP	C	C[contig_4237r[	.	.	AR=3;AS=0.333333
+chr21	10705304	chr21:10705304:FP	T	]contig_7053f]T	.	.	NOANCHOR
+chr21	10709325	chr21:10709325:FP	C	C[contig_8427f[	.	.	NOANCHOR
+chr21	10709229	chr21:10709229:FP	C	]contig_3814r]C	.	.	NOANCHOR
+chr21	10712410	chr21:10712410:FP	C	]contig_7159f]C	.	.	NOANCHOR
+chr21	10716549	chr21:10716549:FP	T	]contig_1117r]T	.	.	NOANCHOR
+chr21	10731367	chr21:10731367:FP	C	C[contig_5203f[	.	.	AR=2;AS=0.333333
+chr21	10736568	chr21:10736568:FP	A	A[contig_4086f[	.	.	AR=3;AS=0.3
+chr21	10736468	chr21:10736468:FP	C	]contig_4086f]C	.	.	NOANCHOR
+chr21	10737870	chr21:10737870:FP	C	C[contig_7749r[	.	.	AR=2;AS=0.666667
+chr21	10738033	chr21:10738033:FP	T	]contig_6459f]T	.	.	NOANCHOR
+chr21	10738133	chr21:10738133:FP	A	A[contig_6459f[	.	.	AR=3;AS=0.333333
+chr21	33474797	chr21:33474797:FP	T	T[contig_973r[	.	.	AR=11;AS=1
+chr21	33474697	chr21:33474697:FP	C	]contig_973r]C	.	.	NOANCHOR
+chr22	23971120	chr22:23971120:FP	T	T[contig_4557f[	.	.	NOANCHOR
+chr22	27401397	chr22:27401397:FP	G	G[contig_5916r:4[	.	.	AR=4;AS=0.571429;SR=5
+chr22	35735179	chr22:35735179:FP	C	]contig_7302r]C	.	.	NOANCHOR
+chr22	36863642	chr22:36863642:FP	T	T[contig_3325r:0[	.	.	AR=3;AS=1;SR=11
+chr22	36863517	chr22:36863517:FP	G	]contig_3325r]G	.	.	NOANCHOR
+chr22	40950171	chr22:40950171:FP	T	T[contig_3683f:1[	.	.	AR=2;AS=0.666667;SR=3
+chr22	40950111	chr22:40950111:FP	C	]contig_3683f]C	.	.	NOANCHOR
+chr22	42696029	chr22:42696029:FP	A	]contig_7823r]A	.	.	NOANCHOR
+chr22	42696094	chr22:42696094:FP	C	C[contig_7823r:1[	.	.	AR=2;AS=0.333333;SR=3
+chr22	46528940	chr22:46528940:FP	A	A[contig_2931f:4[	.	.	AR=4;AS=0.307692;SR=2
+chr22	46528789	chr22:46528789:FP	C	]contig_2931f]C	.	.	NOANCHOR
+chr22_KI270736v1_random	1089	chr22_KI270736v1_random:1089:FP	C	]contig_9619f]C	.	.	NOANCHOR
+chr22_KI270736v1_random	2204	chr22_KI270736v1_random:2204:FP	G	]contig_5232r]G	.	.	NOANCHOR
+chr22_KI270736v1_random	58589	chr22_KI270736v1_random:58589:FP	A	]contig_3026r]A	.	.	AR=7;AS=0.388889
+chr22_KI270736v1_random	62370	chr22_KI270736v1_random:62370:FP	A	]contig_2268r]A	.	.	NOANCHOR
+chr22_KI270736v1_random	69839	chr22_KI270736v1_random:69839:FP	A	A[contig_7413f[	.	.	AR=3;AS=0.6
+chr22_KI270736v1_random	85982	chr22_KI270736v1_random:85982:FP	G	]contig_2823r]G	.	.	AR=8;AS=0.8
+chr22_KI270736v1_random	103112	chr22_KI270736v1_random:103112:FP	G	]contig_8257r]G	.	.	NOANCHOR
+chr22_KI270736v1_random	153882	chr22_KI270736v1_random:153882:FP	G	G[contig_1856r[	.	.	NOANCHOR
+chr22_KI270736v1_random	154269	chr22_KI270736v1_random:154269:FP	A	]contig_523f]A	.	.	AR=11;AS=0.55
+chr22_KI270736v1_random	156263	chr22_KI270736v1_random:156263:FP	N	]contig_8470r]N	.	.	AR=28;AS=0.636364
+chr22_KI270736v1_random	161985	chr22_KI270736v1_random:161985:FP	T	]contig_3634r]T	.	.	AR=19;AS=0.95
+chr22_KI270736v1_random	162589	chr22_KI270736v1_random:162589:FP	T	]contig_8950r]T	.	.	NOANCHOR
+chr22_KI270736v1_random	173099	chr22_KI270736v1_random:173099:FP	C	C[contig_3356f[	.	.	NOANCHOR
+chr22_KI270736v1_random	172790	chr22_KI270736v1_random:172790:FP	G	]contig_2391r]G	.	.	AR=4;AS=0.333333
+chr3	5239356	chr3:5239356:FP	C	]contig_1985f]C	.	.	AR=5;AS=0.555556
+chr3	20301635	chr3:20301635:FP	G	G[contig_8393f[	.	.	NOANCHOR
+chr3	20301390	chr3:20301390:FP	A	]contig_8393f:1061]A	.	.	AR=3;AS=0.428571;SR=2
+chr3	32675017	chr3:32675017:FP	A	A[contig_4293r[	.	.	NOANCHOR
+chr3	32674917	chr3:32674917:FP	G	]contig_4293r]G	.	.	AR=3;AS=0.3
+chr3	45134553	chr3:45134553:FP	A	A[contig_2342r:47[	.	.	NOANCHOR;SR=2
+chr3	45133740	chr3:45133740:FP	A	]contig_2342r:575]A	.	.	AR=5;AS=1;SR=33
+chr3	46840403	chr3:46840403:FP	T	T[contig_897r[	.	.	NOANCHOR
+chr3	78604248	chr3:78604248:FP	T	]contig_5292f]T	.	.	NOANCHOR
+chr3	78604347	chr3:78604347:FP	G	G[contig_5292f:7[	.	.	AR=2;AS=0.4;SR=2
+chr3	86736548	chr3:86736548:FP	T	T[contig_2560f:5[	.	.	AR=3;AS=0.5;SR=11
+chr3	86736471	chr3:86736471:FP	G	]contig_2560f]G	.	.	NOANCHOR
+chr3	95825656	chr3:95825656:FP	A	A[contig_727r[	.	.	NOANCHOR
+chr3	95825539	chr3:95825539:FP	C	]contig_727r:318]C	.	.	AR=2;AS=1;SR=5
+chr3	168000913	chr3:168000913:FP	T	T[contig_3497r[	.	.	NOANCHOR
+chr3	168000750	chr3:168000750:FP	A	A[contig_714f[	.	.	AR=2;AS=1
+chr3	168000650	chr3:168000650:FP	T	]contig_714f]T	.	.	NOANCHOR
+chr3	183473135	chr3:183473135:FP	G	G[contig_6663f[	.	.	NOANCHOR
+chr3	183473010	chr3:183473010:FP	T	]contig_6663f:487]T	.	.	AR=6;AS=0.75;SR=3
+chr3	185432455	chr3:185432455:FP	T	T[contig_7220f:4[	.	.	AR=4;AS=0.333333;SR=5
+chr3	185432389	chr3:185432389:FP	C	]contig_7220f]C	.	.	NOANCHOR
+chr3	191196385	chr3:191196385:FP	A	A[contig_6154r[	.	.	NOANCHOR
+chr3	191196285	chr3:191196285:FP	G	]contig_6154r]G	.	.	AR=2;AS=0.333333
+chr3	196295331	chr3:196295331:FP	T	T[contig_2487f[	.	.	NOANCHOR
+chr3	196295231	chr3:196295231:FP	G	]contig_2487f]G	.	.	AR=6;AS=0.545455
+chr4	13575499	chr4:13575499:FP	G	G[contig_1721f[	.	.	NOANCHOR
+chr4	13575444	chr4:13575444:FP	G	]contig_1721f:1212]G	.	.	AR=2;AS=0.333333;SR=2
+chr4	28844920	chr4:28844920:FP	G	G[contig_2668f[	.	.	NOANCHOR
+chr4	28844820	chr4:28844820:FP	C	]contig_2668f]C	.	.	AR=2;AS=0.333333
+chr4	37438096	chr4:37438096:FP	C	C[contig_3278r[	.	.	NOANCHOR
+chr4	49092124	chr4:49092124:FP	C	C[contig_7361r[	.	.	AR=2;AS=0.5
+chr4	49092460	chr4:49092460:FP	C	C[contig_8479f[	.	.	AR=2;AS=0.4
+chr4	49092360	chr4:49092360:FP	C	]contig_8479f]C	.	.	NOANCHOR
+chr4	49633918	chr4:49633918:FP	A	]contig_2371r]A	.	.	AR=2;AS=0.333333
+chr4	49644976	chr4:49644976:FP	A	]contig_1470r]A	.	.	AR=4;AS=0.444444
+chr4	53469747	chr4:53469747:FP	T	T[contig_1629r[	.	.	NOANCHOR
+chr4	53469647	chr4:53469647:FP	G	]contig_1629r]G	.	.	AR=3;AS=1
+chr4	55746154	chr4:55746154:FP	C	C[contig_8512r[	.	.	NOANCHOR
+chr4	56926914	chr4:56926914:FP	T	T[contig_8027f[	.	.	NOANCHOR
+chr4	56926843	chr4:56926843:FP	T	]contig_8027f:1967]T	.	.	AR=3;AS=0.333333;SR=5
+chr4	87211509	chr4:87211509:FP	T	]contig_8792r]T	.	.	NOANCHOR
+chr4	87211645	chr4:87211645:FP	A	A[contig_8792r:3[	.	.	AR=2;AS=0.666667;SR=5
+chr4	111279340	chr4:111279340:FP	T	]contig_3528f]T	.	.	NOANCHOR
+chr4	120216254	chr4:120216254:FP	G	G[contig_3411f[	.	.	AR=2;AS=0.5
+chr4	120216154	chr4:120216154:FP	T	]contig_3411f]T	.	.	NOANCHOR
+chr4	139281791	chr4:139281791:FP	G	G[contig_4803f:2[	.	.	AR=5;AS=1;SR=1
+chr4	139281755	chr4:139281755:FP	C	]contig_4803f]C	.	.	NOANCHOR
+chr4	139948030	chr4:139948030:FP	G	G[contig_4088r[	.	.	AR=3;AS=0.3
+chr4	139947930	chr4:139947930:FP	C	]contig_4088r]C	.	.	NOANCHOR
+chr4	155349306	chr4:155349306:FP	G	G[contig_1315f:11[	.	.	AR=17;AS=1;SR=39
+chr4	155349207	chr4:155349207:FP	G	]contig_1315f]G	.	.	NOANCHOR
+chr4	176922624	chr4:176922624:FP	A	A[contig_4155r:105[	.	.	NOANCHOR;SR=1
+chr4	176921829	chr4:176921829:FP	T	]contig_4155r]T	.	.	AR=4;AS=0.4
+chr4	183823391	chr4:183823391:FP	C	C[contig_7161r:10[	.	.	AR=2;AS=0.4;SR=2
+chr4	183823328	chr4:183823328:FP	A	]contig_7161r]A	.	.	NOANCHOR
+chr4	184661536	chr4:184661536:FP	T	T[contig_9625r[	.	.	NOANCHOR
+chr4	184661436	chr4:184661436:FP	G	]contig_9625r]G	.	.	AR=2;AS=0.5
+chr5	6448523	chr5:6448523:FP	A	]contig_2690f]A	.	.	NOANCHOR
+chr5	12685931	chr5:12685931:FP	A	A[contig_8406r[	.	.	NOANCHOR
+chr5	12685833	chr5:12685833:FP	T	T[contig_8042f[	.	.	AR=4;AS=0.8
+chr5	12685733	chr5:12685733:FP	A	]contig_8042f]A	.	.	NOANCHOR
+chr5	12685831	chr5:12685831:FP	A	]contig_8406r]A	.	.	AR=5;AS=0.833333
+chr5	23845644	chr5:23845644:FP	T	]contig_9432r]T	.	.	NOANCHOR
+chr5	23845744	chr5:23845744:FP	A	A[contig_9432r[	.	.	AR=2;AS=0.333333
+chr5	33827168	chr5:33827168:FP	G	G[contig_1219f:4[	.	.	AR=8;AS=1;SR=10
+chr5	33827069	chr5:33827069:FP	C	]contig_1219f]C	.	.	NOANCHOR
+chr5	56198921	chr5:56198921:FP	T	T[contig_2345r[	.	.	NOANCHOR
+chr5	57286366	chr5:57286366:FP	A	A[contig_6854f[	.	.	NOANCHOR
+chr5	88676323	chr5:88676323:FP	C	]contig_5530f]C	.	.	AR=3;AS=0.75
+chr5	92344198	chr5:92344198:FP	T	T[contig_7449f[	.	.	NOANCHOR
+chr5	92344098	chr5:92344098:FP	A	]contig_7449f]A	.	.	AR=2;AS=0.666667
+chr5	113146300	chr5:113146300:FP	A	A[contig_3146f:8[	.	.	AR=8;AS=1;SR=47
+chr5	113146201	chr5:113146201:FP	G	]contig_3146f]G	.	.	NOANCHOR
+chr5	115463206	chr5:115463206:FP	A	]contig_9741r]A	.	.	NOANCHOR
+chr5	123583461	chr5:123583461:FP	A	A[contig_4582r[	.	.	NOANCHOR
+chr5	123583371	chr5:123583371:FP	T	]contig_4582r:415]T	.	.	AR=8;AS=0.8;SR=3
+chr5	149460842	chr5:149460842:FP	T	T[contig_10168r[	.	.	AR=3;AS=0.333333
+chr5	149460742	chr5:149460742:FP	T	]contig_10168r]T	.	.	NOANCHOR
+chr5	174655020	chr5:174655020:FP	G	G[contig_135r[	.	.	NOANCHOR
+chr5	174654917	chr5:174654917:FP	T	]contig_4836f]T	.	.	NOANCHOR
+chr5	174655016	chr5:174655016:FP	T	T[contig_4836f:16[	.	.	AR=5;AS=0.833333;SR=12
+chr6	2376180	chr6:2376180:FP	T	T[contig_240f:12[	.	.	NOANCHOR;SR=6
+chr6	2376247	chr6:2376247:FP	A	]contig_240f:306]A	.	.	AR=6;AS=1;SR=55
+chr6	3222109	chr6:3222109:FP	A	A[contig_1667r:79[	.	.	NOANCHOR;SR=13
+chr6	3222061	chr6:3222061:FP	A	]contig_1667r:514]A	.	.	AR=4;AS=0.333333;SR=21
+chr6	11491604	chr6:11491604:FP	T	T[contig_665r:0[	.	.	AR=4;AS=1;SR=15
+chr6	11491472	chr6:11491472:FP	C	]contig_665r]C	.	.	NOANCHOR
+chr6	17338635	chr6:17338635:FP	C	]contig_5621f]C	.	.	NOANCHOR
+chr6	28176192	chr6:28176192:FP	C	C[contig_5131f:0[	.	.	AR=5;AS=1;SR=9
+chr6	28176066	chr6:28176066:FP	T	]contig_5131f]T	.	.	NOANCHOR
+chr6	31042181	chr6:31042181:FP	T	T[contig_7312f:11[	.	.	AR=5;AS=0.454545;SR=1
+chr6	31042220	chr6:31042220:FP	C	]contig_7312f]C	.	.	NOANCHOR
+chr6	32534539	chr6:32534539:FP	A	]contig_2556f]A	.	.	NOANCHOR
+chr6	32536096	chr6:32536096:FP	G	G[contig_7947f[	.	.	AR=2;AS=1
+chr6	32535996	chr6:32535996:FP	C	]contig_7947f]C	.	.	NOANCHOR
+chr6	34071511	chr6:34071511:FP	A	]contig_3137r]A	.	.	NOANCHOR
+chr6	36898227	chr6:36898227:FP	T	T[contig_4689f[	.	.	NOANCHOR
+chr6	36898127	chr6:36898127:FP	G	]contig_4689f]G	.	.	AR=5;AS=0.333333
+chr6	63337090	chr6:63337090:FP	A	A[contig_2858r[	.	.	NOANCHOR
+chr6	63336990	chr6:63336990:FP	C	]contig_2858r]C	.	.	AR=2;AS=0.666667
+chr6	65851624	chr6:65851624:FP	T	T[contig_9774f[	.	.	NOANCHOR
+chr6	79375188	chr6:79375188:FP	T	T[contig_10062f:14[	.	.	AR=6;AS=1;SR=15
+chr6	79375089	chr6:79375089:FP	G	]contig_10062f]G	.	.	NOANCHOR
+chr6	89036762	chr6:89036762:FP	C	C[contig_264f[	.	.	NOANCHOR
+chr6	89872264	chr6:89872264:FP	C	C[contig_5815f[	.	.	AR=2;AS=0.4
+chr6	89872164	chr6:89872164:FP	C	]contig_5815f]C	.	.	NOANCHOR
+chr6	113772459	chr6:113772459:FP	C	]contig_693f]C	.	.	NOANCHOR
+chr6	116047705	chr6:116047705:FP	G	G[contig_3176r[	.	.	NOANCHOR
+chr6	154474071	chr6:154474071:FP	C	C[contig_4372r[	.	.	AR=2;AS=0.333333
+chr6	154473971	chr6:154473971:FP	G	]contig_4372r]G	.	.	NOANCHOR
+chr6	166285980	chr6:166285980:FP	T	T[contig_5572r:22[	.	.	AR=7;AS=1;SR=8
+chr6	166285880	chr6:166285880:FP	T	]contig_5572r]T	.	.	NOANCHOR
+chr6	166951859	chr6:166951859:FP	A	A[contig_4755r:9[	.	.	AR=2;AS=0.4;SR=3
+chr6	166951733	chr6:166951733:FP	A	]contig_4755r]A	.	.	NOANCHOR
+chr7	930565	chr7:930565:FP	T	T[contig_4725r[	.	.	NOANCHOR
+chr7	930465	chr7:930465:FP	C	]contig_4725r]C	.	.	AR=2;AS=1
+chr7	32472908	chr7:32472908:FP	T	]contig_4057f]T	.	.	NOANCHOR
+chr7	32472955	chr7:32472955:FP	C	C[contig_4057f:0[	.	.	AR=5;AS=0.454545;SR=1
+chr7	62402822	chr7:62402822:FP	T	]contig_4630f]T	.	.	NOANCHOR
+chr7	68761612	chr7:68761612:FP	T	T[contig_3809f[	.	.	NOANCHOR
+chr7	68761512	chr7:68761512:FP	A	]contig_3809f:1135]A	.	.	AR=6;AS=1;SR=19
+chr7	87516234	chr7:87516234:FP	A	A[contig_6839f[	.	.	NOANCHOR
+chr7	102260289	chr7:102260289:FP	A	]contig_1995r]A	.	.	NOANCHOR
+chr7	105511236	chr7:105511236:FP	T	T[contig_6046r[	.	.	NOANCHOR
+chr7	105511136	chr7:105511136:FP	A	]contig_6046r]A	.	.	AR=2;AS=1
+chr7	110329613	chr7:110329613:FP	T	]contig_623f]T	.	.	NOANCHOR
+chr7	121665661	chr7:121665661:FP	T	T[contig_855f[	.	.	NOANCHOR
+chr7	140126054	chr7:140126054:FP	G	]contig_4403f]G	.	.	NOANCHOR
+chr7	140126154	chr7:140126154:FP	C	C[contig_4403f[	.	.	AR=2;AS=0.333333
+chr7	142303296	chr7:142303296:FP	G	G[contig_1123r:5[	.	.	AR=3;AS=1;SR=2
+chr7	142304369	chr7:142304369:FP	A	]contig_1123r:776]A	.	.	NOANCHOR;SR=3
+chr7	142305168	chr7:142305168:FP	T	T[contig_437f[	.	.	NOANCHOR
+chr7	142343175	chr7:142343175:FP	G	]contig_4175f]G	.	.	NOANCHOR
+chr7	142346920	chr7:142346920:FP	A	A[contig_6902r:6[	.	.	NOANCHOR;SR=4
+chr7	142346117	chr7:142346117:FP	A	]contig_6902r:949]A	.	.	AR=3;AS=1;SR=9
+chr7	142391639	chr7:142391639:FP	G	G[contig_6235f:6[	.	.	AR=2;AS=0.666667;SR=4
+chr7	142391591	chr7:142391591:FP	T	]contig_6235f]T	.	.	NOANCHOR
+chr8	40820861	chr8:40820861:FP	T	T[contig_1933f[	.	.	NOANCHOR
+chr8	40820767	chr8:40820767:FP	G	G[contig_1935r[	.	.	AR=5;AS=0.714286
+chr8	40820761	chr8:40820761:FP	G	]contig_1933f]G	.	.	AR=2;AS=1
+chr8	85158222	chr8:85158222:FP	A	A[contig_3491r[	.	.	AR=3;AS=0.5
+chr8	85158122	chr8:85158122:FP	G	]contig_3491r]G	.	.	NOANCHOR
+chr8	130897702	chr8:130897702:FP	A	A[contig_861r:8[	.	.	AR=5;AS=0.833333;SR=21
+chr8	130897691	chr8:130897691:FP	A	]contig_861r:334]A	.	.	NOANCHOR;SR=7
+chr8	136026813	chr8:136026813:FP	T	]contig_1246f]T	.	.	NOANCHOR
+chr8	136073593	chr8:136073593:FP	A	A[contig_7317r[	.	.	AR=2;AS=0.333333
+chr8	136073493	chr8:136073493:FP	C	]contig_7317r]C	.	.	NOANCHOR
+chr8	141779687	chr8:141779687:FP	T	T[contig_1770r[	.	.	AR=8;AS=1
+chr8	141779587	chr8:141779587:FP	T	]contig_1770r]T	.	.	NOANCHOR
+chr8	142256178	chr8:142256178:FP	T	]contig_3321f]T	.	.	NOANCHOR
+chr8	142432436	chr8:142432436:FP	C	]contig_3714r:274]C	.	.	NOANCHOR;SR=3
+chr9	12769825	chr9:12769825:FP	A	A[contig_459r[	.	.	NOANCHOR
+chr9	12769725	chr9:12769725:FP	C	]contig_459r]C	.	.	AR=3;AS=0.428571
+chr9	29877747	chr9:29877747:FP	T	T[contig_9911r[	.	.	NOANCHOR
+chr9	81575753	chr9:81575753:FP	A	]contig_706r]A	.	.	NOANCHOR
+chr9	81575852	chr9:81575852:FP	A	A[contig_706r:10[	.	.	AR=2;AS=0.666667;SR=1
+chr9	88200046	chr9:88200046:FP	G	G[contig_4788f[	.	.	NOANCHOR
+chr9	88199946	chr9:88199946:FP	C	]contig_4788f]C	.	.	AR=3;AS=0.3
+chr9	90315564	chr9:90315564:FP	A	A[contig_4896f[	.	.	NOANCHOR
+chr9	94969633	chr9:94969633:FP	T	T[contig_9478f[	.	.	NOANCHOR
+chr9	94969533	chr9:94969533:FP	G	]contig_9478f]G	.	.	AR=2;AS=0.5
+chr9	121895860	chr9:121895860:FP	G	G[contig_8011r[	.	.	NOANCHOR
+chr9	126983218	chr9:126983218:FP	T	T[contig_1927r:5[	.	.	AR=3;AS=0.3;SR=7
+chr9	126983137	chr9:126983137:FP	A	]contig_1927r]A	.	.	NOANCHOR
+chr9	137260887	chr9:137260887:FP	C	C[contig_724r[	.	.	NOANCHOR
+chr9	137260799	chr9:137260799:FP	G	]contig_724r:507]G	.	.	AR=2;AS=0.5;SR=2
+chrUn_KI270435v1	92119	chrUn_KI270435v1:92119:FP	T	T[contig_7993f[	.	.	NOANCHOR
+chrUn_KI270435v1	92019	chrUn_KI270435v1:92019:FP	T	]contig_7993f]T	.	.	AR=6;AS=0.6
+chrUn_KI270438v1	56114	chrUn_KI270438v1:56114:FP	T	]contig_1086r]T	.	.	AR=5;AS=0.555556
+chrUn_KI270442v1	101	chrUn_KI270442v1:101:FP	A	A[contig_7475r[	.	.	NOANCHOR
+chrUn_KI270442v1	801	chrUn_KI270442v1:801:FP	A	]contig_7475r]A	.	.	AR=6;AS=0.428571
+chrUn_KI270442v1	18208	chrUn_KI270442v1:18208:FP	A	]contig_379r]A	.	.	AR=4;AS=0.333333
+chrUn_KI270442v1	20482	chrUn_KI270442v1:20482:FP	A	A[contig_5966f[	.	.	NOANCHOR
+chrUn_KI270442v1	20550	chrUn_KI270442v1:20550:FP	N	N[contig_1891r[	.	.	AR=8;AS=0.347826
+chrUn_KI270442v1	20550	chrUn_KI270442v1:20550:FP	N	N[contig_7299r[	.	.	AR=9;AS=0.321429
+chrUn_KI270442v1	20450	chrUn_KI270442v1:20450:FP	G	]contig_7299r]G	.	.	NOANCHOR
+chrUn_KI270442v1	33183	chrUn_KI270442v1:33183:FP	A	A[contig_4086f[	.	.	AR=3;AS=0.3
+chrUn_KI270442v1	45027	chrUn_KI270442v1:45027:FP	G	G[contig_3046r[	.	.	NOANCHOR
+chrUn_KI270442v1	44927	chrUn_KI270442v1:44927:FP	T	]contig_3046r]T	.	.	AR=6;AS=0.315789
+chrUn_KI270442v1	45011	chrUn_KI270442v1:45011:FP	T	]contig_8361r]T	.	.	NOANCHOR
+chrUn_KI270442v1	46897	chrUn_KI270442v1:46897:FP	G	G[contig_3046r[	.	.	NOANCHOR
+chrUn_KI270442v1	46797	chrUn_KI270442v1:46797:FP	G	]contig_3046r]G	.	.	AR=8;AS=0.421053
+chrUn_KI270442v1	63050	chrUn_KI270442v1:63050:FP	N	N[contig_5310r[	.	.	AR=13;AS=0.8125
+chrUn_KI270442v1	62844	chrUn_KI270442v1:62844:FP	C	]contig_5311f:300]C	.	.	NOANCHOR;SR=4
+chrUn_KI270442v1	67565	chrUn_KI270442v1:67565:FP	A	A[contig_9631f[	.	.	NOANCHOR
+chrUn_KI270442v1	67465	chrUn_KI270442v1:67465:FP	A	]contig_9631f]A	.	.	AR=10;AS=0.526316
+chrUn_KI270442v1	222955	chrUn_KI270442v1:222955:FP	C	C[contig_3991f[	.	.	NOANCHOR
+chrUn_KI270442v1	222855	chrUn_KI270442v1:222855:FP	C	]contig_3991f]C	.	.	AR=7;AS=0.388889
+chrUn_KI270512v1	21890	chrUn_KI270512v1:21890:FP	A	A[contig_3287r[	.	.	AR=4;AS=0.363636
+chrUn_KI270519v1	138080	chrUn_KI270519v1:138080:FP	A	A[contig_6197f[	.	.	AR=7;AS=0.411765
+chrX	18281314	chrX:18281314:FP	A	A[contig_7502r[	.	.	NOANCHOR
+chrX	18281214	chrX:18281214:FP	A	]contig_7502r:535]A	.	.	AR=2;AS=0.4;SR=5
+chrX	54753250	chrX:54753250:FP	C	]contig_9432r]C	.	.	NOANCHOR
+chrX	54753341	chrX:54753341:FP	A	A[contig_9432r:10[	.	.	AR=2;AS=0.333333;SR=4
+chrX	77593192	chrX:77593192:FP	C	C[contig_5556r:3[	.	.	AR=4;AS=0.444444;SR=3
+chrX	77593125	chrX:77593125:FP	G	]contig_5556r]G	.	.	NOANCHOR
+chrX	78377746	chrX:78377746:FP	C	C[contig_2931r[	.	.	NOANCHOR
+chrX	78377641	chrX:78377641:FP	T	]contig_2931r:4728]T	.	.	AR=5;AS=0.384615;SR=6
+chrX	112885119	chrX:112885119:FP	T	T[contig_4194r[	.	.	AR=3;AS=0.6
+chrX	112885019	chrX:112885019:FP	G	]contig_4194r]G	.	.	NOANCHOR
+chrX	118744047	chrX:118744047:FP	G	G[contig_693r[	.	.	NOANCHOR
+chrX	118743947	chrX:118743947:FP	A	]contig_693r]A	.	.	AR=2;AS=0.4
+chrX	153383485	chrX:153383485:FP	A	]contig_3025r]A	.	.	AR=2;AS=1
+chrY	10647799	chrY:10647799:FP	C	]contig_7942f]C	.	.	AR=2;AS=0.333333
+chrY	10682586	chrY:10682586:FP	C	C[contig_8263f[	.	.	AR=3;AS=0.375
+chrY	10688065	chrY:10688065:FP	C	C[contig_6140r[	.	.	NOANCHOR
+chrY	10751441	chrY:10751441:FP	T	]contig_4237r]T	.	.	NOANCHOR
+chrY	10751541	chrY:10751541:FP	T	T[contig_4237r[	.	.	AR=3;AS=0.333333
+chrY	10751851	chrY:10751851:FP	A	]contig_9066r]A	.	.	NOANCHOR
+chrY	10751951	chrY:10751951:FP	C	C[contig_9066r[	.	.	AR=3;AS=0.75
+chrY	10760003	chrY:10760003:FP	T	T[contig_6459f[	.	.	AR=4;AS=0.444444
+chrY	10759903	chrY:10759903:FP	T	]contig_6459f]T	.	.	NOANCHOR
+chrY	10776548	chrY:10776548:FP	A	A[contig_5400r[	.	.	NOANCHOR
+chrY	10777584	chrY:10777584:FP	C	C[contig_4707f[	.	.	NOANCHOR
+chrY	10797647	chrY:10797647:FP	C	]contig_7296f]C	.	.	NOANCHOR
+chrY	10799714	chrY:10799714:FP	C	C[contig_4295r[	.	.	AR=2;AS=0.4
+chrY	10807357	chrY:10807357:FP	T	T[contig_493f[	.	.	AR=6;AS=0.333333
+chrY	10807260	chrY:10807260:FP	T	]contig_5101f]T	.	.	NOANCHOR
+chrY	10834143	chrY:10834143:FP	T	]contig_9931r]T	.	.	NOANCHOR
+chrY	10839863	chrY:10839863:FP	A	]contig_2077f]A	.	.	AR=3;AS=0.333333
+chrY	10866319	chrY:10866319:FP	G	G[contig_4825r[	.	.	NOANCHOR
+chrY	10880377	chrY:10880377:FP	C	C[contig_7386r[	.	.	NOANCHOR
+chrY	10895852	chrY:10895852:FP	A	A[contig_637r[	.	.	NOANCHOR
+chrY	10930088	chrY:10930088:FP	C	]contig_5902f]C	.	.	NOANCHOR
+chrY	10939679	chrY:10939679:FP	A	A[contig_7386r[	.	.	NOANCHOR
+chrY	10946548	chrY:10946548:FP	C	]contig_3228r]C	.	.	NOANCHOR
+chrY	10952551	chrY:10952551:FP	A	A[contig_8776r[	.	.	NOANCHOR
+chrY	10987164	chrY:10987164:FP	C	]contig_9330f]C	.	.	AR=3;AS=0.333333
+chrY	10988649	chrY:10988649:FP	C	C[contig_7812f[	.	.	AR=3;AS=0.428571
+chrY	10994071	chrY:10994071:FP	A	]contig_3228r]A	.	.	NOANCHOR
+chrY	11022951	chrY:11022951:FP	C	]contig_10487r]C	.	.	NOANCHOR
+chrY	11294686	chrY:11294686:FP	T	]contig_7324f]T	.	.	AR=2;AS=0.333333
+chrY	11296226	chrY:11296226:FP	C	C[contig_5683r[	.	.	AR=24;AS=0.393443
+chrY	11297539	chrY:11297539:FP	A	A[contig_7069r[	.	.	NOANCHOR
+chrY	11302945	chrY:11302945:FP	C	]contig_1088f]C	.	.	AR=6;AS=0.375
+chrY	11302969	chrY:11302969:FP	C	]contig_5282f]C	.	.	NOANCHOR
+chrY	11643733	chrY:11643733:FP	G	]contig_5199f]G	.	.	NOANCHOR
+chrY	11731236	chrY:11731236:FP	G	]contig_741f]G	.	.	NOANCHOR
+chrY	11739643	chrY:11739643:FP	G	G[contig_378r:25[	.	.	AR=2;AS=0.333333;SR=2
+chrY	26638368	chrY:26638368:FP	C	C[contig_9331r[	.	.	AR=5;AS=0.357143
+chrY	26638268	chrY:26638268:FP	G	]contig_9331r]G	.	.	NOANCHOR
+chrY	26640609	chrY:26640609:FP	A	A[contig_3737f[	.	.	NOANCHOR
+chrY	26653990	chrY:26653990:FP	G	]contig_3884f]G	.	.	NOANCHOR
+chrY	56826918	chrY:56826918:FP	A	A[contig_7190r[	.	.	NOANCHOR
+chrY	56826818	chrY:56826818:FP	T	]contig_7190r]T	.	.	AR=3;AS=1
+chrY	56830270	chrY:56830270:FP	T	]contig_500r]T	.	.	NOANCHOR
+chrY	56833357	chrY:56833357:FP	A	A[contig_2825r[	.	.	AR=7;AS=0.466667
+hs38d1	1428270	hs38d1:1428270:FP	T	]contig_2600r]T	.	.	AR=7;AS=0.304348
+hs38d1	1950480	hs38d1:1950480:FP	G	G[contig_2689r[	.	.	AR=2;AS=0.5
+hs38d1	1965666	hs38d1:1965666:FP	G	]contig_1439f:872]G	.	.	AR=10;AS=0.4;SR=11
+hs38d1	1969363	hs38d1:1969363:FP	T	]contig_10500f]T	.	.	AR=3;AS=0.375
+hs38d1	1978920	hs38d1:1978920:FP	G	]contig_2594f]G	.	.	AR=3;AS=0.75
+hs38d1	1979135	hs38d1:1979135:FP	C	C[contig_10357r[	.	.	AR=22;AS=0.407407
+hs38d1	1979035	hs38d1:1979035:FP	G	]contig_10357r]G	.	.	NOANCHOR
+hs38d1	1992940	hs38d1:1992940:FP	T	T[contig_8158f[	.	.	AR=2;AS=1
+hs38d1	1997596	hs38d1:1997596:FP	T	T[contig_9148r[	.	.	NOANCHOR
+hs38d1	2257024	hs38d1:2257024:FP	C	C[contig_3314f[	.	.	NOANCHOR
+hs38d1	2256924	hs38d1:2256924:FP	C	]contig_3314f:1505]C	.	.	AR=10;AS=1;SR=20
+hs38d1	2274263	hs38d1:2274263:FP	G	G[contig_3912f[	.	.	NOANCHOR
+hs38d1	2274164	hs38d1:2274164:FP	T	]contig_3912f:2111]T	.	.	AR=12;AS=1;SR=10
+hs38d1	2381424	hs38d1:2381424:FP	N	N[contig_3227r[	.	.	AR=2;AS=0.666667
+hs38d1	2381324	hs38d1:2381324:FP	A	]contig_3227r]A	.	.	NOANCHOR
+hs38d1	4641372	hs38d1:4641372:FP	C	C[contig_2496r[	.	.	NOANCHOR
+hs38d1	4641250	hs38d1:4641250:FP	N	]contig_2496r:505]N	.	.	AR=11;AS=0.846154;SR=1
+hs38d1	4680961	hs38d1:4680961:FP	A	A[contig_1780f[	.	.	NOANCHOR
+hs38d1	4680861	hs38d1:4680861:FP	A	]contig_1780f:1171]A	.	.	AR=6;AS=1;SR=15
+hs38d1	4896306	hs38d1:4896306:FP	G	G[contig_1261r:68[	.	.	NOANCHOR;SR=3
+hs38d1	7741673	hs38d1:7741673:FP	T	]contig_4325r]T	.	.	AR=6;AS=0.6
+hs38d1	8547736	hs38d1:8547736:FP	G	G[contig_690f[	.	.	NOANCHOR
+hs38d1	8547636	hs38d1:8547636:FP	C	]contig_690f]C	.	.	AR=7;AS=0.7
