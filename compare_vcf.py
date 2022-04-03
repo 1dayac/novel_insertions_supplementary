@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "NA12878"
+    dataset = "HG002"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -132,7 +132,7 @@ print(sv_dict)
 # print(len(sv_dict))
 max_len = 0
 
-pacbio_name = "pacbio.bed"
+pacbio_name = "pacbio_filtered.vcf"
 
 try:
     with open("results/" + dataset_simple + "/" + pacbio_name, "r") as pacbio:
@@ -413,33 +413,33 @@ identity_vector = []
 
 try:
 
-    with open("results/" + dataset + "/popins.vcf", "r") as popins_vcf:
+    with open("results/" + dataset + "/popins2_extended.vcf", "r") as popins_vcf:
         for r in popins_vcf.readlines():
             #break
             if r.startswith("#"):
                 continue
             chrom = r.split("\t")[0]
             pos = int(r.split("\t")[1])
-            new_sv = SV(chrom, pos, get_popins_len(r), r.strip().split("\t")[-1])
+            new_sv = SV(chrom, pos, len(r.strip().split("\t")[-1]), r.strip().split("\t")[-1])
             found = False
-            if get_popins_len(r) >= 300:
+            if new_sv.length >= 300:
                 ins += 1
             if chrom not in sv_dict:
                 sv_dict[chrom] = []
             if chrom not in popins_dict:
                 popins_dict[chrom] = []
             popins_dict[chrom].append(new_sv)
-            if get_popins_len(r) < 50:
+            if new_sv.length < 50:
                 pass
-            elif get_popins_len(r) < 300:
+            elif new_sv.length < 300:
                 total_len_50_300 += 1
-            elif get_popins_len(r) < 500:
+            elif new_sv.length < 500:
                 total_len_300_500 += 1
-            elif get_popins_len(r) < 1000:
+            elif new_sv.length < 1000:
                 total_len_500_1000 += 1
-            elif get_popins_len(r) < 2000:
+            elif new_sv.length < 2000:
                 total_len_1000_2000 += 1
-            elif get_popins_len(r) < 5000:
+            elif new_sv.length < 5000:
                 total_len_2000_5000 += 1
             else:
                 total_len_5000 += 1
@@ -448,22 +448,22 @@ try:
                     continue
                 if Near(sv, new_sv):
 
-                    if get_popins_len(r) >= 300  and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
+                    if new_sv.length >= 300 :# and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
                         near += 1
-                        if get_popins_len(r) > max_len:
-                            max_len = get_popins_len(r)
+                        if new_sv.length > max_len:
+                            max_len = new_sv.length
 
-                        if get_popins_len(r) < 50:
+                        if new_sv.length < 50:
                             pass
-                        elif get_popins_len(r) < 300:
+                        elif new_sv.length < 300:
                             len_50_300 += 1
-                        elif get_popins_len(r) < 500:
+                        elif new_sv.length < 500:
                             len_300_500 += 1
-                        elif get_popins_len(r) < 1000:
+                        elif new_sv.length < 1000:
                             len_500_1000 += 1
-                        elif get_popins_len(r) < 2000:
+                        elif new_sv.length < 2000:
                             len_1000_2000 += 1
-                        elif get_popins_len(r) < 5000:
+                        elif new_sv.length < 5000:
                             len_2000_5000 += 1
                         else:
                             len_5000 += 1
@@ -530,7 +530,7 @@ identity_vector = []
 near = 0
 ins = 0
 try:
-    with open("results/" + dataset + "/NUI_2.txt", "r") as nui:
+    with open("results/" + dataset + "/NUI.txt", "r") as nui:
         for r in nui.readlines():
             if r.startswith("ref_chr"):
                 continue
