@@ -3,7 +3,7 @@ from Bio import pairwise2
 try:
     dataset = sys.argv[1]
 except:
-    dataset = "HG002"
+    dataset = "HG002_stlfr"
 
 try:
     dataset_simple = dataset[:dataset.index("_")]
@@ -410,6 +410,7 @@ ins = 0
 max_len = 0
 
 identity_vector = []
+threshold_size = 300
 
 try:
 
@@ -422,7 +423,7 @@ try:
             pos = int(r.split("\t")[1])
             new_sv = SV(chrom, pos, len(r.strip().split("\t")[-1]), r.strip().split("\t")[-1])
             found = False
-            if new_sv.length >= 300:
+            if new_sv.length >= threshold_size:
                 ins += 1
             if chrom not in sv_dict:
                 sv_dict[chrom] = []
@@ -448,7 +449,7 @@ try:
                     continue
                 if Near(sv, new_sv):
 
-                    if new_sv.length >= 300 :# and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
+                    if new_sv.length >= threshold_size and abs(sv.length - new_sv.length) <= 0.05 * sv.length:
                         near += 1
                         if new_sv.length > max_len:
                             max_len = new_sv.length
