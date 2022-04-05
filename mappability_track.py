@@ -5,6 +5,8 @@ count_bad = 0
 count_good = 0
 with open(sys.argv[1]) as vcf:
     for r in vcf.readlines():
+        if (r.startswith('#')):
+            continue
         splitted = r.split("\t")
         chrom = splitted[0]
         pos = int(splitted[1])
